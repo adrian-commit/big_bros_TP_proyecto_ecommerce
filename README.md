@@ -70,4 +70,15 @@ Respetando siempre normas de calidad e higiene.</p>
     
 <h4>Redes:</h4>
     <p>Instagram: @bigbros.alfajores</p>
-    
+
+<h3>Paginas vistas y analizadas</h3>
+<ul>
+    <li>https://www.pedidos.link/sugarkingcandy</li>
+    <li>https://www.alfajoresguaymallen.com/</li>
+    <li>https://guolis.com.ar/cart</li>
+    <li>https://www.alfajorespayes.com.ar/</li>
+    <li>https://www.alfajorespayes.com.ar/</li>
+    <li>https://alfajoresmerengo.com/</li>
+    <li>https://www.havanna.com.ar/productos/alfajores</li>
+    <li>https://www.alfajoresorense.com.ar/</li>
+</ul>
