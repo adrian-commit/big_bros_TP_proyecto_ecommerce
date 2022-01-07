@@ -1,0 +1,27 @@
+{
+  "name": "proyecto_dh_bigbros",
+  "version": "1.0.0",
+  "description": "<h3>Definir la temática del Market Place</h3>",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js -e js,mjs,json,html,css",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrian-commit/big_bros_TP_proyecto_ecommerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrian-commit/big_bros_TP_proyecto_ecommerce/issues"
+  },
+  "homepage": "https://github.com/adrian-commit/big_bros_TP_proyecto_ecommerce#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
