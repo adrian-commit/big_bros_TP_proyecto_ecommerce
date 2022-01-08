@@ -1,6 +1,38 @@
+*{
+    box-sizing: border-box;
+}
 footer{
     background-color: black;
     color:white;
+    font-size: medium;
     display: flex;
     justify-content: space-around;
+    width: 100vw;
+}
+
+footer section {
+    margin: 5px;
+}
+
+footer a{
+    margin:auto;
+    color:white;
+    text-decoration: none;
+    flex-direction: column;
+}
+
+footer section h4 {
+    margin-block-start: 0px;
+    margin-block-end:8px;
+
+}
+
+.panel{
+    border: black 1px;
+    
+}
+
+footer section i{
+    color:white;
+    margin-right: 3px;
 }
