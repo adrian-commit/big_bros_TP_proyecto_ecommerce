@@ -8,11 +8,20 @@
     display: flex;
    justify-content: space-around;
    flex-direction: column;
-      
+   
    }
+
+.enlaces a {
+    color: white;
+    margin-top: 15px;
+  
+}   
+
 @media (min-width: 768px) {
     .enlaces{ 
         flex-direction: row;
+        margin-top: 15px;
+       
     }
 }
 
@@ -41,6 +50,7 @@ div.top-header{
     display: flex;
     flex-wrap: wrap;
     padding: 5%;
+
 }
 
 header div.top-header p{
@@ -51,7 +61,9 @@ header div.top-header p{
 
 
 header{
-    background-color: #675e36;
+    background-color: black;
+    
+    
 }
 
 footer{
@@ -100,6 +112,7 @@ header nav{
 
 section.banner img{
     width: 100%;
+  
 }
 
 
