@@ -4,6 +4,27 @@
     box-sizing: border-box;
 }
 
+.first-bar{
+    background-color: black;
+}
+
+.search-bar{
+    display: block;
+    font-size: 12px;
+    background-color: white;
+    max-width: 220px;
+    height: 15px;
+    text-align: left;
+    margin: 25px;
+    margin-left: 120px;
+}
+
+.submit{
+    position:relative;
+    bottom: 13px;
+    left: 200px;
+}
+
 .enlaces {
     display: flex;
    justify-content: space-around;
