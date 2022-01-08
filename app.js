@@ -6,6 +6,8 @@ app.use('/static', express.static(__dirname + '/public'));
 
 app.set('port', process.env.PORT || 3000) 
 
+
+
 app.listen(app.get('port'), ()=> console.log('On http://localhost:'+app.get('port')));
 
 app.get('/', (req,res)=>{
@@ -26,3 +28,6 @@ app.get('/productDetail', (req,res)=>{
 app.get('/register', (req,res)=>{   
     res.sendFile(__dirname + '/views/register.html');
 });
+
+
+
