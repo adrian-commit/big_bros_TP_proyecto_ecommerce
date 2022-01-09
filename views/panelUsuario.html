@@ -19,20 +19,28 @@
 </head>
 
 <body>
-    <section class="panel"> Panel de usuario </section>
-        <div class="misDatos">Mis datos</div>
-            <div>Nombre: </div>
-            <div>Direccion:</div>
-            <div>Teléfono:</div>
-            <div>Correo:</div>
-        
-        <div class="misCompras">Mis compras</div>
-            <div>Fecha</div>
+    <main>
+    <div class="padre">
+        <section class="opciones">
+                <div class="mis-datos">Mis datos</div>       
+                <div class="mis-compras">Mis compras </div>
+          <!----  <div>Fecha</div>
             <div>Monto</div>
             <div>Estado</div>
-            <div>Detalle-></div>
-</body>
+            <div>Detalle-></div> -->
+        </section>
 
+        <div class="contenido">
+        <h3>Mis datos</h3>
+            
+            <div class="input"><label>Nombre:</label><input type="text" placeholder="Galeano, Noelia Belén"></div>
+            <div class="input"><label>Dirección:</label><input type="text" placeholder="Julio A. Roca 350"></div>
+            <div class="input"><label>Teléfono:</label><input type="tel" placeholder="3624555333"></div>
+            <div class="input"><label>Correo:</label><input type="email" placeholder="noeg@gmail.com"></div>
+        </div>
+
+    </div>
+    </main>
 <footer>
     <section>
         <h4>Contacto</h4>
@@ -45,6 +53,6 @@
        <div><a href="https://www.instagram.com/bigbros.alfajores/"><i class="fab fa-instagram"></i>Instagram</a></div>
        <div><a href="https://acortar.link/9S6U8k"><i class="fab fa-facebook-square"></i>Facebook</a></div>
     </section>
-
 </footer>
+</body>
 </html>

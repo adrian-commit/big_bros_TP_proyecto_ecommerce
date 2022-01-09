@@ -64,41 +64,15 @@ main{
     background-color: rgb(255,255,255,0.5);
 }
 
-.opciones{
-    
-    margin-left: 0%;
-    text-align: left;
-    flex-wrap: wrap;
-    border-right:  white 1px solid;
-    height: 100%;
-    align-items: center;
-}
-
-.mis-datos,.mis-compras{
-    width:100%;
-    height: 50%;
-    text-align: center;
-    font-weight:lighter;
-
-}
-
-.mis-datos{
-    padding-top: 50%;
-    padding-bottom: 50%;
-    margin-left: 0px;
-}
-
-.mis-compras{
-    border-top: white 1px solid;
-    padding-bottom: 50%;
-    padding-top: 50%;
-}
-
 .input{
     width: 50%;
     font-style: italic;
 }
 
+.contenido .input{
+    margin-left: 15%;
+
+}
 .contenido{
     margin-left: 5%;
     margin-right: 5%;
@@ -111,3 +85,11 @@ main{
     margin-block-end:0.5em;
 }
 
+button{
+    background-color:black;
+    border-radius: 5px;
+    display: block;
+    color: white;
+    margin:auto;
+    margin-top: 5%;
+}
