@@ -33,6 +33,6 @@ app.get('/panelUsuario', (req,res)=>{
     res.sendFile(__dirname + '/views/panelUsuario.html');
 });
 
-app.get('/about-us', (req,res)=>{   
-    res.sendFile(__dirname + '/views/panelUsuario.html');
+app.get('/aboutUs', (req,res)=>{   
+    res.sendFile(__dirname + '/views/aboutUS.html');
 });
