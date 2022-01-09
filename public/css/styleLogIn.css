@@ -71,6 +71,7 @@ main{
 
 .contenido .input{
     margin-left: 15%;
+    margin-bottom: 5%;
 
 }
 .contenido{
@@ -92,4 +93,12 @@ button{
     color: white;
     margin:auto;
     margin-top: 5%;
+}
+
+.registro{
+    margin-top: 5%;
+    text-align: center;
+}
+.registro a {
+    font-style: italic;
 }
