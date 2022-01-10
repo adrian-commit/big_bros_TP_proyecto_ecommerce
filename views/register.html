@@ -16,44 +16,10 @@
         <link href="static/css/register.css"  rel="stylesheet">
     </head>
 <body>
-    <!-- ★ Como cliente quiero poder registrarme para estar en su base de datos y 
-    acceder a mi perfil e historial de compras de una manera más sencilla y, además, 
-    facilitar el proceso de futuras compras.
-    Entregable: Archivo register.html (o similar) junto con todos los recursos 
-    necesarios, estilos de CSS e imágenes.--> 
-
-    <!-- datos a pedir, Nombre, apellido, Direccion, Correo,telefono
-    boton para registrase -->
-
-    <!-- El header normal-->
-    <!-- body con fondo de foto y recuadro donde cargar los datos-->
-    <!-- Footer-->
-    <header>
-    
-        <div class="first-bar">
-         <span class="search-bar" action="#" method="GET">
-             <div class="input">Buscar productos, marcas y más</div>
-             <div class="submit"><i class="fa fa-search"></i></div>
-         </span>
-         </div>
-       
-     
-     <nav>
-         <ul class="enlaces">
-             <li><a href='/'>Inicio</a></li>
-             <li><a href="/productDetail">Productos</a></li>
-             <li><a href='/'><img width= "150"  src="static/images/Logo redondo.png" alt="Logo BIG BROS"></a></li>            
-
-             <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-             <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-             <li><a href="/aboutUs">Nosotros <i class=""></i></a></li>
-         </ul>
-     </nav>
-     <div class="burger-menu">
-         <i class="fa fa-bars burger"></i>
-     </div>
- </header>
-    <main class = "register">
+  
+ <main>
+    <section class = "register">
+        <h3>Registro</h3>
         <form action="/" method="POST">
             <label for="name"><b>Nombre y Apellido</b></label>
             <input type="text" name="name" placeholder="Nombre y apellido" required>
@@ -78,8 +44,9 @@
             <br>
             <button type= "submit">Enviar</button>
             <button type= "reset">Enviar</button>
-            </div>
+        </section>
     </main>
+
     <footer>
         <section>
             <article class="section-footer">
