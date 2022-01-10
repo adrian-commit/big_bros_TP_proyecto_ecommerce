@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REGISTRO</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NOSOTROS</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"> 
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,100&display=swap" rel="stylesheet">
+    
+        <link href="static/css/register.css"  rel="stylesheet">
+    </head>
 <body>
     <!-- ★ Como cliente quiero poder registrarme para estar en su base de datos y 
     acceder a mi perfil e historial de compras de una manera más sencilla y, además, 
@@ -19,39 +28,78 @@
     <!-- El header normal-->
     <!-- body con fondo de foto y recuadro donde cargar los datos-->
     <!-- Footer-->
-    <Header>
+    <header>
+    
+        <div class="first-bar">
+         <span class="search-bar" action="#" method="GET">
+             <div class="input">Buscar productos, marcas y más</div>
+             <div class="submit"><i class="fa fa-search"></i></div>
+         </span>
+         </div>
+       
+     
+     <nav>
+         <ul class="enlaces">
+             <li><a href='/'>Inicio</a></li>
+             <li><a href="/productDetail">Productos</a></li>
+             <li><a href='/'><img width= "150"  src="static/images/Logo redondo.png" alt="Logo BIG BROS"></a></li>            
 
-    </Header> 
+             <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+             <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+             <li><a href="/aboutUs">Nosotros <i class=""></i></a></li>
+         </ul>
+     </nav>
+     <div class="burger-menu">
+         <i class="fa fa-bars burger"></i>
+     </div>
+ </header>
     <main class = "register">
         <form action="/" method="POST">
             <label for="name"><b>Nombre y Apellido</b></label>
-            <input type="text" name="name" placeholder="Nombre y apellido">
+            <input type="text" name="name" placeholder="Nombre y apellido" required>
             <br>
             <label for="user"><b>Nombre de Usuario</b></label>
-            <input type="text" name="user" placeholder="Nombre de usuario">
+            <input type="text" name="user" placeholder="Nombre de usuario" required>
+            <br>
+            <label for="password"><b>Contraseña</b></label>
+            <input type="password" name="Contraseña" placeholder="Contraseña" required>
             <br>
             <label for="email"><b>Email</b></label>
-            <input type="email" name="email" placeholder="E-mail">
+            <input type="email" name="email" placeholder="E-mail" required>
             <br>
             <label for="telefono"><b>Teléfono</b></label>
-            <input type="text" name="telefono" placeholder="Teléfono">
+            <input type="number" name="telefono" placeholder="Teléfono">
             <br>
             <label for="birth_date"><b>Fecha de nacimiento</b></label>
-            <input type="date" name="birth_date" id="birth_date">
+            <input type="date" name="birth_date" id="birth_date" required>
             <br>
             <label for="adress"><b>Dirección</b></label>
             <input type="text" name="addres" placeholder="Domicilio">
-           
+            <br>
+            <button type= "submit">Enviar</button>
+            <button type= "reset">Enviar</button>
             </div>
-
-        <section>
-
-        </section>
-
     </main>
     <footer>
-
-    </footer>
+        <section>
+            <article class="section-footer">
+                <i class="fas fa-credit-card"></i>
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p>Con mercado pago, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </article>
+                <article>
+                    <i class="fas fa-gift"></i>
+                    <h4> Envio gratis desde $ 2500</h4>
+                    <p>Solo por estar registrado en BIG BROS tenes envios gratis en miles de productos.</p>
+                </article>
+                <article>
+                    <i class="fas fa-user-shield"></i>
+                    <h4>Seguridad, de principio a fin</h4>
+                    <p>¿No te gusto? ¡Devolvelo! En BIG BROS, no hay nada que puedas perder, porque estas siempre protegido </p>
+                </article>
+                <h4>Copyright © 1999-2020 BIG BROS S.R.L.</h4>
+        </section>
+        </footer>
     
 </body>
 </html>
