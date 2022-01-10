@@ -7,7 +7,7 @@
     <title>PROYECTO BIG BROS</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link href="static/css/style.css"  rel="stylesheet">
+    <link href="static/css/productDetail.css"  rel="stylesheet">
 </head>
 <body>
     <header>
@@ -38,14 +38,65 @@
     <section class="productos">
 
         <h1> PRODUCTOS </h1>
-        <h2> Cookies </h2>
-        <article class="cookies">
-            <img src="" alt="">
+        <article class="alfajores">
+            <h2> Alfajores </h2>
+            <div class="main-product">
+            <img src="static/images/alfajores/alfajores-04.jpg" alt="alfajores Big Bros">
+            <div class="info-product">
+            <p class="caracteristicas">Caracteristicas</p>
+            <p>Alfajores Big Bros clásicos, con relleno de dulce de leche y bañado en chocolate con diferentes estilos. </p>
+            <form action="productCar.html" method="POST">
+                <select class="cantidad" name="cantidad" id="cantidad" aria-checked="3">
+                    <option value="1">x1</option>
+                    <option value="2">x3</option>
+                    <option value="3" selected>x6</option>
+                </select>
+                <input class="precio" type="button" value="$600" id="precio" >
+                <input class="comprar" type="submit" value="Comprar" id="Comprar">
+                <input class="Agregar-carrito" type="submit" value="Agregar al carrito" id="Agregar al carrito">   
+            </form>
+            </div>
+            </div>
         </article>
 
-        <article class="alfajores"></article>
+        
+        <article class="cookies">
+            <h2> Cookies </h2>
+            <div class="main-product">
+                <img src="static/images/cookies-01.jpg" alt="Cookies Big Bros">
+                <div class="info-product">
+                <p class="caracteristicas">Caracteristicas</p>
+                <p>Cookies tipo americanas de vainilla o chocolate con chips de chocolate.</p>
+                <form action="productCar.html" method="POST">
+                    <select class="cantidad" name="cantidad" id="cantidad" aria-checked="3">
+                        <option value="1" selected>x12</option>
+                    </select>
+                    <input class="precio" type="button" value="$400" id="precio" >
+                    <input class="comprar" type="submit" value="Comprar" id="Comprar">
+                    <input class="Agregar-carrito" type="submit" value="Agregar al carrito" id="Agregar al carrito">   
+                </form>
+                </div>
+                </div>
+        </article>
 
-        <article class="pan-dulce"></article>
+        <article class="pan-dulce">
+            <h2> Pan Dulce </h2>
+            <div class="main-product">
+                <img src="static/images/pandulce-01.jpg" alt="Pan Dulce Big Bros">
+                <div class="info-product">
+                <p class="caracteristicas">Caracteristicas</p>
+                <p>Pan Dulce Big Bros 100% artesanal, de varios tipos como el clásico con frutos secos bañado con glasé, o el CHIPS con chips y bañado de chocolate.</p>
+                <form action="productCar.html" method="POST">
+                    <select class="cantidad" name="cantidad" id="cantidad" aria-checked="3">
+                        <option value="1" selected>x1</option>
+                    </select>
+                    <input class="precio" type="button" value="$1200" id="precio" >
+                    <input class="comprar" type="submit" value="Comprar" id="Comprar">
+                    <input class="Agregar-carrito" type="submit" value="Agregar al carrito" id="Agregar al carrito">   
+                </form>
+                </div>
+                </div>
+        </article>
 
     </section>
 </main>
