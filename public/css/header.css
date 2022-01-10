@@ -1,0 +1,103 @@
+nav ul{
+    display:flex;
+    justify-content: space-around;
+    height: 10%;
+    padding-inline-start: 0%;
+}
+
+nav ul a{
+    color:white;
+    text-decoration: none;
+}
+nav ul li{
+    margin: 5px;
+}
+nav ul img{
+    display: none;
+}
+nav{
+    width: 95%;
+    margin:auto;
+    background-color: black;
+    border-radius: 5%;
+}
+
+header{
+    width: 100vw;
+    height: 15%;
+}
+
+.barrita{
+    color:white;
+    height: 25%;
+    width:100%;
+    background-color:black;
+    text-align: right;
+    align-items: center;
+}
+.barrita input{
+    height: 80%;
+}
+
+.barrita i{
+    margin: 2px;
+    width: 5%;
+}
+.busqueda{
+    background-color: black;
+    color: white;
+    font-style: italic;
+}
+
+@media (min-width: 768px){
+
+    nav ul{
+        display:flex;
+        justify-content: space-around;
+        height: 10%;
+        padding-inline-start: 0%;
+        margin:5px;
+    }
+    nav ul img{
+        display:inline-block;
+        width: 100px;
+
+    }
+    
+    nav{
+        width: 90%;
+        margin:auto;
+        background-color: black;
+        border:black 1px solid;
+        border-radius: 3%;
+        margin-top: 5%;
+        
+    }
+    nav ul li{
+        margin: auto;
+    }
+
+    .barrita{
+        height: 30%;
+    }
+}
+
+
+/*
+ <header>
+        <div class="barrita">
+        <input type="search" placeholder="Buscar productos" class="busqueda"><i class="fa fa-search"></i><i class="far fa-user" onclick="location.href='/login'"></i> 
+        </div>
+    <nav>
+        <ul type="none" class="enlaces">
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href='/'><img src="static/images/Logo 2.jpg" alt="Logo BIG BROS"></a></li>
+        
+        
+            <li><a href="/miCuenta">Mi cuenta</a></li>
+            <li><a href="#">Contacto</a></li>
+    </nav>
+    </header>
+
+    */

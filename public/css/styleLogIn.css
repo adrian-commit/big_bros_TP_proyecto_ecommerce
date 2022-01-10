@@ -49,61 +49,6 @@ header{
     font-style: italic;
 }
 
-@media (min-width: 768px){
-    nav ul{
-        display:flex;
-        justify-content: space-around;
-        height: 10%;
-        padding-inline-start: 0%;
-    }
-    
-    nav{
-        width: 90%;
-        margin:auto;
-        background-color: black;
-        border:rgb(133, 16, 16) 1px solid;
-        border-radius: 3%;
-        
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -213,4 +158,44 @@ button{
 }
 .registro a {
     font-style: italic;
+}
+
+
+
+
+@media (min-width: 768px){
+
+    nav ul{
+        display:flex;
+        justify-content: space-around;
+        height: 10%;
+        padding-inline-start: 0%;
+        margin:5px;
+    }
+    nav ul img{
+        display:inline-block;
+        width: 100px;
+
+    }
+    
+    nav{
+        width: 90%;
+        margin:auto;
+        background-color: black;
+        border:black 1px solid;
+        border-radius: 3%;
+        margin-top: 5%;
+        
+    }
+    nav ul li{
+        margin: auto;
+    }
+
+    .barrita{
+        height: 30%;
+    }
+
+    .padre{
+        width: auto;
+    }
 }
