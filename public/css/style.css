@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;    
     box-sizing: border-box;
+    
 }
 
 .first-bar{
@@ -167,6 +168,12 @@ header nav{
 
 section.banner img{
     width: 100%;
+    padding: 3px;
+    border: 10px solid #000;
+    margin: 1px 0px 15px 0px;
+    font-size: 20px;
+   
+ 
   
 }
 
@@ -314,5 +321,25 @@ main section article:hover > .main-article > .fa-truck{
     transform: rotateZ(270deg)
 }
 
+.video1{
+    width: 33%;
+    padding: 3px;
+    border: 10px solid rgb(58, 43, 43);
+    margin: 1px 0px 15px 0px;
+    font-size: 20px;
+}
 
-
+.video2{
+    width: 33%;
+    padding: 3px;
+    border: 10px solid rgb(58, 43, 43);
+    margin: 1px 0px 15px 0px;
+    font-size: 20px;
+}
+.video3{
+    width: 33%;
+    padding: 3px;
+    border: 10px solid rgb(58, 43, 43);
+    margin: 1px 0px 15px 0px;
+    font-size: 20px;
+}
