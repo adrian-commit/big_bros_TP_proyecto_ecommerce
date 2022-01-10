@@ -62,6 +62,7 @@ main{
     align-items: center;
     width:90%;
     background-color: rgb(255,255,255,0.5);
+    justify-content: flex-start;
 }
 
 .opciones{
@@ -72,6 +73,8 @@ main{
     border-right:  white 1px solid;
     height: 100%;
     align-items: center;
+    padding-bottom: 3%;
+    
 }
 
 .mis-datos,.mis-compras{
@@ -95,14 +98,16 @@ main{
 }
 
 .input{
-    width: 50%;
+    width: 100%;
     font-style: italic;
 }
 
+.input i{
+    margin-left: 2px;
+}
 .contenido{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
+    margin:auto;
+    padding-bottom: 3%;
 }
 
 .contenido h3{
