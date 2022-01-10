@@ -83,7 +83,7 @@ header{
 }
 
 
-/*
+/* aca va el html
  <header>
         <div class="barrita">
         <input type="search" placeholder="Buscar productos" class="busqueda"><i class="fa fa-search"></i><i class="far fa-user" onclick="location.href='/login'"></i> 
