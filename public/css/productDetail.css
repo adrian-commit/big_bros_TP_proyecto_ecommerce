@@ -113,3 +113,39 @@ main{
 .pan-dulce{
     margin-bottom: 30px;
 }
+
+
+@media(min-width: 768px){
+
+    h1{
+        font-size: 50px;
+    }
+
+    .productos h2{
+        font-size: 40px;
+    }
+    .main-product{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .main-product img{
+        width: 50%;
+    }
+
+    .info-product{
+        padding: 0px 0px 300px 0px;
+    }
+
+    .info-product .caracteristicas{
+        font-size: 24px;
+    }
+
+    .info-product p{
+        font-size: 18px;
+    }
+
+    
+}
