@@ -1,3 +1,112 @@
+nav ul{
+    display:flex;
+    justify-content: space-around;
+    height: 10%;
+    padding-inline-start: 0%;
+}
+
+nav ul a{
+    color:white;
+    text-decoration: none;
+}
+nav ul li{
+    margin: 5px;
+}
+nav ul img{
+    display: none;
+}
+nav{
+    width: 95%;
+    margin:auto;
+    background-color: black;
+    border-radius: 5%;
+}
+
+header{
+    width: 100vw;
+    height: 15%;
+}
+
+.barrita{
+    color:white;
+    height: 25%;
+    width:100%;
+    background-color:black;
+    text-align: right;
+    align-items: center;
+}
+.barrita input{
+    height: 80%;
+}
+
+.barrita i{
+    margin: 2px;
+    width: 5%;
+}
+.busqueda{
+    background-color: black;
+    color: white;
+    font-style: italic;
+}
+
+@media (min-width: 768px){
+    nav ul{
+        display:flex;
+        justify-content: space-around;
+        height: 10%;
+        padding-inline-start: 0%;
+    }
+    
+    nav{
+        width: 90%;
+        margin:auto;
+        background-color: black;
+        border:rgb(133, 16, 16) 1px solid;
+        border-radius: 3%;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 *{
     box-sizing: border-box;
 }
@@ -38,18 +147,21 @@ body{
     background-image: url("https://i.ibb.co/6Rgv2ST/20210418-112850.jpg");
     background-color: black;
     background-position:center;
+    background-size: cover ;
     background-attachment: fixed;
     background-repeat: no-repeat;
     width: 100vw;
     margin:0;
     height: 100vh;
     display: flex;
+    position: fixed;
 }
 
 main{
     display: flex;
     width: 100vw;
     align-self: center;
+    position:fixed;
 }
 .padre{
     display:flex;
