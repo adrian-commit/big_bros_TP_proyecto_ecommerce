@@ -36,3 +36,4 @@ app.get('/panelUsuario', (req,res)=>{
 app.get('/nosotros', (req,res)=>{   
     res.sendFile(__dirname + '/views/nosotros.html');
 });
+

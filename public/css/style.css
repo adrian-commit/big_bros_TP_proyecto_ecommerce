@@ -129,42 +129,7 @@ footer section i{
 }
 
 
-header div.logo,
-header .form{
-    width: 50%;
-}
 
-
-header .form{
-    display: flex;
-    align-items: center;
-    padding: 2px;
-    font-size: 11px;
-}
-
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-}
-
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
-}
-
-
-
-header nav{
-    font-size: 20px;
-    margin-left: 70px;
-    
-
-}
 
 
 section.banner img{
@@ -177,35 +142,6 @@ section.banner img{
  
   
 }
-
-
-header ul li{
-    list-style-type: none;
-}
-
-header ul li a{
-    text-decoration: none;
-    color: #000;
-}
-
-
-
-div.burger-menu{
-    text-align: center;
-}
-
-div.burger-menu i{
-    background-color: #0044AA;
-    border-radius: 5px;
-    color: #FFF;
-    font-size: 20px;
-    height: 40px;
-    margin: 10px 0px 20px 0px;
-    padding: 10px;
-    width: 40px;
-}
-
-
 
 
 .discount{
@@ -346,14 +282,5 @@ main section article:hover > .main-article > .fa-truck{
 }
 
 
-.Productos{
-    
-  
-   
-}
 
-.Vision{
-   
-    
-  
-}
+
