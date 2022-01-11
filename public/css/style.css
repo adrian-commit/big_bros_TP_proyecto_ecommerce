@@ -2,27 +2,6 @@
     margin: 0px;
     padding: 0px;    
     box-sizing: border-box;
-    
-}
-
-
-.submit{
-    width: 100%;
-    position:relative;
-    bottom: 13px;
-    left: 200px;
-}
-
-.enlaces {
-    display: flex;
-   justify-content: space-around;
-
-@media (min-width: 768px) {
-    .enlaces{ 
-        flex-direction: row;
-        margin-top: 15px;
-       
-    }
 }
 
 body{
@@ -45,81 +24,9 @@ p{
 }
 
 
-
-div.top-header{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5%;
-
-}
-
-header div.top-header p{
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-}
-
-
-header{
-    background-color: rgb(34, 33, 33);
-    
-    
-}
-
-*{
-    box-sizing: border-box;
-}
-footer{
-    background-color: black;
-    color:white;
-    font-size: medium;
-    display: flex;
-    justify-content: space-around;
-    width: 100vw;
-}
-
-footer section {
-    margin: 5px;
-}
-
-footer a{
-    margin:auto;
-    color:white;
-    text-decoration: none;
-    flex-direction: column;
-}
-
-footer section h4 {
-    margin-block-start: 0px;
-    margin-block-end:8px;
-
-}
-
-.panel{
-    border: black 1px;
-    
-}
-
-footer section i{
-    color:white;
-    margin-right: 3px;
-}
-
-
-
-
-
 section.banner img{
     width: 100%;
-    padding: 3px;
-    border: 10px solid #000;
-    margin: 1px 0px 15px 0px;
-    font-size: 20px;
-   
- 
-  
 }
-
 
 .discount{
     width: 50%;
@@ -234,30 +141,6 @@ article div.main-article{
 main section article:hover > .main-article > .fa-truck{
     transform: rotateZ(270deg)
 }
-
-.video1{
-    width: 33%;
-    padding: 3px;
-    border: 10px solid rgb(58, 43, 43);
-    margin: 1px 0px 15px 0px;
-    font-size: 20px;
-}
-
-.video2{
-    width: 33%;
-    padding: 3px;
-    border: 10px solid rgb(58, 43, 43);
-    margin: 1px 0px 15px 0px;
-    font-size: 20px;
-}
-.video3{
-    width: 33%;
-    padding: 3px;
-    border: 10px solid rgb(58, 43, 43);
-    margin: 1px 0px 15px 0px;
-    font-size: 20px;
-}
-
 
 
 
