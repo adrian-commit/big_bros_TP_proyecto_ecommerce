@@ -126,6 +126,7 @@ nav ul{
 
 nav ul a{
     color:white;
+
     text-decoration: none;
 }
 nav ul li{
@@ -205,3 +206,30 @@ header{
     margin-block-start: 10%;
     }
 }
+
+    margin-right: 3px;
+}
+
+main{
+    display: flex;
+    width: 100vw;
+    align-self: center;
+}
+.padre{
+    display:flex;
+    border: white 1px solid;
+    box-shadow: 0px 0px 10px white;
+    border-radius: 3%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width:90%;
+    background-color: rgb(255,255,255,0.5);
+    justify-content: flex-start;
+}
+
+
+
+
+

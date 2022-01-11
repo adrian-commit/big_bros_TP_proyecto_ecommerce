@@ -1,0 +1,68 @@
+main {
+    margin: 0px;
+    padding: 20px;    
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: space-around;
+    font-size: 15px;
+}
+
+img {
+    Width: 100%;
+}
+
+section h3 {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+
+@media (min-width: 361px){
+    main {
+        display: flex;
+        padding: 20px;
+
+    }
+    img {
+        width: 50%;
+        position:relative;
+        left: 25%;
+
+    }
+
+    main p {
+        justify-content: space-between;
+
+    }
+
+   section h3 {
+        text-align: left;
+    }
+
+  
+
+
+}
+
+
+
+
+@media (min-width: 768px){
+    main{
+        display: flex;
+        justify-content: space-between
+    }
+
+    section img{
+        width: 30%;
+    }
+
+}
