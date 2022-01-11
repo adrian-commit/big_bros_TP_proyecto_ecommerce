@@ -13,65 +13,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,100&display=swap" rel="stylesheet">
 
-    <
-        <link href="static/css/style.css"  rel="stylesheet">
-        <link href="static/css/header.css"  rel="stylesheet">
-    
-       </head>
-    
-    <body>
-        <header>
-            <div class="barrita">
-            <input type="search" placeholder="Buscar productos" class="busqueda"><i class="fa fa-search"></i><i class="far fa-user" onclick="location.href='/login'"></i> 
-            </div>
-        <nav>
-            <ul type="none" class="enlaces">
-                <li><a href="/nosotros">Nosotros</a></li>
-                <li><a href="/productDetail">Productos</a></li>
-                <li><a href='/'><img src="static/images/Logo 2.jpg" alt="Logo BIG BROS"></a></li>
-            
-            
-                <li><a href="/panelUsuario">Mi cuenta</a></li>
-                <li><a href="/login">Contacto</a></li>
-        </nav>
-        </header>
-    
-        <section class="bann
-        <img src="static/images/portada4.jpg" alt="Banner de ofertas">
-        </section>
-        
-
-
- <section class="panel"> Panel de usuario </section>
- <div class="misDatos">Mis datos</div>
-     <div>Nombre: </div>
-     <div>Direccion:</div>
-     <div>Teléfono:</div>
-     <div>Correo:</div>
+    <link href="static/css/stylepanel.css"  rel="stylesheet">
  
- <div class="misCompras">Mis compras</div>
-     <div>Fecha</div>
 
-     <div>Monto</div>
-     <div>Estado</div>
-     <div>Detalle-></div> -->
- </section>
+</head>
 
- <div class="contenido">
- <h3>Mis datos</h3>
-     
-     <div class="input"><label>Nombre:</label><div><input type="text" placeholder="Galeano, Noelia Belén"><i class="far fa-edit"></i></div></div>
-     <div class="input"><label>Dirección:</label><div><input type="text" placeholder="Julio A. Roca 350"><i class="far fa-edit"></i></div></div>
-     <div class="input"><label>Teléfono:</label><div><input type="tel" placeholder="3624555333"><i class="far fa-edit"></i></div></div>
-     <div class="input"><label>Correo:</label><div><input type="email" placeholder="noeg@gmail.com"><i class="far fa-edit"></i></div></div>
-     <div class="input"><label>Contraseña:</label><div><input type="password" placeholder="********"><i class="far fa-edit"></i></div></div>
+<body>
 
- </div>
+    <header>
+        <div class="barrita">
+        <input type="search" placeholder="Buscar productos" class="busqueda"><i class="fa fa-search"></i><i class="far fa-user" onclick="location.href='/login'"></i> 
+        </div>
+    <nav>
+        <ul type="none" class="enlaces">
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href='/'><img src="static/images/Logo 2.jpg" alt="Logo BIG BROS"></a></li>
+        
+        
+            <li><a href="/micuenta">Mi cuenta</a></li>
+            <li><a href="#">Contacto</a></li>
+    </nav>
+    </header>
+    <main>
+    <div class="padre">
+        <section class="opciones">
+                <div class="mis-datos">Mis datos</div>       
+                <div class="mis-compras">Mis compras </div>
+        </section>
 
-</div>
-</main>
-
-<footer>
+        <div class="contenido">
+        <h3>Mis datos</h3>
+            
+            <div class="input"><label>Nombre:</label><div><input type="text" placeholder="Galeano, Noelia Belén"><i class="far fa-edit"></i></div></div>
+            <div class="input"><label>Dirección:</label><div><input type="text" placeholder="Julio A. Roca 350"><i class="far fa-edit"></i></div></div>
+            <div class="input"><label>Teléfono:</label><div><input type="tel" placeholder="3624555333"><i class="far fa-edit"></i></div></div>
+            <div class="input"><label>Correo:</label><div><input type="email" placeholder="noeg@gmail.com"><i class="far fa-edit"></i></div></div>
+            <div class="input"><label>Contraseña:</label><div><input type="password" placeholder="********"><i class="far fa-edit"></i></div></div>
+        </div>
+        </div>
+        </main>
+    <footer>
     <section>
         <h4>Contacto</h4>
         <div></i><a href="https://acortar.link/xGVEdB"><i class="fab fa-whatsapp"></i>WhatsApp</a></div>
@@ -83,6 +65,6 @@
        <div><a href="https://www.instagram.com/bigbros.alfajores/"><i class="fab fa-instagram"></i>Instagram</a></div>
        <div><a href="https://acortar.link/9S6U8k"><i class="fab fa-facebook-square"></i>Facebook</a></div>
     </section>
-
-</footer>
+    </footer>
+</body>
 </html>

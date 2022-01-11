@@ -1,122 +1,3 @@
-*{
-    box-sizing: border-box;
-}
-footer{
-    background-color: black;
-    color:white;
-    font-size: medium;
-    display: flex;
-    justify-content: space-around;
-    width: 100vw;
-    position:fixed;
-    bottom: 0%;
-}
-
-footer section {
-    margin: 5px;
-}
-
-footer a{
-    margin:auto;
-    color:white;
-    text-decoration: none;
-    flex-direction: column;
-}
-
-footer section h4 {
-    margin-block-start: 0px;
-    margin-block-end:8px;
-
-}
-
-footer section i{
-    color:white;
-    margin-right: 3px;
-}
-
-body{
-    background-image: url("https://i.ibb.co/6Rgv2ST/20210418-112850.jpg");
-    background-color: black;
-    background-position:center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    width: 100vw;
-    margin:0;
-    height: 100vh;
-    position: fixed;
-}
-
-main{
-    display: flex;
-    width: 100vw;
-    align-self: center;
-}
-.padre{
-    display:flex;
-    border: white 1px solid;
-    box-shadow: 0px 0px 10px white;
-    border-radius: 3%;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    width:90%;
-    background-color: rgb(255,255,255,0.5);
-    
-}
-
-.opciones{
-    
-    margin-left: 0%;
-    text-align: left;
-    flex-wrap: wrap;
-    border-right:  white 1px solid;
-    height: 100%;
-    align-items: center;
-    padding-bottom: 3%;
-    
-}
-
-.mis-datos,.mis-compras{
-    width:100%;
-    height: 50%;
-    text-align: center;
-    font-weight:lighter;
-
-}
-
-.mis-datos{
-    padding-top: 50%;
-    padding-bottom: 50%;
-    margin-left: 0px;
-}
-
-.mis-compras{
-    border-top: white 1px solid;
-    padding-bottom: 50%;
-    padding-top: 50%;
-}
-
-.input{
-    width: 100%;
-    font-style: italic;
-}
-
-.input i{
-    margin-left: 2px;
-}
-.contenido{
-    margin:auto;
-    padding-bottom: 3%;
-}
-
-.contenido h3{
-    text-align: center;
-    font-style: italic;
-    margin-block-end:0.5em;
-}
-
 nav ul{
     display:flex;
     justify-content: space-around;
@@ -126,7 +7,6 @@ nav ul{
 
 nav ul a{
     color:white;
-
     text-decoration: none;
 }
 nav ul li{
@@ -169,6 +49,120 @@ header{
     font-style: italic;
 }
 
+
+
+
+*{
+    box-sizing: border-box;
+}
+footer{
+    background-color: black;
+    color:white;
+    font-size: medium;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    position:fixed;
+    bottom: 0%;
+}
+
+footer section {
+    margin: 5px;
+}
+
+footer a{
+    margin:auto;
+    color:white;
+    text-decoration: none;
+    flex-direction: column;
+}
+
+footer section h4 {
+    margin-block-start: 0px;
+    margin-block-end:8px;
+
+}
+
+footer section i{
+    color:white;
+    margin-right: 3px;
+}
+
+body{
+    background-image: url("https://i.ibb.co/6Rgv2ST/20210418-112850.jpg");
+    background-color: black;
+    background-position:center;
+    background-size: cover ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100vw;
+    margin:0;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+}
+
+main{
+    display: flex;
+    width: 100vw;
+    align-self: center;
+    position:fixed;
+}
+.padre{
+    display:flex;
+    border: white 1px solid;
+    box-shadow: 0px 0px 10px white;
+    border-radius: 3%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width:90%;
+    background-color: rgb(255,255,255,0.5);
+}
+
+.input{
+    width: 50%;
+    font-style: italic;
+}
+
+.contenido .input{
+    margin-left: 15%;
+    margin-bottom: 5%;
+
+}
+.contenido{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.contenido h3{
+    text-align: center;
+    font-style: italic;
+    margin-block-end:0.5em;
+}
+
+button{
+    background-color:black;
+    border-radius: 5px;
+    display: block;
+    color: white;
+    margin:auto;
+    margin-top: 5%;
+}
+
+.registro{
+    margin-top: 5%;
+    text-align: center;
+}
+.registro a {
+    font-style: italic;
+}
+
+
+
+
 @media (min-width: 768px){
 
     nav ul{
@@ -202,19 +196,6 @@ header{
     }
 
     .padre{
-    width: 50%;
-    margin-block-start: 10%;
+        width: auto;
     }
 }
-
-
-main{
-    display: flex;
-    width: 100vw;
-    align-self: center;
-}
-
-
-
-
-

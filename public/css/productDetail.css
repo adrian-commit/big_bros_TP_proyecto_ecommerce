@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../images/alfajores/alfajores-fondo.jpg');
+    background-size: contain;
+
+}
+
+.productos h1{
+    width: 100%;
+    font-weight: bold;
+    color: yellow;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    top: 5px;
+}
+
+.productos h2{
+    width: 100%;
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+.productos article{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+}
+
+.main-product{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100)
+}
+
+.info-product{
+    background-color: #ebebeb;
+    opacity: 0.9;
+    padding: 10px;
+}
+
+.alfajores img,
+.cookies img,
+.pan-dulce img{
+    width: 100%;
+}
+
+.info-product .caracteristicas{
+    font-size: 18px;
+}
+
+.info-product p{
+    font-family: 'The Nautigal', cursive;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.cantidad{
+    width: 20%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5%;
+}
+
+.precio{
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 5px; 
+    font-weight: bold;
+    border-radius: 5%;
+    border: 1px solid black;
+}
+
+.comprar{
+    display: block;
+    width: 100%;
+    margin: auto;
+    color: black;
+    background-color: yellow;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    padding: 0px 20px;
+    border: 2px solid black;
+    border-radius: 5%;
+    margin-bottom: 3px;
+}
+
+.Agregar-carrito{
+    display: block;
+    width: 100%;
+    margin: auto;
+    color: black;
+    background-color: yellow;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    padding: 0px 20px;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+.pan-dulce{
+    margin-bottom: 30px;
+}
+
+
+@media(min-width: 768px){
+
+    h1{
+        font-size: 50px;
+    }
+
+    .productos h2{
+        font-size: 40px;
+    }
+    .main-product{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .main-product img{
+        width: 50%;
+    }
+
+    .info-product{
+        padding: 0px 0px 300px 0px;
+    }
+
+    .info-product .caracteristicas{
+        font-size: 24px;
+    }
+
+    .info-product p{
+        font-size: 18px;
+    }
+
+    
+}

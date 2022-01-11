@@ -29,7 +29,7 @@ app.get('/register', (req,res)=>{
     res.sendFile(__dirname + '/views/register.html');
 });
 
-app.get('/panelUsuario', (req,res)=>{   
+app.get('/miCuenta', (req,res)=>{   
     res.sendFile(__dirname + '/views/panelUsuario.html');
 });
 

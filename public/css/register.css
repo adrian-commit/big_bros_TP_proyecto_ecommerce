@@ -1,0 +1,107 @@
+body{
+    background-image: url("https://i.ibb.co/6Rgv2ST/20210418-112850.jpg");
+    background-color: black;
+    background-position:center;
+    background-size: cover ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin:0;
+    height: 100vh;
+    position: fixed;
+}
+
+main{
+    height: 40%;
+    width:60%;
+    display: flex;
+}
+
+main .register{
+    position: relative;
+    left: 30%;
+    top:50%;
+    display:flex;
+    border: white 1px solid;
+    box-shadow: 0px 0px 10px white;
+    border-radius: 3%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width:90%;
+    background-color: rgb(255,255,255,0.5);
+    padding: 20px;
+    padding-top: 160px;
+    padding-bottom: 160px;
+
+
+}
+
+
+
+footer{
+    background-color: black;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: justify;
+    margin: 0px;
+    padding: 10px;    
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+h4 {
+    text-align: center;
+}
+
+i {
+    position: relative;
+    left: 50%;
+
+}
+@media (min-width: 361px){
+    main {
+        display: flex;
+        padding: 20px;
+
+    }
+    img {
+        width: 50%;
+        position:relative;
+        left: 25%;
+
+    }
+
+    main p {
+        justify-content: space-between;
+
+    }
+
+   section h3 {
+        text-align: left;
+    }
+
+    footer p{
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+@media (min-width: 768px){
+    main{
+        display: flex;
+        justify-content: space-between
+    }
+
+    section img{
+        width: 30%;
+    }
+
+}

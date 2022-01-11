@@ -1,62 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROYECTO BIG BROS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-
-    <link href="static/css/style.css"  rel="stylesheet">
-    <link href="static/css/header.css"  rel="stylesheet">
-
-   </head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NOSOTROS</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"> 
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,100&display=swap" rel="stylesheet">
+    
+        <link href="static/css/register.css"  rel="stylesheet">
+    </head>
 <body>
-    <header>
-        <div class="barrita">
-        <input type="search" placeholder="Buscar productos" class="busqueda"><i class="fa fa-search"></i><i class="far fa-user" onclick="location.href='/login'"></i> 
-        </div>
-    <nav>
-        <ul type="none" class="enlaces">
-            <li><a href="/nosotros">Nosotros</a></li>
-            <li><a href="/productDetail">Productos</a></li>
-            <li><a href='/'><img src="static/images/Logo 2.jpg" alt="Logo BIG BROS"></a></li>
-        
-        
-            <li><a href="/panelUsuario">Mi cuenta</a></li>
-            <li><a href="/login">Contacto</a></li>
-    </nav>
-    </header>
-
-    <section class="bann
-    <img src="static/images/portada4.jpg" alt="Banner de ofertas">
-    </section>
-    
-    
-
-
-<H1>Hola empecemos a registrar clientes</H1>
-
   
-    
+ <main>
+    <section class = "register">
+        <h3>Registro</h3>
+        <form action="/" method="POST">
+            <label for="name"><b>Nombre y Apellido</b></label>
+            <input type="text" name="name" placeholder="Nombre y apellido" required>
+            <br>
+            <label for="user"><b>Nombre de Usuario</b></label>
+            <input type="text" name="user" placeholder="Nombre de usuario" required>
+            <br>
+            <label for="password"><b>Contraseña</b></label>
+            <input type="password" name="Contraseña" placeholder="Contraseña" required>
+            <br>
+            <label for="email"><b>Email</b></label>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <br>
+            <label for="telefono"><b>Teléfono</b></label>
+            <input type="number" name="telefono" placeholder="Teléfono">
+            <br>
+            <label for="birth_date"><b>Fecha de nacimiento</b></label>
+            <input type="date" name="birth_date" id="birth_date" required>
+            <br>
+            <label for="adress"><b>Dirección</b></label>
+            <input type="text" name="addres" placeholder="Domicilio">
+            <br>
+            <button type= "submit">Enviar</button>
+            <button type= "reset">Enviar</button>
+        </section>
+    </main>
+
     <footer>
         <section>
-            <h4>Contacto</h4>
-            <div></i><a href="https://acortar.link/xGVEdB"><i class="fab fa-whatsapp"></i>WhatsApp</a></div>
-            <div><a href="mailto:bigbros.alfajores@gmail.com"><i class="far fa-envelope"></i>Correo</a></div>
+            <article class="section-footer">
+                <i class="fas fa-credit-card"></i>
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p>Con mercado pago, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </article>
+                <article>
+                    <i class="fas fa-gift"></i>
+                    <h4> Envio gratis desde $ 2500</h4>
+                    <p>Solo por estar registrado en BIG BROS tenes envios gratis en miles de productos.</p>
+                </article>
+                <article>
+                    <i class="fas fa-user-shield"></i>
+                    <h4>Seguridad, de principio a fin</h4>
+                    <p>¿No te gusto? ¡Devolvelo! En BIG BROS, no hay nada que puedas perder, porque estas siempre protegido </p>
+                </article>
+                <h4>Copyright © 1999-2020 BIG BROS S.R.L.</h4>
         </section>
+        </footer>
     
-        <section>
-            <h4>Redes sociales</h4>
-           <div><a href="https://www.instagram.com/bigbros.alfajores/"><i class="fab fa-instagram"></i>Instagram</a></div>
-           <div><a href="https://acortar.link/9S6U8k"><i class="fab fa-facebook-square"></i>Facebook</a></div>
-        </section>
-       
-            
-           
-        </footer>   
-
 </body>
 </html>
