@@ -1,0 +1,201 @@
+nav ul{
+    display:flex;
+    justify-content: space-around;
+    height: 10%;
+    padding-inline-start: 0%;
+}
+
+nav ul a{
+    color:white;
+    text-decoration: none;
+}
+nav ul li{
+    margin: 5px;
+}
+nav ul img{
+    display: none;
+}
+nav{
+    width: 95%;
+    margin:auto;
+    background-color: black;
+    border-radius: 5%;
+}
+
+header{
+    width: 100vw;
+    height: 15%;
+}
+
+.barrita{
+    color:white;
+    height: 25%;
+    width:100%;
+    background-color:black;
+    text-align: right;
+    align-items: center;
+}
+.barrita input{
+    height: 80%;
+}
+
+.barrita i{
+    margin: 2px;
+    width: 5%;
+}
+.busqueda{
+    background-color: black;
+    color: white;
+    font-style: italic;
+}
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+footer{
+    background-color: black;
+    color:white;
+    font-size: medium;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    position:fixed;
+    bottom: 0%;
+}
+
+footer section {
+    margin: 5px;
+}
+
+footer a{
+    margin:auto;
+    color:white;
+    text-decoration: none;
+    flex-direction: column;
+}
+
+footer section h4 {
+    margin-block-start: 0px;
+    margin-block-end:8px;
+
+}
+
+footer section i{
+    color:white;
+    margin-right: 3px;
+}
+
+body{
+    background-image: url("https://i.ibb.co/6Rgv2ST/20210418-112850.jpg");
+    background-color: black;
+    background-position:center;
+    background-size: cover ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100vw;
+    margin:0;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+}
+
+main{
+    display: flex;
+    width: 100vw;
+    align-self: center;
+    position:fixed;
+}
+.padre{
+    display:flex;
+    border: white 1px solid;
+    box-shadow: 0px 0px 10px white;
+    border-radius: 3%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width:90%;
+    background-color: rgb(255,255,255,0.5);
+}
+
+.input{
+    width: 50%;
+    font-style: italic;
+}
+
+.contenido .input{
+    margin-left: 15%;
+    margin-bottom: 5%;
+
+}
+.contenido{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.contenido h3{
+    text-align: center;
+    font-style: italic;
+    margin-block-end:0.5em;
+}
+
+button{
+    background-color:black;
+    border-radius: 5px;
+    display: block;
+    color: white;
+    margin:auto;
+    margin-top: 5%;
+}
+
+.registro{
+    margin-top: 5%;
+    text-align: center;
+}
+.registro a {
+    font-style: italic;
+}
+
+
+
+
+@media (min-width: 768px){
+
+    nav ul{
+        display:flex;
+        justify-content: space-around;
+        height: 10%;
+        padding-inline-start: 0%;
+        margin:5px;
+    }
+    nav ul img{
+        display:inline-block;
+        width: 100px;
+
+    }
+    
+    nav{
+        width: 90%;
+        margin:auto;
+        background-color: black;
+        border:black 1px solid;
+        border-radius: 3%;
+        margin-top: 5%;
+        
+    }
+    nav ul li{
+        margin: auto;
+    }
+
+    .barrita{
+        height: 30%;
+    }
+
+    .padre{
+        width: auto;
+    }
+}

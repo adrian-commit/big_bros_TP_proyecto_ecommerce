@@ -2,10 +2,7 @@
     margin: 0px;
     padding: 0px;    
     box-sizing: border-box;
-}
-
-.burger-menu{
-    display: none;
+    
 }
 
 .first-bar{
@@ -33,17 +30,12 @@
 .enlaces {
     display: flex;
    justify-content: space-around;
-   align-items: center;
-   font-size: 12px;
-   margin: auto;
-   position: relative;
-   bottom: 10px;
-   right: 40px;
-   }
 
 @media (min-width: 768px) {
     .enlaces{ 
         flex-direction: row;
+        margin-top: 15px;
+       
     }
 }
 
@@ -72,6 +64,7 @@ div.top-header{
     display: flex;
     flex-wrap: wrap;
     padding: 5%;
+
 }
 
 header div.top-header p{
@@ -82,12 +75,48 @@ header div.top-header p{
 
 
 header{
-    background-color: #675e36;
+    background-color: rgb(34, 33, 33);
+    
+    
 }
 
+*{
+    box-sizing: border-box;
+}
 footer{
-    background-color: #898161;
-    font-size: 12px;
+    background-color: black;
+    color:white;
+    font-size: medium;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+footer section {
+    margin: 5px;
+}
+
+footer a{
+    margin:auto;
+    color:white;
+    text-decoration: none;
+    flex-direction: column;
+}
+
+footer section h4 {
+    margin-block-start: 0px;
+    margin-block-end:8px;
+
+}
+
+.panel{
+    border: black 1px;
+    
+}
+
+footer section i{
+    color:white;
+    margin-right: 3px;
 }
 
 
@@ -131,6 +160,13 @@ header nav{
 
 section.banner img{
     width: 100%;
+    padding: 3px;
+    border: 10px solid #000;
+    margin: 1px 0px 15px 0px;
+    font-size: 20px;
+   
+ 
+  
 }
 
 
@@ -277,5 +313,38 @@ main section article:hover > .main-article > .fa-truck{
     transform: rotateZ(270deg)
 }
 
+.video1{
+    width: 33%;
+    padding: 3px;
+    border: 10px solid rgb(58, 43, 43);
+    margin: 1px 0px 15px 0px;
+    font-size: 20px;
+}
+
+.video2{
+    width: 33%;
+    padding: 3px;
+    border: 10px solid rgb(58, 43, 43);
+    margin: 1px 0px 15px 0px;
+    font-size: 20px;
+}
+.video3{
+    width: 33%;
+    padding: 3px;
+    border: 10px solid rgb(58, 43, 43);
+    margin: 1px 0px 15px 0px;
+    font-size: 20px;
+}
 
 
+.Productos{
+    
+  
+   
+}
+
+.Vision{
+   
+    
+  
+}
