@@ -5,7 +5,6 @@
     
 }
 
-
 .first-bar{
     background-color: black;
 }
@@ -22,6 +21,7 @@
 }
 
 .submit{
+    width: 100%;
     position:relative;
     bottom: 13px;
     left: 200px;
@@ -30,15 +30,6 @@
 .enlaces {
     display: flex;
    justify-content: space-around;
-   flex-direction: column;
-   
-   }
-
-.enlaces a {
-    color: white;
-    margin-top: 15px;
-  
-}   
 
 @media (min-width: 768px) {
     .enlaces{ 
