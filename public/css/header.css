@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  body{
+    background-color: white;
+  }
+  header{
+      width: 100vw;
+      height: 15%;
+  }
+  
+  nav {
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 10%;
+      width: 95%;
+      margin:auto;
+      background-color: black;
+      border-radius: 5%;
+      padding: 1%;
+  }
+  
+  nav a{
+      color:white;
+      font-family: 'Bebas Neue', cursive;
+      padding: 3px;
+  }
+  
+  nav img{
+      display: none;
+  }
+  
+  .barra button{
+    background-color:black;
+    color: white;
+  }
+  
+  .busqueda{
+      background-color: black;
+      color: white;
+      font-style: italic;
+      }
+  
+  .barra{
+    text-align: right;
+    background-color: black;
+    padding:5px;
+  }
+  
+  @media(min-width: 768px){
+    nav img{
+        display: inline-block;
+        width: 100px;
+    }
+
+  }
+  
+  @media(min-width: 1024px){
+    nav a{
+       padding:0;
+       font-size: larger;
+    }
+
+    nav img {
+        width: 150px;
+    }
+
+  }
+
+
+
+
+
+  /* <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO BIG BROS</title>
+    
+    <link href="static/css/header.css"  rel="stylesheet">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"> 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <header>
+
+        <form class="barra">
+        <input type="search" placeholder="Buscar productos" class="busqueda">
+        <button>  
+        <i class="fa fa-search"></i>
+        </button> 
+        </form>
+        <nav class="enlaces">
+            <a href="/">Nosotros</a>
+            <a href="/productDetail">Productos</a>
+            <a href='/'><img src="static/images/Logo2.jpeg" alt="Logo BIG BROS"></a>
+            <a href="/nosotros">Mi cuenta</a>     
+            <a href="/login">Contacto</a>
+        </nav>
+    </header>
+  </body>
+
+*/ 
