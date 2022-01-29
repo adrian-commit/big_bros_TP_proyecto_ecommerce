@@ -1,201 +1,225 @@
-nav ul{
-    display:flex;
-    justify-content: space-around;
-    height: 10%;
-    padding-inline-start: 0%;
-}
-
-nav ul a{
-    color:white;
-    text-decoration: none;
-}
-nav ul li{
-    margin: 5px;
-}
-nav ul img{
-    display: none;
-}
-nav{
-    width: 95%;
-    margin:auto;
-    background-color: black;
-    border-radius: 5%;
-}
-
-header{
-    width: 100vw;
-    height: 15%;
-}
-
-.barrita{
-    color:white;
-    height: 25%;
-    width:100%;
-    background-color:black;
-    text-align: right;
-    align-items: center;
-}
-.barrita input{
-    height: 80%;
-}
-
-.barrita i{
-    margin: 2px;
-    width: 5%;
-}
-.busqueda{
-    background-color: black;
-    color: white;
-    font-style: italic;
-}
-
-
-
-
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-footer{
+    text-decoration: none;
+  }
+  body{
     background-color: black;
-    color:white;
-    font-size: medium;
-    display: flex;
-    justify-content: space-around;
-    width: 100vw;
-    position:fixed;
-    bottom: 0%;
+  }
+  header{
+      width: 100vw;
+      height: 15%;
+  }
+  
+  nav {
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      height:auto;
+      width: 95%;
+      margin:auto;
+      background-color: black;
+      border-radius: 5%;
+      padding: 1%;
+  }
+  
+  nav a{
+      color:white;
+      font-family: 'Bebas Neue', cursive;
+      padding: 3px;
+      font-size: medium ;
+  }
+  
+  nav img{
+      display: none;
+  }
+  
+  .barra button{
+    background-color:black;
+    color: white;
+  }
+  
+  .busqueda{
+      background-color: black;
+      color: white;
+      font-style: italic;
+      }
+  
+  .barra{
+    text-align: right;
+    background-color: black;
+    padding:5px;
+  }
+  
+/* hasta acá el header*/
+
+body{
+  background-image: url("https://i.ibb.co/6Rgv2ST/20210418-112850.jpg");
+  background-color: black;
+  background-position:center;
+  background-size: cover ;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100vw;
+  margin:0;
+  height: 100vh;
+  position: fixed;
+}
+
+main {
+  display:flex;
+  flex-wrap: wrap;
+  border: white 1px solid;
+  box-shadow: 0px 0px 10px white;
+  border-radius: 3%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-block-start: 15%;
+  margin-block-end: 30%;
+  align-items: center;
+  width:90%;
+  background-color: rgb(255,255,255,0.5);
+  padding: 5%;
+}
+
+main button{
+  background-color:black;
+  border-radius: 5px;
+  display: block;
+  color: white;
+  margin:auto;
+  margin-top: 5%;
+}
+
+main form {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  width:90%;
+  
+ 
+}
+
+main form input{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  border-color: white;
+  width: 100%;
+}
+
+main form label {
+  display:block;
+  margin-top: 5%;
+  font-size: small;
+
+}
+
+main h4 {
+  display:block;
+  margin-top: 5%;
+  font-size: larger;
+  font-family: 'Bebas Neue', cursive;
+  width: 80%;
+  text-align: center;
+  text-shadow: 1px 1px 2px white;
+}
+
+.registro{
+  margin-top: 5%;
+  font-size: small;
+  text-align: center;
+}
+ main form button{
+   margin-top: 7%;
+   padding: 1%;
+ }
+
+/*hasta aca el cuerpo*/
+/*inicio footer*/
+
+footer{
+  background-color: black;
+  color:white;
+  font-size:small;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  position:fixed;
+  bottom: 0%;
 }
 
 footer section {
-    margin: 5px;
+  margin: 5%;
 }
 
 footer a{
-    margin:auto;
-    color:white;
-    text-decoration: none;
-    flex-direction: column;
+  margin:auto;
+  color:white;
+  text-decoration: none;
+  flex-direction: column;
 }
 
 footer section h4 {
-    margin-block-start: 0px;
-    margin-block-end:8px;
+  margin-block-start: 0px;
+  margin-block-end:8px;
 
 }
 
 footer section i{
-    color:white;
-    margin-right: 3px;
-}
-
-body{
-    background-image: url("https://i.ibb.co/6Rgv2ST/20210418-112850.jpg");
-    background-color: black;
-    background-position:center;
-    background-size: cover ;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    width: 100vw;
-    margin:0;
-    height: 100vh;
-    display: flex;
-    position: fixed;
-}
-
-main{
-    display: flex;
-    width: 100vw;
-    align-self: center;
-    position:fixed;
-}
-.padre{
-    display:flex;
-    border: white 1px solid;
-    box-shadow: 0px 0px 10px white;
-    border-radius: 3%;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    width:90%;
-    background-color: rgb(255,255,255,0.5);
-}
-
-.input{
-    width: 50%;
-    font-style: italic;
-}
-
-.contenido .input{
-    margin-left: 15%;
-    margin-bottom: 5%;
-
-}
-.contenido{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-}
-
-.contenido h3{
-    text-align: center;
-    font-style: italic;
-    margin-block-end:0.5em;
-}
-
-button{
-    background-color:black;
-    border-radius: 5px;
-    display: block;
-    color: white;
-    margin:auto;
-    margin-top: 5%;
-}
-
-.registro{
-    margin-top: 5%;
-    text-align: center;
-}
-.registro a {
-    font-style: italic;
+  color:white;
+  margin-right: 3px;
 }
 
 
+/*fin footer*/
 
 
-@media (min-width: 768px){
+/*inicio media queries*/
 
-    nav ul{
-        display:flex;
-        justify-content: space-around;
-        height: 10%;
-        padding-inline-start: 0%;
-        margin:5px;
-    }
-    nav ul img{
-        display:inline-block;
+  @media(min-width: 768px){
+    nav img{
+        display: inline-block;
         width: 100px;
-
-    }
-    
-    nav{
-        width: 90%;
-        margin:auto;
-        background-color: black;
-        border:black 1px solid;
-        border-radius: 3%;
-        margin-top: 5%;
-        
-    }
-    nav ul li{
-        margin: auto;
     }
 
-    .barrita{
-        height: 30%;
+    footer{
+      font-size: smaller;
+      height: 15%;
+    }
+    footer section{
+      margin: 1%;
+    }
+    main {
+      margin-block-start: 5%;
+      width: 60vw;
+      height: auto;
     }
 
-    .padre{
-        width: auto;
+  }
+  
+  @media(min-width: 1024px){
+    nav a{
+       padding:0;
+       font-size: larger;
     }
-}
+
+    nav img {
+        width: 150px;
+    }
+    main {
+      margin-block-start: 5%;
+      width: 45vw;
+      height: auto;
+      padding: 3%;
+    }
+    main h4 {
+      margin-top: 0;
+    }
+
+    main form label{
+      margin-bottom: 0.5%;
+    }
+  }
