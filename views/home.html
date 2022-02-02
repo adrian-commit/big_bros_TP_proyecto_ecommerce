@@ -15,7 +15,7 @@
 
    </head>
 
-<body>
+ <body>
     <header>
         <form class="barra">
         <input type="search" placeholder="Buscar productos" class="busqueda">
@@ -25,114 +25,110 @@
         </form>
         <nav class="enlaces">
             <a href="/nosotros">Nosotros</a>
-            <a href="/">Productos</a>
+            <a href="/productDetail">Productos</a>
             <a href='/'><img src="/static/images/Logo 2.jpg" alt="Logo BIG BROS"></a>
             <a href="/login">Mi cuenta</a>     
             <a href="">Contacto</a>
         </nav>
     </header>
-
-    <section class="banner">
-    <img src="static/images/portada4.jpg" alt="Banner de ofertas">
-    </section>
-    
+     
     <main>
-        <section class="last-visit">
-          
-            <div class="products">
-              
-                <article>
-                    <img src="static/images/alfajores 4.jpg" alt="Alfajores de Chocolate" class="product_img">
-                    <div class="main-article">
-                        <i class="fas fa-truck"></i>
-                        <h2 class="price">$3.500</h2>
-                        <p class="discount">5% off</p>
-                        <h4 class="description">Alfajores de Chocolate</h4>
-                    </div>
-                </article>
+     <section id="slider">
+        <ul id="slides">
+            <li id="slide-1" class="slide"><img src="/static/images/banner-01.jpg" alt=""></li>
+            <li id="slide-2" class="slide"><img src="/static/images/banner-02.jpg" alt=""></li>
+            <li id="slide-3" class="slide"><img src="/static/images/banner-03.jpg" alt=""></li>
+        </ul>
+        <nav id="menu">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+        </nav>
+     </section>
+   
+   
+        <p id="titulo">Productos Destacados</p>
+        <section class="productos">
 
-                <article>
-                    <img src="static/images/alfajores 2.jpg" alt="Alfajores de Maicena" class="product_img">
-                    <div class="main-article">
-                        <i class="fas fa-truck"></i>
-                        <h2 class="price">$2.500</h2>
-                        <p class="discount">10% off</p>
-                        <h4 class="description">Alfajores de Maicena</h4>
-                    </div>
-                </article>
+          <article>
+             <img src="/static/images/alfajores/alfajores-04.jpg" alt="alfajores Big Bros">
+             <section class="caracteristicas-p">
+                 <p>Alfajores</p>
+                    <form action="productCar.html" method="POST">
+                        <select class="cantidad" name="cantidad" id="cantidad" aria-checked="3">
+                            <option value="1" selected>x12</option>
+                        </select>
+                        <input class="Agregar-carrito" type="submit" value="Agregar al carrito" id="Agregar al carrito"> 
+                        <input class="precio" type="text" value="$600" id="precio" >
+                        <section id="share">
+                            <a href=" "><i class="fas fa-share-alt"></i></a>
+                            <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        </section>
+             </section>
+          </article>
 
-              
+          <article>
+            <img src="/static/images/cookies-01.jpg" alt="Cookies Big Bros">
+            <section class="caracteristicas-p">
+                <p>Cookies</p>
+                   <form action="productCar.html" method="POST">
+                       <select class="cantidad" name="cantidad" id="cantidad" aria-checked="3">
+                           <option value="1" selected>x12</option>
+                       </select>
+                       <input class="Agregar-carrito" type="submit" value="Agregar al carrito" id="Agregar al carrito"> 
+                       <input class="precio" type="text" value="$400" id="precio" >
+            <section id="share">
+                <a href=" "><i class="fas fa-share-alt"></i></a>
+                <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            </section>
+            </section>
+         </article>
 
-                <article>
-                    <img src="static/images/chips-alfajores-1.jpg" alt="SmartTv Samsung" class="product_img">
-                    <div class="main-article">
-                        <i class="fas fa-truck"></i>
-                        <h2 class="price">$3000</h2>
-                        <p class="discount">5% off</p>
-                        <h4 class="description">Chips de chocolate-Alfajores</h4>
-                    </div>
-                </article>
+         <article>
+            <img src="/static/images/pandulce-01.jpg" alt="Pan Dulce Big Bros">
+            <section class="caracteristicas-p">
+                <p>Pan Dulce</p>
+                   <form action="productCar.html" method="POST">
+                       <select class="cantidad" name="cantidad" id="cantidad" aria-checked="3">
+                           <option value="1" selected>x1</option>
+                       </select>
+                       <input class="Agregar-carrito" type="submit" value="Agregar al carrito" id="Agregar al carrito"> 
+                       <input class="precio" type="text" value="$1200" id="precio" >
+                       <section id="share">
+                        <a href=" "><i class="fas fa-share-alt"></i></a>
+                        <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    </section>
+            </section>
+         </article>
 
-                <article>
-                    <img src="static/images/chips2.jpg" alt="MacBook" class="product_img">
-                    <div class="main-article">
-                        <i class="fas fa-truck"></i>
-                        <h2 class="price">$1.500</h2>
-                        <p class="discount">20% off</p>
-                        <h4 class="description">Chips de Chocolate</h4>
-                    </div>
-                </article>
-
-                
-                <article>
-                    <img src="static/images/santafesino.jpg" alt="Alfajores santafecino" class="product_img">
-                    <div class="main-article">
-                        <i class="fas fa-truck"></i>
-                        <h2 class="price">$2.500</h2>
-                        <p class="discount">5% off</p>
-                        <h4 class="description">Alfajores santafecino</h4>
-                    </div>
-                </article>
-
-                <article>
-                    <img src="static/images/pandulce-01.jpg" alt="Pan dulce" class="product_img">
-                    <div class="main-article">
-                        <i class="fas fa-truck"></i>
-                        <h2 class="price">$4.500</h2>
-                        <p class="discount">5% off</p>
-                        <h4 class="description">Pan dulce</h4>
-                    </div>
-                </article>
-
-                <article>
-                    <img src="static/images/chips-alfajores-1.jpg" alt="cookies-01" class="product_img">
-                    <div class="main-article">
-                        <i class="fas fa-truck"></i>
-                        <h2 class="price">$5.000</h2>
-                        <p class="discount">5% off</p>
-                        <h4 class="description">Cookies</h4>
-                    </div>
-                </article>
-
-                <article>
-                    <img src="static/images/alfajores 3.jpg" alt="alfajores" class="product_img">
-                    <div class="main-article">
-                        <i class="fas fa-truck"></i>
-                        <h2 class="price">$3000</h2>
-                        <p class="discount">5% off</p>
-                        <h4 class="description">Chocolate-Alfajores</h4>
-                    </div>
-                </article>
-
-
-
-                
-                         </div>
+         <article>
+            <img src="/static/images/budin-01.jpg" alt="budines Big Bros">
+            <section class="caracteristicas-p">
+                <p>Budines</p>
+                   <form action="productCar.html" method="POST">
+                       <select class="cantidad" name="cantidad" id="cantidad" aria-checked="3">
+                           <option value="1" selected>x1</option>
+                       </select>
+                       <input class="Agregar-carrito" type="submit" value="Agregar al carrito" id="Agregar al carrito"> 
+                       <input class="precio" type="text" value="$900" id="precio">
+                       <section id="share">
+                        <a href=" "><i class="fas fa-share-alt"></i></a>
+                        <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    </section>
+            </section>
+         </article>
         </section>
 
     </main>
-
-    
+ 
     <footer>
 
         <section>
@@ -147,9 +143,7 @@
           <p><a href="https://acortar.link/9S6U8k"><i class="fab fa-facebook-square"></i>Facebook</a></p>
         </section>
         
-        </footer>  
+    </footer> 
 
-</body>
-
-
+ </body>
 </html>
