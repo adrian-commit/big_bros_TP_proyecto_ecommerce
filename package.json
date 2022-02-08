@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/adrian-commit/big_bros_TP_proyecto_ecommerce#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.2"
   },
   "devDependencies": {
