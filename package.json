@@ -4,9 +4,8 @@
   "description": "<h3>Definir la temática del Market Place</h3>",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js -e js,mjs,json,html,css",
-    "start": "node app.js"
+    "test": "clear && nodemon src/app.js -e mjs,js,json,ejs,css",
+    "start": "node src/app.js"
   },
   "repository": {
     "type": "git",

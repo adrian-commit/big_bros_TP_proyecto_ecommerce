@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../includes/head")%>
+    <link href="/static/css/styleLogIn.css"  rel="stylesheet">
+ 
+
+</head>
+
+<body>
+    <%- include("../includes/header")%>
+
+    <main>
+            <h4>Inicio de sesión</h4>       
+            <form action="" method="POST">
+            <p><label for="correo">Correo:</label><input type="email" placeholder="noeg@gmail.com" id="correo" name="correo"></p>
+            <p><label for="pass">Contraseña:</label><input type="password" placeholder="security password" id="pass" name="pass"></p>
+            <button onclick="location.href='/'">
+                Ingresar
+            </button>
+            <p class="registro">¿Sos nuevo? <a href="/miCuenta/register">¡Registrate!</a></p>
+            </form>
+
+    </main>
+    
+    <%- include("../includes/footer")%>  
+
+</body>
+</html>
