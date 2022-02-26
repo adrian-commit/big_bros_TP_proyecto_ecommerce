@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+ 
+  
+  /* inicio del header */
+
+
+  header{
+      width: 100vw;
+      height: 15%;
+      position: relative;
+      z-index: 2;
+  }
+  
+  nav {
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      height:auto;
+      width: 95%;
+      margin:auto;
+      background-color: black;
+      border-radius: 5%;
+      padding: 1%;
+  }
+  
+  nav a{
+      color:white;
+      font-family: 'Bebas Neue', cursive;
+      padding: 3px;
+      font-size: medium ;
+  }
+  
+  nav img{
+      display: none;
+  }
+  
+  .barra button{
+    background-color:black;
+    color: white;
+  }
+  
+  .busqueda{
+      background-color: black;
+      color: white;
+      font-style: italic;
+      }
+  
+  .barra{
+    text-align: right;
+    background-color: black;
+    padding:5px;
+  }
+
+  
+/* hasta acá el header*/
+
+
+/*inicio footer*/
+
+
+footer{
+    background-color: black;
+    color: white;
+    font-size:small;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    position:relative;
+    bottom: 0%;
+    border-top: 1px solid rgba(255, 254, 254, 0.5);
+    box-shadow: rgba(255, 254, 254, 1);
+  }
+  
+  footer section {
+    margin: 5%;
+  }
+  
+  footer a{
+    margin:auto;
+    color:white;
+    text-decoration: none;
+    flex-direction: column;
+  }
+  
+  footer section h4 {
+    margin-block-start: 0px;
+    margin-block-end:8px;
+  
+  }
+  
+  footer section i{
+    color:white;
+    margin-right: 3px;
+  }
+  
+  
+  /*fin footer*/

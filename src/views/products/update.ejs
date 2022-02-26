@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../includes/head")%>
+    <link href="/static/css/create.css"  rel="stylesheet">
+</head>
+<body>
+    <%- include("../includes/header")%>
+    <p>Actualizando producto</p>
+  <form action="/productos/actualizar?m=PUT" method="post">
+    <input type="hidden" name="id" id="id" value="<%= producto.id %>">
+       <fieldset>
+          <label for="name">Name</label>
+          <input type="text" name="name" value="<%= producto.name%>" placeholder="name">
+        </fieldset>
+      <fieldset>
+          <label for="description">Description</label>
+          <textarea name="description" id="description" cols="30" rows="10"><%= producto.description%></textarea>
+        </fieldset>
+      <fieldset>
+          <label for="price">Price</label>
+          <input type="number" min="1" name="price" id="price" value="<%= producto.price%>">
+        </fieldset>
+        <fieldset>
+            <label for="amount">amount</label>
+            <input type="number" min="1" max="100" name="amount" id="amount" value="<%= producto.amount%>">
+          </fieldset>
+      <fieldset>
+          <label for="stock">Stock</label>
+          <input type="range" min="1" max="100" name="stock" id="stock" value="<%= producto.stock%>">
+        </fieldset>
+      <fieldset> 
+          <button type="submit">Guardar</button>
+        </fieldset>
+        <%- include("../includes/footer")%> 
+</body>
+</html>

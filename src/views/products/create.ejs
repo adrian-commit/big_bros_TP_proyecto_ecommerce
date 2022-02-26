@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../includes/head")%>
+    <link href="/static/css/create.css"  rel="stylesheet">
+</head>
+<body>
+    <%- include("../includes/header")%>
+    <p>Crear un nuevo producto</p>
+  <form action="/productos/guardar"  method="post">
+       <fieldset>
+          <label for="name">Name</label>
+          <input type="text" name="name" value="name" placeholder="name">
+        </fieldset>
+      <fieldset>
+          <label for="description">Description</label>
+          <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        </fieldset>
+      <fieldset>
+          <label for="price">Price</label>
+          <input type="number" min="1" name="price" id="price">
+        </fieldset>
+        <fieldset>
+            <label for="amount">amount</label>
+            <input type="number" min="1" max="100" name="amount" id="amount">
+          </fieldset>
+      <fieldset>
+          <label for="stock">Stock</label>
+          <input type="range" min="1" max="100" name="stock" id="stock">
+        </fieldset>
+      <fieldset> 
+          <button type="submit">Guardar</button>
+        </fieldset>
+        <%- include("../includes/footer")%> 
+</body>
+</html>
