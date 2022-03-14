@@ -7,7 +7,7 @@
 <body>
     <%- include("../includes/header")%>
     <p>Crear un nuevo producto</p>
-  <form action="/productos/guardar"  method="post">
+  <form action="/productos/guardar" enctype="multipart/form-data" method="post">
        <fieldset>
           <label for="name">Name</label>
           <input type="text" name="name" value="name" placeholder="name">
@@ -27,6 +27,10 @@
       <fieldset>
           <label for="stock">Stock</label>
           <input type="range" min="1" max="100" name="stock" id="stock">
+        </fieldset>
+        <fieldset>
+          <label for="product">Imagen</label>
+          <input type="file" name="product" id="product">
         </fieldset>
       <fieldset> 
           <button type="submit">Guardar</button>

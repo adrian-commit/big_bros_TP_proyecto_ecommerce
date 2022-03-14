@@ -23,6 +23,8 @@ show: (req, res) => {
 },
 create: (req,res)=> res.render('products/create', {title: "Nuevo Producto"}),
 storage: (req,res) => {
+    //console.log(req.files);
+    req.body.files = req.files;
     const nuevo = generate(req.body);
     create(nuevo);
     return res.redirect('/productos/'+nuevo.id);
@@ -36,6 +38,7 @@ update:(req, res) => {
     }) : res.render('error', {title:"Error", error:"No se encontró ningún producto"})
 },
 modify:(req, res) => {
+    req.body.files = req.files;
     update(req.body);
      return res.redirect('/productos/'+req.body.id);
 },

@@ -101,6 +101,18 @@ main{
     text-decoration: underline;
   }
 
+  .create {
+    
+    color: red;
+    background-color: black;
+    font-family:'Bebas Neue', cursive;
+    font-size: 20px;
+    text-align: center;
+    padding: 3px 5px;
+    margin: auto;
+
+  }
+
 /*inicio footer*/
 
 footer{

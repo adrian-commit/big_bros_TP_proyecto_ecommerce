@@ -4,13 +4,13 @@ const path = require("path");
 module.exports = {
     home: (req, res) =>{
         const {search} = req.query;
-        return search ? res.render ('products/productDetail', {
+        return search ? res.render ('home', {
             title:'Search |'+search, 
             productos:filter('name', search)
             }) : res.render ('home', {
-                title:'Product List', 
+                title:'Home',
                 productos:all()
             })
     },
-    nosotros: (req,res)=> res.render('nosotros')
+    nosotros: (req,res)=> res.render('nosotros', {title: "Nosotros"})
 };

@@ -12,7 +12,7 @@ const listen = () => console.log('listening on port http://localhost:'+app.get('
 app.listen(app.get('port'), listen);
 
 app.use('/static', express.static(resolve(__dirname , '../public')));
-app.use('/statoc', express.static(resolve(__dirname , '../uploads')));
+app.use('/static', express.static(resolve(__dirname , '../uploads')));
 app.use(express.urlencoded({extended: true}));
 app.use(method("m"));
 

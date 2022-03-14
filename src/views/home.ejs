@@ -26,84 +26,46 @@
    
    
         <p id="titulo">Productos Destacados</p>
-        <section class="productos">
-
-          <article>
-             <img src="/static/images/alfajores/alfajores-04.jpg" alt="alfajores Big Bros">
-             <section class="caracteristicas-p">
-                 <p>Alfajores</p>
-                    <form action="productCar.html" method="POST">
-                        <select class="cantidad" name="cantidad" id="cantidad" aria-checked="3">
-                            <option value="1" selected>x12</option>
-                        </select>
-                        <input class="Agregar-carrito" type="submit" value="Agregar al carrito" id="Agregar al carrito"> 
-                        <input class="precio" type="text" value="$600" id="precio" >
-                        <section id="share">
-                            <a href=" "><i class="fas fa-share-alt"></i></a>
-                            <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
-                            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-                        </section>
-             </section>
-          </article>
-
-          <article>
-            <img src="/static/images/cookies-01.jpg" alt="Cookies Big Bros">
-            <section class="caracteristicas-p">
-                <p>Cookies</p>
-                   <form action="productCar.html" method="POST">
-                       <select class="cantidad" name="cantidad" id="cantidad" aria-checked="3">
-                           <option value="1" selected>x12</option>
-                       </select>
-                       <input class="Agregar-carrito" type="submit" value="Agregar al carrito" id="Agregar al carrito"> 
-                       <input class="precio" type="text" value="$400" id="precio" >
-            <section id="share">
-                <a href=" "><i class="fas fa-share-alt"></i></a>
-                <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-            </section>
-            </section>
-         </article>
-
-         <article>
-            <img src="/static/images/pandulce-01.jpg" alt="Pan Dulce Big Bros">
-            <section class="caracteristicas-p">
-                <p>Pan Dulce</p>
-                   <form action="productCar.html" method="POST">
-                       <select class="cantidad" name="cantidad" id="cantidad" aria-checked="3">
-                           <option value="1" selected>x1</option>
-                       </select>
-                       <input class="Agregar-carrito" type="submit" value="Agregar al carrito" id="Agregar al carrito"> 
-                       <input class="precio" type="text" value="$1200" id="precio" >
-                       <section id="share">
-                        <a href=" "><i class="fas fa-share-alt"></i></a>
-                        <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+    
+        <% if (productos.length > 0) {%>
+            <ul>
+              <%productos.forEach(producto => {%>
+                <li>
+                    <section class="productos">
+                        <article>
+                            <% if (producto.files && producto.files.length > 0) { %>
+                                <% producto.files.forEach(file => { %>  
+                                <figure>
+                            <img src="/static/products/<%= file %>" alt="<%= producto.name %> Big Bros">
+                                </figure>
+                                <% }) %>
+                            <% } %>
+                            <section class="caracteristicas-p">
+                                <p><%= producto.name%></p>
+                                   <form action="" method="">
+                                       <select class="cantidad" name="cantidad" id="cantidad" aria-checked="3">
+                                           <option value="1" selected><%= producto.amount%></option>
+                                       </select>
+                                       <input class="Agregar-carrito" type="submit" value="Agregar al carrito" id="Agregar al carrito"> 
+                                       <input class="precio" type="text" value="$ <%= producto.price%>" id="precio" >
+                                    
+                                       <section id="share">
+                                           <a href=" "><i class="fas fa-share-alt"></i></a>
+                                           <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
+                                           <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                           <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                                       </section>
+                                   </form>
+                            </section>
+                         </article>  
                     </section>
-            </section>
-         </article>
-
-         <article>
-            <img src="/static/images/budin-01.jpg" alt="budines Big Bros">
-            <section class="caracteristicas-p">
-                <p>Budines</p>
-                   <form action="productCar.html" method="POST">
-                       <select class="cantidad" name="cantidad" id="cantidad" aria-checked="3">
-                           <option value="1" selected>x1</option>
-                       </select>
-                       <input class="Agregar-carrito" type="submit" value="Agregar al carrito" id="Agregar al carrito"> 
-                       <input class="precio" type="text" value="$900" id="precio">
-                       <section id="share">
-                        <a href=" "><i class="fas fa-share-alt"></i></a>
-                        <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-                    </section>
-            </section>
-         </article>
-        </section>
+                </li>
+                <% }) %>
+            </ul>
+            <% } else {%>
+                <h2>no se encontro ningún producto</h2>
+                <% } %> 
+        
 
     </main>
  

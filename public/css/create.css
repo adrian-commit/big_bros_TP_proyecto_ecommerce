@@ -58,8 +58,40 @@
 
   
 /* hasta acá el header*/
+/* Inicio Main*/
+
+body{
+  background-image: url("https://i.ibb.co/6Rgv2ST/20210418-112850.jpg");
+  background-color: black;
+  background-position:center;
+  background-size: cover ;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100vw;
+  margin:0;
+  height: 100vh;
+  position: fixed;
+}
+
+main {
+  display:flex;
+  flex-wrap: wrap;
+  border: white 1px solid;
+  box-shadow: 0px 0px 10px white;
+  border-radius: 3%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-block-start: 15%;
+  margin-block-end: 30%;
+  align-items: center;
+  width:90%;
+  background-color: rgb(255,255,255,0.5);
+  padding: 5%;
+}
 
 
+/* hasta acá el main*/
 /*inicio footer*/
 
 
