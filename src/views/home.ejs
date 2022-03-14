@@ -28,11 +28,9 @@
         <p id="titulo">Productos Destacados</p>
     
         <% if (productos.length > 0) {%>
-            <ul>
+            <ul class="productos">
               <%productos.forEach(producto => {%>
                 <li>
-                    <section class="productos">
-                        <article>
                             <% if (producto.files && producto.files.length > 0) { %>
                                 <% producto.files.forEach(file => { %>  
                                 <figure>
@@ -56,14 +54,12 @@
                                            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
                                        </section>
                                    </form>
-                            </section>
-                         </article>  
-                    </section>
+                            </section> 
                 </li>
                 <% }) %>
             </ul>
             <% } else {%>
-                <h2>no se encontro ningún producto</h2>
+                <h2 class="p-null">no se encontro ningún producto</h2>
                 <% } %> 
         
 

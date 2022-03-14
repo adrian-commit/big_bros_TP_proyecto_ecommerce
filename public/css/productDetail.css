@@ -67,14 +67,14 @@ main{
     margin: auto;
   }
   
-  .productos article{
+  .productos li{
     width: 100%;
     height: 400px;
     margin-bottom: 10px;
     box-shadow: rgba(255, 254, 254, 1);
   }
   
-  .productos article img{
+  .productos li img{
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -177,7 +177,7 @@ footer{
       justify-content: space-around;
     }
 
-    .productos article{
+    .productos li{
       width: 45%;
       margin-bottom: 20px;
     }
@@ -195,7 +195,7 @@ footer{
         width: 150px;
     }
 
-    .productos article{
+    .productos li{
       width: 23%;
     }
 

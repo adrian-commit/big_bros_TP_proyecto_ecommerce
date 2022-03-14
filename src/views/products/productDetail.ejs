@@ -13,19 +13,11 @@
   
 
 <main>
- 
-<section>
-<img width=33% src="/static/images/alfajores 3.jpg" alt="Alfajores de Chocolate" class="product_img">
-<img width=33% src="/static/images/alfajores 2.jpg" alt="Alfajores de Chocolate" class="product_img">
-<img width=33% src="/static/images/alfajores 4.jpg" alt="Alfajores de Chocolate" class="product_img">  
-</section> 
-  
+   
 <% if (productos.length > 0) {%>
-    <ul>
+    <ul class="productos">
       <%productos.forEach(producto => {%>
         <li>
-          <section class="productos">
-            <article>
               <% if (producto.files && producto.files.length > 0) { %>
                 <% producto.files.forEach(file => { %>  
                 <figure>
@@ -35,9 +27,7 @@
             <% } %>
                 <section class="caracteristicas-p">
                     <p><a href="/productos/<%= producto.id%>"><%=producto.name%></a></p>
-                </section>
-             </article>  
-        </section>
+                </section> 
           </li>
         <% }) %>
     </ul>
