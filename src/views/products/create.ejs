@@ -6,35 +6,36 @@
 </head>
 <body>
     <%- include("../includes/header")%>
-    <p>Crear un nuevo producto</p>
-  <form action="/productos/guardar" enctype="multipart/form-data" method="post">
-       <fieldset>
+    <p class="title">nuevo producto</p>
+  <form class="create" action="/productos/guardar" enctype="multipart/form-data" method="post">
+       <fieldset class="name">
           <label for="name">Name</label>
           <input type="text" name="name" value="name" placeholder="name">
         </fieldset>
-      <fieldset>
+      <fieldset class="description">
           <label for="description">Description</label>
           <textarea name="description" id="description" cols="30" rows="10"></textarea>
         </fieldset>
-      <fieldset>
+      <fieldset class="price">
           <label for="price">Price</label>
           <input type="number" min="1" name="price" id="price">
         </fieldset>
-        <fieldset>
+        <fieldset class="amount">
             <label for="amount">amount</label>
             <input type="number" min="1" max="100" name="amount" id="amount">
           </fieldset>
-      <fieldset>
+      <fieldset class="stock">
           <label for="stock">Stock</label>
           <input type="range" min="1" max="100" name="stock" id="stock">
         </fieldset>
-        <fieldset>
+        <fieldset class="image">
           <label for="product">Imagen</label>
           <input type="file" name="product" id="product">
         </fieldset>
       <fieldset> 
           <button type="submit">Guardar</button>
         </fieldset>
+  </form>
         <%- include("../includes/footer")%> 
 </body>
 </html>

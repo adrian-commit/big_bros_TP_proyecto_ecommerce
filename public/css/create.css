@@ -62,7 +62,6 @@
 
 body{
   background-image: url("https://i.ibb.co/6Rgv2ST/20210418-112850.jpg");
-  background-color: black;
   background-position:center;
   background-size: cover ;
   background-attachment: fixed;
@@ -70,26 +69,79 @@ body{
   width: 100vw;
   margin:0;
   height: 100vh;
-  position: fixed;
 }
 
-main {
-  display:flex;
-  flex-wrap: wrap;
-  border: white 1px solid;
-  box-shadow: 0px 0px 10px white;
-  border-radius: 3%;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-block-start: 15%;
-  margin-block-end: 30%;
-  align-items: center;
-  width:90%;
-  background-color: rgb(255,255,255,0.5);
-  padding: 5%;
+.title {
+  width: 80vw;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-style: italic;
+  font-size: 30px;
+  }
+
+.create{
+  width: 90vw;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: rgba(2, 2, 2, 0.7);
+  box-shadow: 0px 0px 10px black;
 }
 
+fieldset {
+  width: 100%;
+  padding: 5px;
+  margin-left: 10%;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  border-color: rgba(255, 255, 255, 1);
+}
+
+fieldset label {
+  display:block;
+  font-size: small;
+  margin-left: 10px;
+  margin-bottom: 2px;
+}
+
+fieldset input {
+  width: 80%;
+}
+
+.name input{
+  width: 60%;
+}
+
+.description textarea{
+width: 80%;
+height: 50px;
+}
+
+.price input {
+  width: 25%;
+  text-align: center;
+}
+
+.amount input {
+  width: 25%;
+  text-align: center;
+}
+
+fieldset button {
+  width: 30%;
+  margin-left: 25%;
+  padding: 3px;
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  background-color: black;
+  font-size: 20px;
+  box-shadow: 0px 0px 10px black;
+  border: 1px rgba(255, 254, 254, 1);
+}
 
 /* hasta acá el main*/
 /*inicio footer*/
@@ -103,7 +155,7 @@ footer{
     display: flex;
     justify-content: space-around;
     width: 100vw;
-    position:relative;
+    position:fixed;
     bottom: 0%;
     border-top: 1px solid rgba(255, 254, 254, 0.5);
     box-shadow: rgba(255, 254, 254, 1);
@@ -133,3 +185,5 @@ footer{
   
   
   /*fin footer*/
+  /*Inicio Query strings*/
+  

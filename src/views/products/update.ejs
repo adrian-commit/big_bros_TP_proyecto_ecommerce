@@ -6,36 +6,37 @@
 </head>
 <body>
     <%- include("../includes/header")%>
-    <p>Actualizando producto</p>
-  <form action="/productos/actualizar?m=PUT" enctype="multipart/form-data" method="post">
+    <p class="title">Actualizando producto</p>
+  <form class="create" action="/productos/actualizar?m=PUT" enctype="multipart/form-data" method="post">
     <input type="hidden" name="id" id="id" value="<%= producto.id %>">
-       <fieldset>
+       <fieldset class="name">
           <label for="name">Name</label>
           <input type="text" name="name" value="<%= producto.name%>" placeholder="name">
         </fieldset>
-      <fieldset>
+      <fieldset class="description">
           <label for="description">Description</label>
           <textarea name="description" id="description" cols="30" rows="10"><%= producto.description%></textarea>
         </fieldset>
-      <fieldset>
+      <fieldset class="price">
           <label for="price">Price</label>
           <input type="number" min="1" name="price" id="price" value="<%= producto.price%>">
         </fieldset>
-        <fieldset>
+        <fieldset class="amount">
             <label for="amount">amount</label>
             <input type="number" min="1" max="100" name="amount" id="amount" value="<%= producto.amount%>">
           </fieldset>
-      <fieldset>
+      <fieldset class="stock">
           <label for="stock">Stock</label>
           <input type="range" min="1" max="100" name="stock" id="stock" value="<%= producto.stock%>">
         </fieldset>
-        <fieldset>
+        <fieldset class="image">
           <label for="product">Imagen</label>
           <input type="file" name="product" id="product">
         </fieldset>
       <fieldset> 
           <button type="submit">Guardar</button>
         </fieldset>
+  </form>
         <%- include("../includes/footer")%> 
 </body>
 </html>
