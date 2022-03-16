@@ -1,4 +1,5 @@
 const {generate,create} = require('../models/users');
+const {validationResult} = require('express-validator');
 const path = require("path");
 
 module.exports = {
@@ -6,11 +7,19 @@ module.exports = {
         login: (req,res)=> res.render('users/login', {title: "Inicio de Sesion"}),
      register: (req,res)=> res.render('users/register', {title: "Registro"}),
      storage: (req,res) => {
-      console.log(req.body);
-      console.log(req.files);
       req.body.files = req.files;
       const nuevo = generate(req.body);
       create(nuevo);
-      return res.redirect('login');
+      const resultVs = validationResult(req);
+      console.log(resultVs);
+
+      if(resultVs.errors.length > 0) {
+         return res.render('users/register' , {
+            errors: resultVs.mapped()
+         });
+      } else { 
+         res.redirect('login');
+      }
+       
      }
 }

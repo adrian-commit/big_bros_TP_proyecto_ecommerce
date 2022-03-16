@@ -66,44 +66,57 @@ body{
   margin:0;
   margin-bottom: 5%;
   height: 100vh;
-  position: relative;
 }
 
 main {
-  display:flex;
-  flex-wrap: wrap;
-  border: white 1px solid;
-  box-shadow: 0px 0px 10px white;
-  border-radius: 3%;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-block-start: 15%;
-  margin-block-end: 30%;
+  margin: auto;
   align-items: center;
   width:90%;
-  background-color: rgb(255,255,255,0.5);
   padding: 5%;
+  border: white 1px solid;
+  border-radius: 3%;
+  background-color: rgb(255,255,255,0.5);
+  box-shadow: 0px 0px 10px white;
 }
 
-main button{
-  background-color:black;
-  border-radius: 5px;
-  display: block;
-  color: white;
-  margin:auto;
-  margin-top: 5%;
+.title{
+ margin: auto;
+ margin-top: 5%;
+ font-size: 24px;
+ font-family: 'Bebas Neue', cursive;
+ width: 60%;
+ text-align: center;
+ text-shadow: 1px 1px 2px white;
 }
 
-main form {
+.register{
+  width:90%;
+  margin: auto;
+  margin-top: 3%;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  width:90%;
-  
- 
+  font-size: small;
+  text-align: center;
 }
 
-main form input{
+fieldset{
+  border:none;
+  margin-bottom: 10px;
+}
+
+fieldset label {
+  display:block;
+  margin-top: 5%;
+  margin-bottom: 3px;
+  font-size: small;
+  
+}
+
+fieldset input .is-invalid {
+  border-color: red;
+}
+
+fieldset input{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-style: italic;
@@ -111,32 +124,23 @@ main form input{
   width: 100%;
 }
 
-main form label {
-  display:block;
-  margin-top: 5%;
-  font-size: small;
-
-}
-
-main h4 {
-  display:block;
-  margin-top: 5%;
-  font-size: larger;
+fieldset button{
+  width: 20%;
+  background-color:black;
   font-family: 'Bebas Neue', cursive;
-  width: 80%;
-  text-align: center;
-  text-shadow: 1px 1px 2px white;
+  font-size: larger;
+  border-radius: 5px;
+  color: white;
+  margin:auto;
+  margin-top: 10%;
+  padding: 1%;
 }
 
-.registro{
-  margin-top: 5%;
-  font-size: small;
-  text-align: center;
+.text-danger{
+  text-align: start;
+  color: red;
 }
- main form button{
-   margin-top: 7%;
-   padding: 1%;
- }
+
 
 /*hasta aca el cuerpo*/
 
@@ -172,11 +176,17 @@ main h4 {
       height: auto;
       padding: 3%;
     }
-    main h4 {
+    .title {
       margin-top: 0;
+      font-size: 30px;
     }
 
-    main form label{
+    fieldset label{
       margin-bottom: 0.5%;
+    }
+
+    fieldset button {
+      width: 15%;
+      font-size: 20px;
     }
   }
