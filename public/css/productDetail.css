@@ -55,11 +55,19 @@ nav img{
 
 /* hasta acá el header*/
 
-main{
-    font-family: 'Roboto', sans-serif;
-    background-image: url('../images/alfajores/alfajores-fondo.jpg');
-    background-size: contain;
+body {
+  background-image: url('../images/alfajores/alfajores-fondo.jpg');
+  background-position:center;
+  background-size: cover ;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100vw;
+  margin:0;
+  height: 100vh;
+}
 
+main {
+  margin-top: 8%;
 }
 
 .productos{
@@ -102,15 +110,21 @@ main{
   }
 
   .create {
-    
-    color: red;
-    background-color: black;
-    font-family:'Bebas Neue', cursive;
-    font-size: 20px;
-    text-align: center;
+    width: 20vw;
+    margin-left: 40vw;
+    margin-right: 40vw;
+    margin-bottom: 10%;
     padding: 3px 5px;
-    margin: auto;
+    background-color: black;
+    box-shadow: 0px 0px 10px black;
+  }
 
+  .create a {
+    width: 100%;
+    font-family:'Bebas Neue', cursive;
+    color: white;
+    border-color: white;
+    font-size: 20px;
   }
 
 /*inicio footer*/
@@ -182,6 +196,12 @@ footer{
       margin-bottom: 20px;
     }
 
+    .create{
+      width: 10vw;
+    margin-left: 45vw;
+    margin-right: 45vw;
+    }
+
   
   }
   
@@ -199,4 +219,7 @@ footer{
       width: 23%;
     }
 
+    .create a{
+      font-size: 30px;
+    }
   }

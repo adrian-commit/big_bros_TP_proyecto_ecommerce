@@ -42,27 +42,5 @@
     "files": [
       "product-1647057694880-.jpg"
     ]
-  },
-  {
-    "id": 5,
-    "name": "Torta",
-    "description": "Torta",
-    "price": 1500,
-    "amount": 1,
-    "stock": 51,
-    "files": [
-      "product-1647084445579-.jpg"
-    ]
-  },
-  {
-    "id": 6,
-    "name": "Torta Frita",
-    "description": "Descripcion de la torta frita",
-    "price": 100,
-    "amount": 1,
-    "stock": 100,
-    "files": [
-      "product-1647314764827-.jpg"
-    ]
   }
 ]

@@ -21,5 +21,5 @@ app.use(method("m"));
 
 app.use(require('./routes/main'));
 app.use('/productos',require('./routes/productos'));
-app.use('/miCuenta',require('./routes/miCuenta'));
+app.use('/users',require('./routes/users'));
 
