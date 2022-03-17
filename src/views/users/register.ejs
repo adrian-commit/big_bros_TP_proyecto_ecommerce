@@ -20,7 +20,14 @@
             
             <fieldset>
                 <label for="name"><b>Nombre y Apellido</b></label>
-                <input type="text" name="name" placeholder="Nombre y apellido" class=" <%= locals.errors && errors.name ? 'is-invalid' : null %> " >
+                <input 
+                type="text" 
+                name="name" 
+                placeholder="Nombre y apellido" 
+                class=" <%= locals.errors && errors.name ? 'is-invalid' : null %> " 
+                value="<%= locals.oldData ? oldData.name : null %>" 
+                >
+                
                 <% if (locals.errors && errors.name) { %>
                     <section class="text-danger">
                         <%= errors.name.msg %> 
@@ -83,7 +90,12 @@
             </fieldset>
             <fieldset>
                 <label for="avatar"><b>Imagen de Perfil</b></label>
-                <input type="file" name="avatar" id="avatar"> 
+                <input type="file" name="avatar" id="avatar">
+                <% if (locals.errors && errors.avatar) { %>
+                    <section class="text-danger">
+                        <%= errors.avatar.msg %> 
+                    </section>
+                <% } %> 
             </fieldset>
             <fieldset>
                 <button type= "submit">Enviar</button>

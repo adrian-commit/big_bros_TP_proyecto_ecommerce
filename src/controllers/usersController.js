@@ -15,7 +15,8 @@ module.exports = {
 
       if(resultVs.errors.length > 0) {
          return res.render('users/register' , {
-            errors: resultVs.mapped()
+            errors: resultVs.mapped(),
+            oldData: req.body
          });
       } else { 
          res.redirect('login');
