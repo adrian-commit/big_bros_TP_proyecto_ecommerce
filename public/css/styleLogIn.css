@@ -137,6 +137,10 @@ main h4 {
    padding: 1%;
  }
 
+ .invalid {
+  border: 1px solid red;
+}
+
 /*hasta aca el cuerpo*/
 /*inicio footer*/
 

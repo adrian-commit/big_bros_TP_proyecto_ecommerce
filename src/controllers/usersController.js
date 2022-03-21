@@ -1,5 +1,5 @@
 const {generate,create,match} = require('../models/users');
-const {validationResult} = require('express-validator');
+const {validationResult, body} = require('express-validator');
 const path = require("path");
 const model = require('../models/users');
 
@@ -37,6 +37,7 @@ module.exports = {
    },
 
    loginAccess: (req,res) => {
-      return res.send(req.body);
+      let userLogin = model.match('email', req.body.email);
+      return res.send(userLogin);
    }
 }
