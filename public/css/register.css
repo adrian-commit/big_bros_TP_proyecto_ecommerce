@@ -113,18 +113,20 @@ fieldset label {
   
 }
 
-fieldset input .is-invalid {
-  border-color: red;
-}
 
 
 fieldset input{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-style: italic;
-  border-color: red;
+  border-color: white;
   width: 100%;
 }
+
+.invalid {
+  border: 1px solid red;
+}
+
 
 fieldset button{
   width: 20%;

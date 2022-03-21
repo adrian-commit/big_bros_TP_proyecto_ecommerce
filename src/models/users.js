@@ -7,6 +7,9 @@ const model = {
     list: () => JSON.parse(model.read()),
     convert: data => JSON.stringify(data, null, 2),
     write: data => writeFileSync(model.file,model.convert(data)),
+    all: () => model.list().filter(usuario => usuario.id > 0),
+    filter: (propiedad, valor) => model.all().filter(usuario => typeof valor !== "string" ? usuario[propiedad] == valor : usuario[propiedad].includes(valor)),
+    match: (propiedad, valor) => model.all().find(usuario => usuario[propiedad] == valor),
     generate: data => Object({
         id: model.list().length > 0 ? model.list().sort((a,b) => a.id < b.id ? -1 :a.id > b.id ? 1 : 0).pop().id + 1 : 1,
         name: data.name,
