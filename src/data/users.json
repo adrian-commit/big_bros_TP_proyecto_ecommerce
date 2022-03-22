@@ -11,5 +11,18 @@
     "files": [
       "avatar-1647893600330-.jpg"
     ]
+  },
+  {
+    "id": 2,
+    "name": "David  Lezcano",
+    "userName": "Davagulez",
+    "email": "lezcadav@gmail.com",
+    "password": "$2b$10$NjgfVspDyi7a/moq7Mybw.3R1T3pa/F5.B1aIEOJkcRDp4xdsQKA.",
+    "telephone": "123123123",
+    "birthDate": "123123-03-12",
+    "address": "Juan domingo peron 1451",
+    "files": [
+      "avatar-1647901424206-.jpg"
+    ]
   }
 ]

@@ -1,4 +1,5 @@
 const express = require('express');
+const session = require('express-session');
 const method = require('method-override');
 const app = express();
 const {resolve} = require("path");
@@ -15,6 +16,12 @@ app.use('/static', express.static(resolve(__dirname , '../public')));
 app.use('/static', express.static(resolve(__dirname , '../uploads')));
 app.use(express.urlencoded({extended: true}));
 app.use(method("m"));
+
+app.use(session({
+    secret: "Shhh, It's a secret", 
+    resave: false,
+    saveUninitialized: false,
+}));
 
 
 /* rutas */

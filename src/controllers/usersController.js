@@ -1,10 +1,12 @@
 const {generate,create,match} = require('../models/users');
 const {validationResult, body} = require('express-validator');
+const {compareSync} = require('bcrypt');
 const path = require("path");
 const model = require('../models/users');
+const session = require('express-session');
 
 module.exports = {
- panelUsuario: (req,res)=> res.render('users/panelUsuario', {title: "Panel de Usuario"}),
+
         login: (req,res)=> res.render('users/login', {title: "Inicio de Sesion"}),
      register: (req,res)=> res.render('users/register', {title: "Registro"}),
      storage: (req,res) => {
@@ -38,6 +40,45 @@ module.exports = {
 
    loginAccess: (req,res) => {
       let userLogin = model.match('email', req.body.email);
-      return res.send(userLogin);
+     
+
+      if(userLogin){
+         let userPassword = compareSync(req.body.password, userLogin.password); 
+         if(userPassword) {
+            delete userLogin.password;
+            req.session.userLogged = userLogin;
+            return res.redirect('panelUsuario');
+         }
+         return res.render('users/login', {
+            errors: {
+               email: {
+                  msg: 'Las credenciales son invalidas.'
+               }
+            }
+         });
+      }
+      return res.render('users/login', {
+         errors: {
+            email: {
+               msg: 'Este email no esta registrado'
+            }
+         }
+      });
+   },
+
+   panelUsuario: (req,res)=> {
+      console.log(req.session);
+      res.render('users/panelUsuario', {
+         title: "Panel de Usuario",
+         user: req.session.userLogged
+      })
+   },
+
+   check: (req, res) => {
+      if(req.session.userLogged == undefined) {
+         res.send('no estas logueado')
+      } else {
+         res.send('el usuario logueado es' + req.session.userLogged.email);
+      }
    }
 }
