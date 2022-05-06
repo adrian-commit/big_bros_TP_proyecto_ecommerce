@@ -58,12 +58,24 @@
 /*inicio cuerpo*/
 
 /*codigo Ale */
+body{
+  background-image: url("https://i.postimg.cc/ZnyH3V6m/20210418-110632.jpg");
+  background-color: black;
+  background-position:center;
+  background-size: cover ;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100vw;
+  margin:0;
+  height: 100vh;
+  position: fixed;
+}
+
 main {
     margin: 0px;
     padding: 20px;    
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    background-color: #ebebeb;
     display: flex;
     flex-direction: column;
     text-align: justify;

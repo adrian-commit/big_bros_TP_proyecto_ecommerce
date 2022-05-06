@@ -11,7 +11,7 @@
     "sql:migrate": "sequelize db:migrate:undo:all && sequelize db:migrate",
     "sql:seed": "sequelize db:seed:undo:all && sequelize db:seed:all",
     "db:mg": "sequelize migration:generate --name=product",
-    "db:sd": "sequelize seed:generate --name=product" 
+    "db:sd": "sequelize seed:generate --name=product"
   },
   "repository": {
     "type": "git",
