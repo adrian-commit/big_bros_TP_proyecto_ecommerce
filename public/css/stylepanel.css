@@ -27,6 +27,7 @@
       padding: 1%;
   }
   
+  
   nav a{
       color:white;
       font-family: 'Bebas Neue', cursive;
@@ -71,10 +72,13 @@ body{
     width: 100vw;
     margin:0;
     height: 100vh;
-    position:absolute;
+    position: fixed;
 }
 
 main{
+        display: flex;
+        width: 100vw;
+        align-self: center;
     width: 100vw;
 }
 
@@ -175,7 +179,7 @@ footer{
     display: flex;
     justify-content: space-around;
     width: 100vw;
-    position:relative;
+    position:fixed;
     bottom: 0%;
   }
   
