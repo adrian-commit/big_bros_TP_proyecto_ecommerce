@@ -37,5 +37,18 @@
     "files": [
       "avatar-1651815766202-.jpg"
     ]
+  },
+  {
+    "id":4, 
+    "name": "Noe Galeano",
+    "userName": "noegal97",
+    "email": "noeliagale@hotmail.com",
+    "password": "$2b$10$B0Ii2F6VTuRapVVhW.erQuxfs9sYRz8OCO6Ty/4xiivDY.Ch4cAx.",
+    "telephone": "3624012370",
+    "birthDate": "1997-02-11",
+    "address": "Julio A Roca 3350",
+    "files": [
+      "avatar-1651800127132-.png"
+    ]
   }
 ]
