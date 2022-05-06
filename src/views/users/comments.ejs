@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../includes/head")%>
+    <link href="/static/css/styleLogIn.css"  rel="stylesheet">
+ 
+
+</head>
+
+<body>
+    <%- include("../includes/header")%>
+
+    <main>
+            <h4>Dejanos tu comentario sobre cualquier duda o problema que tengas!</h4>       
+            <form action="/users/createComment" method="POST" novalidate>
+                    <input 
+                    type="text" 
+                    placeholder="comentario .." 
+                    id="comment" 
+                    name="comment"
+                    >
+                <button type="submit">
+                    Enviar
+                </button>
+            </form>
+    </main>
+    
+    <%- include("../includes/footer")%>  
+
+</body>
+</html>

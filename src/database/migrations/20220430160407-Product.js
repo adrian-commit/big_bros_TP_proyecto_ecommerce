@@ -10,12 +10,16 @@ module.exports = {
          primaryKey: true 
        },
        name: {
-         type: Sequelize.INTEGER,
+         type: Sequelize.TEXT,
          allowNull: false
        },
        description: {
          type: Sequelize.TEXT,
          allowNull: false
+       },
+       price: {
+        type: Sequelize.BIGINT,
+        allowNull: false
        },
        amount: {
         type: Sequelize.BIGINT,
@@ -31,7 +35,7 @@ module.exports = {
        },
        image: {
         type: Sequelize.INTEGER,
-        allowNull: false
+        allowNull: true
        }
       });
       

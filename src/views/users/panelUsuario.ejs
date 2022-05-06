@@ -11,24 +11,80 @@
 
     <%- include("../includes/header")%>
     <main>
-    <div class="padre">
+    <section class="usuario">
+        <img src="https://www.softzone.es/app/uploads-softzone.es/2018/04/guest.png?x=480&quality=20" alt="Dava">
+        <p class="nombreUsuario">Davagulez </p>
+    </section>    
+    <section class="padre">
         <section class="opciones">
-                <div class="mis-datos">Mis datos</div>       
-                <div class="mis-compras">Mis compras </div>
+                <section class="mis-datos">Mis datos</section>       
+                <section class="mis-compras">Mis compras </section>
+                <section class="mis-comentarios"><a href="/users/commentsList"></a>Mis comentarios</section>
         </section>
 
-        <div class="contenido">
-        <h3>Mis datos</h3>
-            
-            <div class="input"><label>Nombre:</label><div><input type="text" placeholder="Galeano, Noelia Belén"><i class="far fa-edit"></i></div></div>
-            <div class="input"><label>Dirección:</label><div><input type="text" placeholder="Julio A. Roca 350"><i class="far fa-edit"></i></div></div>
-            <div class="input"><label>Teléfono:</label><div><input type="tel" placeholder="3624555333"><i class="far fa-edit"></i></div></div>
-            <div class="input"><label>Correo:</label><div><input type="email" placeholder="noeg@gmail.com"><i class="far fa-edit"></i></div></div>
-            <div class="input"><label>Contraseña:</label><div><input type="password" placeholder="********"><i class="far fa-edit"></i></div></div>
-        </div>
-            <a href="/users/logout">Cerrar sesión</a>
-        </div>
-        </main>
+        <section class="contenido">
+        <h3>Completa tus datos!!!</h3>
+        <form action="/users/completarInfo" method="post" enctype="multipart/form-data" novalidate>
+            <fieldset class="input">
+                <label for="firstName">Nombre:</label>
+                <input type="text" name="firstName" placeholder=". . .">
+            </fieldset>    
+            <fieldset class="input">
+                <label for="lastName">Apellido:</label>
+                <input type="text" name="lastName" placeholder=". . .">
+            </fieldset>
+            <fieldset class="input">
+                <label for="tel">Teléfono:</label>
+                <input type="tel" name="tel" placeholder=". . .">
+            </fieldset>
+            <fieldset class="input">
+                <label for="birthDate">Cumpleaños:</label>
+                <input type="date" name="birthDate" placeholder=". . .">
+            </fieldset>
+            <fieldset class="input">
+                <label for="address">Domicilio:</label>
+                <input type="text" name="address" placeholder=". . .">
+            </fieldset>
+            <fieldset class="input">
+                <label for="avatar">Imagen de Perfil:</label>
+                <input type="file" name="avatar" placeholder=". . .">
+            </fieldset>
+            <fieldset class="input">
+                <label>Enviar</label>
+                <input type="button">
+            </fieldset>
+        </form>
+
+        <!-- <section class="datos">
+            <h3>Mis Datos</h3>
+            <fieldset>
+                <label for=""></label>
+                <p></p>
+            </fieldset>
+            <fieldset>
+                <label for=""></label>
+                <p></p>
+            </fieldset>
+            <fieldset>
+                <label for=""></label>
+                <p></p>
+            </fieldset>
+            <fieldset>
+                <label for=""></label>
+                <p></p>
+            </fieldset>
+            <fieldset>
+                <label for=""></label>
+                <p></p>
+            </fieldset>
+            <fieldset>
+                <button><a href="">Editar Informacion <i class="far fa-edit"></i></a></button>
+            </fieldset>
+        </section> -->  
+        </section>
+        </section>
+        <a class="cerrar" href="/users/logout">Cerrar sesión</a>
+    </main>
         <%- include("../includes/footer")%>  
 </body>
 </html>

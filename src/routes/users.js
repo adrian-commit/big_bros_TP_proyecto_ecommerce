@@ -1,4 +1,4 @@
-const {panelUsuario,login,register,storage, loginAccess,logout} = require('../controllers/usersController');
+const {panelUsuario,login,register,storage, loginAccess,logout, comments} = require('../controllers/usersController');
 const express = require('express');
 const router = express.Router();
 
@@ -19,6 +19,7 @@ router.get("/panelUsuario", authMiddleware, panelUsuario);
 router.get("/login", loggedMiddleware, login);
 router.get("/register", loggedMiddleware, register);
 router.get("/logout", logout);
+router.get("/comments", authMiddleware, comments);
 
 /---rutas POST---/
 router.post('/guardar', [upload.any()], validations, storage);

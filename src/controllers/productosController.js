@@ -62,7 +62,12 @@ module.exports = {
 
     storage: async (req, res) => {
         try {
-            let all = await Product_image.findAll();
+            let image = null;
+            if(req.files && req.files.length > 0){
+                image = await Product_image.create({
+                    url: req.files[0].filename
+                })
+            }
             let newProduct = await Product.create({
                 name: req.body.name,
                 description: req.body.description,
@@ -70,44 +75,61 @@ module.exports = {
                 amount: req.body.amount,
                 stock: req.body.stock,
                 category: req.body.category,
-                image: all.length + 1
+                image: image != null ? image.id : image
             });
-            let file = await req.files.map(file => file.filename);
-            console.log(file);
-            let newImage = await Product_image.create({
-                url: file
-            });      
-            return res.send(newProduct);
+            return res.redirect('/productos/' + newProduct.id);
         } catch (error) {
             return res.render('error', {error: error});
         }
     },
 
-    /* storage: (req,res) => {
-        //console.log(req.files);
-        req.body.files = req.files;
-        const nuevo = generate(req.body);
-        create(nuevo);
-        return res.redirect('/productos/'+nuevo.id);
-    }, */
 
-    update:(req, res) => {
-        const {id} = req.params;
-        let producto = id ? match('id', id) : null;
-        return producto ? res.render('products/update', {
-         title: 'Actualizando', 
-            producto: producto
-        }): res.render('error', {title:"Error", error:"No se encontró ningún producto"})
+    update: async (req, res) => {
+        try {
+            let producto = await Product.findByPk(req.params.id, {include:{all:true}});
+            return res.render('products/update', {
+                title: 'Actualizando', 
+                   producto: producto
+               })
+        } catch (error) {
+            return res.render('error', {error: error});
+        }
+    },
+    
+    modify: async (req, res) => {
+        try {
+            let producto = await Product.findByPk(req.params.id);
+            let image = null;
+            if(req.files && req.files.length > 0){
+                image = await Product_image.update({
+                    url: req.files[0].filename
+                }, {where:{
+                    id: producto.image
+                }});
+            };
+            await producto.update({
+                name: req.body.name,
+                description: req.body.description,
+                price: req.body.price,
+                amount: req.body.amount,
+                stock: req.body.stock,
+                category: req.body.category,
+                image: image != null ? image.id : image
+            });
+            return res.send(producto);
+        } catch (error) {
+            return res.render('error', {error: error});
+        }
     },
 
-modify:(req, res) => {
-    req.body.files = req.files;
-    update(req.body);
-     return res.redirect('/productos/'+req.body.id);
-},
-
-trash:(req,res) => {
-     trash(req.body.id);
-     return res.redirect('/productos/productDetail'); 
- }
+    trash: async (req,res) => {
+        try {
+            let productDelete = await Product.findByPk(req.params.id);
+            await productDelete.destroy();
+            return res.redirect('/productos/productDetail'); 
+        } catch (error) {
+            return res.render('error', {error: error});
+        }
+        
+    }
 };

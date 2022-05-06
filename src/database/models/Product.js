@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
             primaryKey: true 
           },
           name: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.TEXT,
             allowNull: false
           },
           description: {
@@ -34,7 +34,7 @@ module.exports = (sequelize, DataTypes) => {
           },
           image: {
             type: DataTypes.INTEGER,
-            allowNull: false
+            allowNull: true
           }   
     }
 

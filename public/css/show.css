@@ -267,6 +267,11 @@ footer{
     nav img {
         width: 150px;
     }
+    
+    #slider{
+    width: 80%;
+    margin: auto;
+    }
     /*
     main {
       margin-block-start: 5%;
@@ -282,10 +287,7 @@ footer{
       margin-bottom: 0.5%;
     }
     */
-    #slider{
-    width: 80%;
-    margin: auto;
-    }
+    
     
     #menu a{
       width: 3rem;
