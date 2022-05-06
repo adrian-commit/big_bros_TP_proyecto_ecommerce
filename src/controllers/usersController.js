@@ -74,16 +74,22 @@ module.exports = {
    },
 
    panelUsuario: (req,res)=> {
-      console.log(req.session.userLogged.email);
       res.render('users/panelUsuario', {
          title: "Panel de Usuario",
          user: req.session.userLogged
       })
+      console.log(req.session.userLogged);
    },
 
    logout: (req, res) => {
       req.session.destroy();
       return res.redirect('/');
+   },
+
+   comments: (req, res) => {
+      return res.render('users/comments', {
+         title: "Comentario"
+      })
    },
 
    check: (req, res) => {

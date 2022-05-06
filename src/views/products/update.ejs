@@ -33,6 +33,15 @@
           <label for="product">Imagen</label>
           <input type="file" name="product" id="product">
         </fieldset>
+        <fieldset> 
+          <label for="category">Category</label>
+          <select name="category" id="category" value="<%= producto.category%>">
+           <option value="1">Alfajores</option>
+           <option value="2">Budines</option>
+           <option value="3">Pan Dulce</option>
+           <option value="4">Cookies</option>
+          </select> 
+        </fieldset>
       <fieldset> 
           <button type="submit">Guardar</button>
         </fieldset>
