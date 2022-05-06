@@ -115,7 +115,14 @@ main form label {
   display:block;
   margin-top: 5%;
   font-size: small;
+}
 
+.cookie label {
+  display: inline-block;
+}
+
+.cookie input {
+  width: auto;
 }
 
 main h4 {
@@ -129,6 +136,8 @@ main h4 {
 }
 
 .registro{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   margin-top: 5%;
   font-size: small;
   text-align: center;
@@ -140,6 +149,10 @@ main h4 {
 
  .invalid {
   border: 1px solid red;
+}
+
+.text-danger {
+  color: red;
 }
 
 /*hasta aca el cuerpo*/

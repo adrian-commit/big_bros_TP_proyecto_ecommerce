@@ -18,22 +18,18 @@
     <ul class="productos">
       <%productos.forEach(producto => {%>
         <li>
-              <% if (producto.files && producto.files.length > 0) { %>
-                <% producto.files.forEach(file => { %>  
-                <figure>
-            <img src="/static/products/<%= file %>" alt="<%= producto.name %> Big Bros">
-                </figure>
-                <% }) %>
-            <% } %>
+            <figure>
+              <img src="/static/products/<%= producto.product_image.url %>" alt="<%= producto.name %> Big Bros">
+            </figure>
                 <section class="caracteristicas-p">
                     <p><a href="/productos/<%= producto.id%>"><%=producto.name%></a></p>
                 </section> 
-          </li>
-        <% }) %>
+        </li>
+      <% }) %>
     </ul>
     <% } else {%>
         <h2>no se encontro ningún producto</h2>
-        <% } %>   
+    <% } %>   
         
         <button class="create" type="submit"><a href="/productos/nuevo">Nuevo</a></button>
 </main>

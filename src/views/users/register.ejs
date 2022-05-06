@@ -16,7 +16,7 @@
  <main>
     <section>
         <h3 class="title">Registro</h3>
-        <form class="register" action="/users/guardar" method="post" enctype="multipart/form-data" >
+        <form class="register" action="/users/guardar" method="post" enctype="multipart/form-data" novalidate>
             
             <fieldset>
                 <label for="name"><b>Nombre y Apellido</b></label>
@@ -25,7 +25,7 @@
                 name="name" 
                 placeholder="Nombre y apellido" 
                 class=" <%= locals.errors && errors.name ? "invalid" : null %> " 
-                value="<%= locals.oldData ? oldData.name : null %>" 
+                value="<%= locals.oldData ? oldData.name : null %>"
                 >
                 <% if (locals.errors && errors.name) { %>
                     <section class="text-danger">
@@ -55,7 +55,7 @@
                 name="email" 
                 placeholder="E-mail" 
                 class=" <%= locals.errors && errors.email ? "invalid" : null %> "
-                value="<%= locals.oldData ? oldData.email : null %>" 
+                value="<%= locals.oldData ? oldData.email : null %>"  
                 >
                 <% if (locals.errors && errors.email) { %>
                     <section class="text-danger">

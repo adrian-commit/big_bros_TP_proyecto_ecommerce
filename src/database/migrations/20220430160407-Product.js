@@ -25,11 +25,11 @@ module.exports = {
         type: Sequelize.BIGINT,
         allowNull: false
        },
-       image: {
-         type: Sequelize.STRING,
-         allowNull: false
-       },
        category: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+       },
+       image: {
         type: Sequelize.INTEGER,
         allowNull: false
        }

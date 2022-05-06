@@ -47,6 +47,13 @@ module.exports = {
          if(userPassword) {
             delete userLogin.password;
             req.session.userLogged = userLogin;
+
+            if(req.body.recordarme) {
+               res.cookie('email', req.body.email, {
+                  maxAge: (1000 * 60) *2
+               })
+            }
+
             return res.redirect('panelUsuario');
          }
          return res.render('users/login', {
@@ -60,18 +67,23 @@ module.exports = {
       return res.render('users/login', {
          errors: {
             email: {
-               msg: 'Este email no esta registrado'
+               msg: 'Email no registrado'
             }
          }
       });
    },
 
    panelUsuario: (req,res)=> {
-      console.log(req.session);
+      console.log(req.session.userLogged.email);
       res.render('users/panelUsuario', {
          title: "Panel de Usuario",
          user: req.session.userLogged
       })
+   },
+
+   logout: (req, res) => {
+      req.session.destroy();
+      return res.redirect('/');
    },
 
    check: (req, res) => {

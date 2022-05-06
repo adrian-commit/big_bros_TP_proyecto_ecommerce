@@ -13,13 +13,9 @@
 
 <section class="productos">
     <article>
-        <% if (producto.files && producto.files.length > 0) { %>
-            <% producto.files.forEach(file => { %>  
             <figure>
-        <img src="/static/products/<%= file %>" alt="<%= producto.name %> Big Bros">
-            </figure>
-            <% }) %>
-        <% } %>
+        <img src="/static/products/<%= producto.product_image.url %>" alt="<%= producto.name %> Big Bros">
+            </figure>  
         <section class="caracteristicas-p">
             <p><%= producto.name%></p>
                <form action="" method="">
