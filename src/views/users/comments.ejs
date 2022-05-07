@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
     <%- include("../includes/head")%>
-    <link href="/static/css/styleLogIn.css"  rel="stylesheet">
- 
-
+    <link href="/static/css/stylecomments.css"  rel="stylesheet">
 </head>
 
 <body>
@@ -13,18 +11,19 @@
     <main>
             <h4>Dejanos tu comentario sobre cualquier duda o problema que tengas!</h4>       
             <form action="/users/createComment" method="POST" novalidate>
-                <input 
+                <textarea
                     type="text" 
                     placeholder="Titulo .." 
                     id="titutlo" 
-                    name="titutlo"
-                >    
-                <input 
+                    name="titulo"
+                ></textarea>
+                <div>
+                <textarea
                     type="text" 
                     placeholder="Comentario .." 
                     id="comment" 
                     name="comment"
-                >
+                ></textarea></div>
                 <button type="submit">
                     Enviar
                 </button>
