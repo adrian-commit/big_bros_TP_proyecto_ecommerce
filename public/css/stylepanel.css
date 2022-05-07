@@ -27,6 +27,7 @@
       padding: 1%;
   }
   
+  
   nav a{
       color:white;
       font-family: 'Bebas Neue', cursive;
@@ -79,6 +80,7 @@ main{
     width: 100vw;
     align-self: center;
 }
+
 .padre{
     display:flex;
     border: white 1px solid;
