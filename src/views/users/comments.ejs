@@ -13,12 +13,18 @@
     <main>
             <h4>Dejanos tu comentario sobre cualquier duda o problema que tengas!</h4>       
             <form action="/users/createComment" method="POST" novalidate>
-                    <input 
+                <input 
                     type="text" 
-                    placeholder="comentario .." 
+                    placeholder="Titulo .." 
+                    id="titutlo" 
+                    name="titutlo"
+                >    
+                <input 
+                    type="text" 
+                    placeholder="Comentario .." 
                     id="comment" 
                     name="comment"
-                    >
+                >
                 <button type="submit">
                     Enviar
                 </button>

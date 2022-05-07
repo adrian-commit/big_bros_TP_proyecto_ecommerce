@@ -1,12 +1,12 @@
 const {Product,Category,Product_image} = require('../database/models');
 const { Op } = require("sequelize");
-const {list,all,filter,match,generate,create,update,trash, file} = require('../models/products');
+const {list,all,filter,match,generate,create,update,trash,} = require('../models/products');
 const path = require("path");
 
 
 module.exports = {
-    productCar: (req,res)=> res.render('products/productCar'),
 
+    productCar: (req,res) => res.render('products/productCar'),
 
     search: async (req, res) => {
      try {
@@ -100,13 +100,20 @@ module.exports = {
         try {
             let producto = await Product.findByPk(req.params.id);
             let image = null;
-            if(req.files && req.files.length > 0){
-                image = await Product_image.update({
+            if(req.files && req.files.length > 0 && producto.image != null){
+                await Product_image.update({
                     url: req.files[0].filename
                 }, {where:{
                     id: producto.image
-                }});
+                }})
+                image = producto.image;
             };
+            if(req.files && req.files.length > 0 && producto.image == null){
+                image = await Product_image.create({
+                    url: req.files[0].filename
+                }) 
+                image = image.id;
+            }
             await producto.update({
                 name: req.body.name,
                 description: req.body.description,
@@ -114,9 +121,9 @@ module.exports = {
                 amount: req.body.amount,
                 stock: req.body.stock,
                 category: req.body.category,
-                image: image != null ? image.id : image
+                image: image
             });
-            return res.send(producto);
+            return res.redirect('/productos/' + producto.id);
         } catch (error) {
             return res.render('error', {error: error});
         }
@@ -124,12 +131,11 @@ module.exports = {
 
     trash: async (req,res) => {
         try {
-            let productDelete = await Product.findByPk(req.params.id);
+            let productDelete = await Product.findByPk(req.body.id);
             await productDelete.destroy();
             return res.redirect('/productos/productDetail'); 
         } catch (error) {
             return res.render('error', {error: error});
         }
-        
     }
 };

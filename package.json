@@ -12,7 +12,7 @@
     "sql:migrate": "sequelize db:migrate:undo:all && sequelize db:migrate",
     "sql:seed": "sequelize db:seed:undo:all && sequelize db:seed:all",
     "db:mg": "sequelize migration:generate --name=User_image",
-    "db:sd": "sequelize seed:generate --name=Products"
+    "db:sd": "sequelize seed:generate --name=Users_image"
 
   },
   "repository": {

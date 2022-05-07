@@ -1,21 +1,24 @@
 const {generate,create,match} = require('../models/users');
+const {User, User_image} = require('../database/models');
 const {validationResult, body} = require('express-validator');
-const {compareSync} = require('bcrypt');
+const {hashSync, compareSync} = require('bcrypt');
 const path = require("path");
 const model = require('../models/users');
 const session = require('express-session');
 
 module.exports = {
 
-        login: (req,res)=> res.render('users/login', {title: "Inicio de Sesion"}),
-     register: (req,res)=> res.render('users/register', {title: "Registro"}),
-     storage: (req,res) => {
-      req.body.files = req.files;
+   login: (req,res)=> res.render('users/login', {title: "Inicio de Sesion"}),
+   
+   register: (req,res)=> res.render('users/register', {title: "Registro"}),
+     
+   
+   storage: async (req, res) => {
+      try {
+      /* req.body.files = req.files; */
       const resultVs = validationResult(req);
-      
-      let userInDb = model.match('email', req.body.email);
-
-      if(userInDb) {
+      let userInDb = await User.findAll({where:{email: req.body.email}});
+      if(userInDb != "") {
          return res.render('users/register' , {
             errors: {
                email: {
@@ -25,29 +28,34 @@ module.exports = {
             oldData: req.body
          });
       }
-
       if(resultVs.errors.length > 0) {
          return res.render('users/register' , {
             errors: resultVs.mapped(),
             oldData: req.body
          });
       } else {
-         const nuevo = generate(req.body);
-         create(nuevo); 
-         res.redirect('login');
+         await User.create({
+            first_name: req.body.firstName,
+            last_name:req.body.lastName,
+            user_name:req.body.userName,
+            email:req.body.email,
+            password: hashSync(req.body.password, 10),
+         });
+         res.render('users/login', {title: "Inicio de Sesion"});
+      }
+      } catch (error) {
+         return res.render('error', {error});
       }
    },
-
-   loginAccess: (req,res) => {
-      let userLogin = model.match('email', req.body.email);
-     
-
-      if(userLogin){
-         let userPassword = compareSync(req.body.password, userLogin.password); 
-         if(userPassword) {
-            delete userLogin.password;
-            req.session.userLogged = userLogin;
-
+   
+   loginAccess: async (req,res) => {
+      try {
+         let userLogin = await User.findOne({where:{email: req.body.email}});
+         if(userLogin){
+            let userPassword = compareSync(req.body.password, userLogin.password); 
+            if(userPassword) {
+               delete userLogin.password;
+               req.session.userLogged = userLogin;
             if(req.body.recordarme) {
                res.cookie('email', req.body.email, {
                   maxAge: (1000 * 60) *2
@@ -71,6 +79,9 @@ module.exports = {
             }
          }
       });
+      } catch (error) {
+         return res.render('error', {error});
+      }
    },
 
    panelUsuario: (req,res)=> {

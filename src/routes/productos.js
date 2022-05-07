@@ -15,7 +15,7 @@ router.get('/:id', show);
 
 router.post('/guardar', [upload.any()], storage);
 
-router.put('/actualizar', [upload.any()], modify);
+router.put('/actualizar/:id', [upload.any()], modify);
 
 router.delete('/borrar', trash);
 

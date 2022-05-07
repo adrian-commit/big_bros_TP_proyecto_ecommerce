@@ -72,7 +72,7 @@
             <li><input class="seguir-comprando" type="button" value="Seguir comprando" id="Cerrar menu"></li>
             <li><input class="detalles" type="button" value="Ver detalles" id="detalles"></li>
             <li>
-                <div class="envio">
+                <section class="envio">
                  <ul>
                      <li><input class="retirar" type="radio" name="envio" value="Retirar" id="Retirar"> Paso a Retirar
                       <ul type="none" class="si-paso-a-retirar">
@@ -91,18 +91,43 @@
                         <li><textarea>Comentarios</textarea></li>
                     </ul>
                 </ul>
-                </div>
+                </section>
             </li>
             <p class="registro">No tenes cuenta?<a href="./register.html">Registrate</a></p>
         </ul>
-        <div class="principal">
+        <section class="principal">
             <i class="fas fa-shopping-cart"></i>
             <p> Comprar </p>
             <p>($total)</p>
-        </div>
+        </section>
     </ul>
 </section>
 
+
+//carrito de compras pt 2//
+<section class="carrito">
+    <ul type="none" class="menu-carrito">
+        <ul type="none" class="menu-desplegable">
+            <li><input class="seguir-comprando" type="button" value="Seguir comprando" id="Cerrar menu"></li>
+            <li><input class="detalles" type="button" value="Ver detalles" id="detalles"></li>
+            <li>
+                <section class="envio">
+                 <ul>
+                     <li><input class="retirar" type="radio" name="envio" value="Retirar" id="Retirar"> Paso a Retirar</li>
+                <ul>
+                  <li><input class="enviar" type="radio" name="envio" value="Envio" id="Envio"> Quiero que me lo envien</li>
+                </ul>
+                </section>
+            </li>
+            <p class="registro">Iniciar sesión para comprar<a href="users/login"> Iniciar Sesion</a></p>
+        </ul>
+        <section class="principal">
+            <i class="fas fa-shopping-cart"></i>
+            <p> Comprar </p>
+            <p>($total)</p>
+        </section>
+    </ul>
+</section>
 
 //imagenes varias//
 <section>
@@ -110,3 +135,66 @@
     <img width=33% src="/static/images/alfajores 2.jpg" alt="Alfajores de Chocolate" class="product_img">
     <img width=33% src="/static/images/alfajores 4.jpg" alt="Alfajores de Chocolate" class="product_img">  
     </section> 
+
+
+//campos de formulario//
+</fieldset>
+<fieldset>
+    <label for="telefono"><b>Teléfono</b></label>
+<input 
+type="number" 
+name="telephone" 
+placeholder="Teléfono"
+class=" <%= locals.errors && errors.telephone ? "invalid" : null %> "
+value="<%= locals.oldData ? oldData.telephone : null %>" 
+>
+<% if (locals.errors && errors.telephone) { %>
+    <section class="text-danger">
+        <%= errors.telephone.msg %> 
+    </section>
+<% } %>
+</fieldset>
+<fieldset>
+    <label for="birthDate"><b>Fecha de nacimiento</b></label>
+    <input 
+    type="date" 
+    name="birthDate" 
+    id="birthDate" 
+    class=" <%= locals.errors && errors.birthDate ? "invalid" : null %> "
+    value="<%= locals.oldData ? oldData.birthDate : null %>" 
+    >
+    <% if (locals.errors && errors.birthDate) { %>
+        <section class="text-danger">
+            <%= errors.birthDate.msg %> 
+        </section>
+    <% } %>
+</fieldset>
+<fieldset>
+    <label for="address"><b>Dirección</b></label>
+    <input 
+    type="text" 
+    name="address" 
+    placeholder="Domicilio"
+    class=" <%= locals.errors && errors.address ? "invalid" : null %> "
+    value="<%= locals.oldData ? oldData.address : null %>" 
+    >
+    <% if (locals.errors && errors.address) { %>
+        <section class="text-danger">
+            <%= errors.address.msg %> 
+        </section>
+    <% } %>
+</fieldset>
+<fieldset>
+    <label for="avatar"><b>Imagen de Perfil</b></label>
+    <input type="file" 
+    name="avatar" 
+    id="avatar"
+    class=" <%= locals.errors && errors.avatar ? "invalid" : null %> "
+    >
+    <% if (locals.errors && errors.avatar) { %>
+        <section class="text-danger">
+            <%= errors.avatar.msg %> 
+        </section>
+    <% } %> 
+</fieldset>
+<fieldset>

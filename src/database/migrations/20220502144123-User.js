@@ -11,11 +11,11 @@ module.exports = {
        },
        first_name: {
          type: Sequelize.STRING,
-         allowNull: false
+         allowNull: true
        },
        last_name: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: true
        },
        user_name: {
         type: Sequelize.STRING,
@@ -31,18 +31,18 @@ module.exports = {
        },
        telephone: {
         type: Sequelize.BIGINT,
-        allowNull: false
+        allowNull: true
        },
        birth_day: {
          type: Sequelize.DATE,
-         allowNull: false
+         allowNull: true
        },
        address: {
         type: Sequelize.TEXT,
-        allowNull: false
+        allowNull: true
        },
        image: {
-         type: Sequelize.STRING,
+         type: Sequelize.INTEGER,
          allowNull: true
        },
        is_admin: {

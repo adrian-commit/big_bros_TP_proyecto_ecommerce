@@ -8,7 +8,7 @@ const folder = require('../middlewares/register');
 const upload = multer({ storage: folder('users')});
 
 /---middlewares---/
-const validations = require('../middlewares/registervalidations');
+const registervalidations = require('../middlewares/registervalidations');
 const loggedMiddleware = require('../middlewares/loggedMiddleware');
 const authMiddleware = require('../middlewares/authMiddleware'); 
 
@@ -22,7 +22,7 @@ router.get("/logout", logout);
 router.get("/comments", authMiddleware, comments);
 
 /---rutas POST---/
-router.post('/guardar', [upload.any()], validations, storage);
+router.post('/guardar', [upload.any()], registervalidations, storage);
 router.post('/acceder', loginAccess);
 
 module.exports = router;

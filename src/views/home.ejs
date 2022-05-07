@@ -31,21 +31,20 @@
             <ul class="productos">
               <%productos.forEach(producto => {%>
                 <li>
-                            <% if (producto.files && producto.files.length > 0) { %>
-                                <% producto.files.forEach(file => { %>  
-                                <figure>
-                            <img src="/static/products/<%= file %>" alt="<%= producto.name %> Big Bros">
-                                </figure>
-                                <% }) %>
-                            <% } %>
-                            <section class="caracteristicas-p">
-                                <p><%= producto.name%></p>
-                                   <form action="" method="">
-                                       <select class="cantidad" name="cantidad" id="cantidad" aria-checked="3">
-                                           <option value="1" selected><%= producto.amount%></option>
-                                       </select>
-                                       <input class="Agregar-carrito" type="submit" value="Agregar al carrito" id="Agregar al carrito"> 
-                                       <input class="precio" type="text" value="$ <%= producto.price%>" id="precio" >
+                    <figure>
+                        <img src="/static/products/<%= producto.product_image.url %>" alt="<%= producto.name %> Big Bros">    
+                    </figure>                        
+                            <section class="caracteristicas-p item">
+                                <p class="titulo item-titulo"><%= producto.name%></p>
+                                <select class="cantidad item-cantidad" name="cantidad" id="cantidad" aria-checked="3">
+                                    <option value="1" selected>1</option>
+                                    <% for( let i = 2; i <= 10; i++ ) { %>       
+                                    <option value="<%= i %>"><%= i %></option>        
+                                    <% } %>             
+                                </select>              
+                                <button class="agregarCarrito item-agregarCarrito">Agregar al carrito</button>             
+                                <p class="precio item-precio">$<%= producto.price%></p>    
+                                       
                                     
                                        <section id="share">
                                            <a href=" "><i class="fas fa-share-alt"></i></a>
@@ -53,7 +52,7 @@
                                            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
                                            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
                                        </section>
-                                   </form>
+                                   
                             </section> 
                 </li>
                 <% }) %>
@@ -62,10 +61,10 @@
                 <h2 class="p-null">no se encontro ningún producto</h2>
                 <% } %> 
         
-
     </main>
  
     <%- include("./includes/footer")%>
 
+    <script src="/static/js/carrito.js"></script>
  </body>
 </html>

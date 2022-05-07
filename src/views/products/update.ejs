@@ -7,7 +7,7 @@
 <body>
     <%- include("../includes/header")%>
     <p class="title">Actualizando producto</p>
-  <form class="create" action="/productos/actualizar?m=PUT" enctype="multipart/form-data" method="post">
+  <form class="create" action="/productos/actualizar/<%= producto.id %>?m=PUT" enctype="multipart/form-data" method="post">
     <input type="hidden" name="id" id="id" value="<%= producto.id %>">
        <fieldset class="name">
           <label for="name">Name</label>

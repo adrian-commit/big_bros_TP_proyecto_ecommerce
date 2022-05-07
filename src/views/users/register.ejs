@@ -19,26 +19,41 @@
         <form class="register" action="/users/guardar" method="post" enctype="multipart/form-data" novalidate>
             
             <fieldset>
-                <label for="name"><b>Nombre y Apellido</b></label>
+                <label for="firstName"><b>Nombre</b></label>
                 <input 
                 type="text" 
-                name="name" 
-                placeholder="Nombre y apellido" 
-                class=" <%= locals.errors && errors.name ? "invalid" : null %> " 
-                value="<%= locals.oldData ? oldData.name : null %>"
+                name="firstName" 
+                placeholder="Nombre.." 
+                class=" <%= locals.errors && errors.firstName ? "invalid" : null %> " 
+                value="<%= locals.oldData ? oldData.firstName : null %>"
                 >
-                <% if (locals.errors && errors.name) { %>
+                <% if (locals.errors && errors.firstName) { %>
                     <section class="text-danger">
-                        <%= errors.name.msg %> 
+                        <%= errors.firstName.msg %> 
                     </section>
                 <% } %>
-            </fieldset> 
+            </fieldset>
+            <fieldset>
+                <label for="lastName"><b>Apellido</b></label>
+                <input 
+                type="text" 
+                name="lastName" 
+                placeholder="Apellido.." 
+                class=" <%= locals.errors && errors.lastName ? "invalid" : null %> " 
+                value="<%= locals.oldData ? oldData.lastName : null %>"
+                >
+                <% if (locals.errors && errors.lastName) { %>
+                    <section class="text-danger">
+                        <%= errors.lastName.msg %> 
+                    </section>
+                <% } %>
+            </fieldset>  
             <fieldset>
                 <label for="userName"><b>Nombre de Usuario</b></label>
                 <input 
                 type="text" 
                 name="userName" 
-                placeholder="Nombre de usuario" 
+                placeholder="Nombre de usuario.." 
                 class=" <%= locals.errors && errors.userName ? "invalid" : null %> "
                 value="<%= locals.oldData ? oldData.userName : null %>" 
                 >
@@ -53,7 +68,7 @@
                 <input 
                 type="email" 
                 name="email" 
-                placeholder="E-mail" 
+                placeholder="Email.." 
                 class=" <%= locals.errors && errors.email ? "invalid" : null %> "
                 value="<%= locals.oldData ? oldData.email : null %>"  
                 >
@@ -68,7 +83,7 @@
                 <input 
                 type="password" 
                 name="password" 
-                placeholder="Contraseña" 
+                placeholder="Contraseña.." 
                 class=" <%= locals.errors && errors.password ? "invalid" : null %> "
                 >
                 <% if (locals.errors && errors.password) { %>
@@ -76,66 +91,6 @@
                         <%= errors.password.msg %> 
                     </section>
                 <% } %>
-            </fieldset>
-            <fieldset>
-                <label for="telefono"><b>Teléfono</b></label>
-            <input 
-            type="number" 
-            name="telephone" 
-            placeholder="Teléfono"
-            class=" <%= locals.errors && errors.telephone ? "invalid" : null %> "
-            value="<%= locals.oldData ? oldData.telephone : null %>" 
-            >
-            <% if (locals.errors && errors.telephone) { %>
-                <section class="text-danger">
-                    <%= errors.telephone.msg %> 
-                </section>
-            <% } %>
-            </fieldset>
-            <fieldset>
-                <label for="birthDate"><b>Fecha de nacimiento</b></label>
-                <input 
-                type="date" 
-                name="birthDate" 
-                id="birthDate" 
-                class=" <%= locals.errors && errors.birthDate ? "invalid" : null %> "
-                value="<%= locals.oldData ? oldData.birthDate : null %>" 
-                >
-                <% if (locals.errors && errors.birthDate) { %>
-                    <section class="text-danger">
-                        <%= errors.birthDate.msg %> 
-                    </section>
-                <% } %>
-            </fieldset>
-            <fieldset>
-                <label for="address"><b>Dirección</b></label>
-                <input 
-                type="text" 
-                name="address" 
-                placeholder="Domicilio"
-                class=" <%= locals.errors && errors.address ? "invalid" : null %> "
-                value="<%= locals.oldData ? oldData.address : null %>" 
-                >
-                <% if (locals.errors && errors.address) { %>
-                    <section class="text-danger">
-                        <%= errors.address.msg %> 
-                    </section>
-                <% } %>
-            </fieldset>
-            <fieldset>
-                <label for="avatar"><b>Imagen de Perfil</b></label>
-                <input type="file" 
-                name="avatar" 
-                id="avatar"
-                class=" <%= locals.errors && errors.avatar ? "invalid" : null %> "
-                >
-                <% if (locals.errors && errors.avatar) { %>
-                    <section class="text-danger">
-                        <%= errors.avatar.msg %> 
-                    </section>
-                <% } %> 
-            </fieldset>
-            <fieldset>
                 <button type= "submit">Enviar</button>
             </fieldset> 
         </section>
