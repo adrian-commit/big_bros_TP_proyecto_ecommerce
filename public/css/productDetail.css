@@ -137,7 +137,7 @@ footer{
     display: flex;
     justify-content: space-around;
     width: 100vw;
-    position:relative;
+    position:fixed;
     bottom: 0%;
     border-top: 1px solid rgba(255, 254, 254, 0.5);
     box-shadow: rgba(255, 254, 254, 1);
@@ -179,7 +179,7 @@ footer{
 
     footer{
       font-size: smaller;
-      height: 15%;
+      height: 12.5%;
     }
     footer section{
       margin: 1%;

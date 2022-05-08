@@ -9,19 +9,19 @@
     <p class="title">nuevo producto</p>
   <form class="create" action="/productos/guardar" enctype="multipart/form-data" method="post" novalidate>
        <fieldset class="name">
-          <label for="name">Name</label>
-          <input type="text" name="name" value="name" placeholder="name">
+          <label for="name">Nombre</label>
+          <input type="text" name="name">
         </fieldset>
       <fieldset class="description">
-          <label for="description">Description</label>
+          <label for="description">Descripción</label>
           <textarea name="description" id="description" cols="30" rows="10"></textarea>
         </fieldset>
       <fieldset class="price">
-          <label for="price">Price</label>
+          <label for="price">Precio</label>
           <input type="number" min="1" name="price" id="price">
         </fieldset>
         <fieldset class="amount">
-            <label for="amount">amount</label>
+            <label for="amount">Cantidad</label>
             <input type="number" min="1" max="100" name="amount" id="amount">
           </fieldset>
       <fieldset class="stock">
@@ -33,7 +33,7 @@
           <input type="file" name="product" id="product">
         </fieldset>
         <fieldset> 
-          <label for="category">Category</label>
+          <label for="category">Categoría</label>
           <select name="category" id="category">
            <option value="1">Alfajores</option>
            <option value="2">Budines</option>

@@ -168,6 +168,10 @@ fieldset button{
       width: 60vw;
       height: auto;
     }
+    footer{
+      font-size: smaller;
+      height: 12.5%;
+    }
 
   }
   
