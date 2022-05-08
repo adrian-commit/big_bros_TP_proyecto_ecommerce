@@ -11,8 +11,8 @@
     "sql:drop": "sequelize db:drop",
     "sql:migrate": "sequelize db:migrate:undo:all && sequelize db:migrate",
     "sql:seed": "sequelize db:seed:undo:all && sequelize db:seed:all",
-    "db:mg": "sequelize migration:generate --name=User_image",
-    "db:sd": "sequelize seed:generate --name=Users_image"
+    "db:mg": "sequelize migration:generate --name=Comment",
+    "db:sd": "sequelize seed:generate --name=Comments"
 
   },
   "repository": {

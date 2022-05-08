@@ -14,8 +14,8 @@
                 <textarea
                     type="text" 
                     placeholder="Titulo .." 
-                    id="titutlo" 
-                    name="titulo"
+                    id="title" 
+                    name="title"
                 ></textarea>
                 <div>
                 <textarea
@@ -24,6 +24,7 @@
                     id="comment" 
                     name="comment"
                 ></textarea></div>
+                <input type="hidden" name="userId" value="<%= user.id %> ">
                 <button type="submit">
                     Enviar
                 </button>

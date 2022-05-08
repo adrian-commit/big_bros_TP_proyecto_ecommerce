@@ -7,7 +7,7 @@
 <body>
     <%- include("../includes/header")%>
     <p class="title">nuevo producto</p>
-  <form class="create" action="/productos/guardar" enctype="multipart/form-data" method="post">
+  <form class="create" action="/productos/guardar" enctype="multipart/form-data" method="post" novalidate>
        <fieldset class="name">
           <label for="name">Name</label>
           <input type="text" name="name" value="name" placeholder="name">

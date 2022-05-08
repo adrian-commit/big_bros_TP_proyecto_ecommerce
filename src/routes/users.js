@@ -1,4 +1,4 @@
-const {panelUsuario,login,register,storage, loginAccess,logout, comments} = require('../controllers/usersController');
+const {panelUsuario,login,register,storage, loginAccess,logout, comments, createComment, listComments} = require('../controllers/usersController');
 const express = require('express');
 const router = express.Router();
 
@@ -20,9 +20,11 @@ router.get("/login", loggedMiddleware, login);
 router.get("/register", loggedMiddleware, register);
 router.get("/logout", logout);
 router.get("/comments", authMiddleware, comments);
+router.get("/listComments", listComments);
 
 /---rutas POST---/
 router.post('/guardar', [upload.any()], registervalidations, storage);
 router.post('/acceder', loginAccess);
+router.post('/createComment', createComment);
 
 module.exports = router;

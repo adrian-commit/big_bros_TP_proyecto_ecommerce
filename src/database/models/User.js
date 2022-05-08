@@ -63,6 +63,12 @@ module.exports = (sequelize, DataTypes) => {
         as: 'users_image',
         foreignKey: 'image'
       });
+
+      User.hasMany(models.Comment, {
+        as: 'comments',
+        foreignKey: 'id'
+      });
+
     }
 
     return User; 

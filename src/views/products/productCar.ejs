@@ -2,13 +2,52 @@
 <html lang="en">
 <head>
     <%- include("../includes/head")%>
-    <link href="static/css/styleCar.css"  rel="stylesheet">
-    
-</head>
+    <link href="/static/css/productCar.css"  rel="stylesheet">
+ 
 
-<body>
+   </head>
+
+ <body>
     <%- include("../includes/header")%>
-<h1>hola estoy aqui</h1>
-    <%- include("../includes/footer")%>  
-</body>
+     
+    <main>
+        <section class="carrito">
+            <section class="menuDespligue">
+                <button class="seguir">
+                    Seguir Comprando
+                </button>
+                <button class="verDetalle">
+                    Ver detalle
+                </button>
+                <section class="detalle"></section>
+                <section class="envio">
+                    <input type="checkbox" class="retirar" id="retirar">
+                    <label for="opcionRetirar">Paso a retirar</label>
+                    <label for="opcionRetirar">Resistencia,Chaco,Argentina</label>
+                    <input type="checkbox" class="enviar" id="enviar">
+                    <label for="opcionEnviar">Quiero que me lo lleven</label>
+                    <label for="opcionEnviar">Costo de envio coordinar por whatsaap</label>
+                    <form class="retirar" action="/">
+                        <input type="text" class="nombre" placeholder="Nombre">
+                        <input type="text" class="telefono" placeholder="Telefono">
+                    </form>
+                    <form action="/">
+                        <input type="text" class="nombre" placeholder="Nombre">
+                        <input type="text" class="telefono" placeholder="Telefono">
+                        <input type="text" class="Direccion" placeholder="Direccion">
+                    </form>
+                </section>
+            </section>
+            <section class="menu">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Siguiente</p>
+                <p>($ )</p>
+            </section>
+        </section>
+    </main> 
+ 
+    <%- include("../includes/footer")%>
+
+    <script src="/static/js/carrito.js"></script>
+ </body>
 </html>

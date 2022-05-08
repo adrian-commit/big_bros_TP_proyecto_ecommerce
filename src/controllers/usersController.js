@@ -1,5 +1,5 @@
 const {generate,create,match} = require('../models/users');
-const {User, User_image} = require('../database/models');
+const {User, User_image, Comment} = require('../database/models');
 const {validationResult, body} = require('express-validator');
 const {hashSync, compareSync} = require('bcrypt');
 const path = require("path");
@@ -99,15 +99,32 @@ module.exports = {
 
    comments: (req, res) => {
       return res.render('users/comments', {
-         title: "Comentario"
+         title: "Comentario",
+         user: req.session.userLogged
       })
    },
 
-   check: (req, res) => {
-      if(req.session.userLogged == undefined) {
-         res.send('no estas logueado')
-      } else {
-         res.send('el usuario logueado es' + req.session.userLogged.email);
+   createComment: async (req, res) => {
+      try {
+         let comment = await Comment.create({
+            title: req.body.title,
+            comment: req.body.comment,
+            userId: req.body.userId
+         });
+         return res.send(comment);
+      } catch (error) {
+         return res.render('error', {error});
+      }
+   },
+
+   listComments: async (req, res) => {
+      try {
+         let comment = await Comment.findAll({include:{all:true}});
+         return res.send(comment);
+      } catch (error) {
+         return res.render('error', {error});
       }
    }
+
+   
 }
