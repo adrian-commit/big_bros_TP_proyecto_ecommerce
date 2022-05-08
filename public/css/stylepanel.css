@@ -76,9 +76,26 @@ body{
 }
 
 main{
-    display: flex;
+        display: flex;
+        width: 100vw;
+        align-self: center;
     width: 100vw;
-    align-self: center;
+}
+
+.usuario {
+    width: 50%;
+    display: block;
+    margin: auto;
+    height: 200px;
+}
+
+.usuario img {
+    width: 100%;
+}
+
+.nombreUsuario {
+    text-align: center;
+    color: white;
 }
 
 .padre{
@@ -157,7 +174,7 @@ footer{
     display: flex;
     justify-content: space-around;
     width: 100vw;
-    position:fixed;
+   position:fixed;
     bottom: 0%;
   }
   
