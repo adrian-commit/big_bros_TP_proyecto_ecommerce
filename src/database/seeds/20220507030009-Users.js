@@ -29,7 +29,46 @@ module.exports = {
       address: "Julio A Roca 3350",
       image: 2,
       is_admin: false
-     }
+     },
+     {
+      id: 3, 
+      first_name: "usuario3",
+      last_name: "usuario3",
+      user_name: "usuario3",
+      email: "usuario3@hotmail.com",
+      password: "$2b$10$KCBJ.becXH9ShkBgXO5WhOhlNUjrnvlpq6JWksVSATimjFc2mWHHu",
+      telephone: "123456789",
+      birth_day: "2020-03-15",
+      address: "juancito123",
+      image: null,
+      is_admin: false
+     },
+     {
+      id: 4, 
+      first_name: "usuario4",
+      last_name: "usuario4",
+      user_name: "usuario4",
+      email: "usuario4@hotmail.com",
+      password: "$2b$10$KCBJ.becXH9ShkBgXO5WhOhlNUjrnvlpq6JWksVSATimjFc2mWHHu",
+      telephone: "123456789",
+      birth_day: "2020-03-15",
+      address: "juancito123",
+      image: null,
+      is_admin: false
+     },
+     {
+      id: 5, 
+      first_name: "usuario5",
+      last_name: "usuario5",
+      user_name: "usuario5",
+      email: "usuario5@hotmail.com",
+      password: "$2b$10$KCBJ.becXH9ShkBgXO5WhOhlNUjrnvlpq6JWksVSATimjFc2mWHHu",
+      telephone: "123456789",
+      birth_day: "2020-03-15",
+      address: "juancito123",
+      image: null,
+      is_admin: false
+     },
     ], {});
     
   },

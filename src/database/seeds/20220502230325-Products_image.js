@@ -28,6 +28,30 @@ module.exports = {
         "product-1647057694880-.jpg"
       ],
      },
+     {
+      id:5,
+      url:[
+        "product-1651976533884-.JPG"
+      ],
+     },
+     {
+      id:6,
+      url:[
+        "product-1651976669516-.jpg"
+      ],
+     },
+     {
+      id:7,
+      url:[
+        "product-1651976720814-.JPG"
+      ],
+     },
+     {
+      id:8,
+      url:[
+        "product-1651976763978-.JPG"
+      ],
+     }
     ], {});
   },
 
