@@ -1,60 +1,52 @@
+header{
+  width: 100vw;
+  height: 9%;
+  position: relative;
+  z-index: 2;
+}
 
-/* inicio codigo general*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+nav {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  height:auto;
+  width: 95%;
+  margin:auto;
+  background-color: black;
+  border-radius: 5%;
+  padding: 1%;
+}
+
+
+nav a{
+  color:white;
+  font-family: 'Bebas Neue', cursive;
+  padding: 3px;
+  font-size: medium ;
+  text-decoration: none;
+}
+
+nav img{
+  display: none;
+}
+
+.barra button{
+background-color:black;
+color: white;
+}
+
+.busqueda{
+  background-color: black;
+  color: white;
+  font-style: italic;
   }
-  body{
-    background-color: black;
-  }
-  header{
-      width: 100vw;
-      height: 15%;
-  }
-  
-  nav {
-      display:flex;
-      justify-content: space-around;
-      align-items: center;
-      height:auto;
-      width: 95%;
-      margin:auto;
-      background-color: black;
-      border-radius: 5%;
-      padding: 1%;
-  }
-  
-  nav a{
-      color:white;
-      font-family: 'Bebas Neue', cursive;
-      padding: 3px;
-      font-size: medium ;
-  }
-  
-  nav img{
-      display: none;
-  }
-  
-  .barra button{
-    background-color:black;
-    color: white;
-  }
-  
-  .busqueda{
-      background-color: black;
-      color: white;
-      font-style: italic;
-      }
-  
-  .barra{
-    text-align: right;
-    background-color: black;
-    padding:5px;
-  }
-  
-/* hasta acá el header*/
+
+.barra{
+text-align: right;
+background-color: black;
+padding:5px;
+}
+
 /*inicio cuerpo*/
 
 /*codigo Ale */
@@ -81,25 +73,24 @@ main {
     text-align: justify;
     justify-content: space-around;
     font-size: 15px;
-    padding-bottom: 100px;
+    padding-bottom: 40%;
+    background-color: rgb(255,255,255,0.5);
 }
 
 main section p {
-    background-color: rgb(255,255,255,0.5);
     box-shadow: 3% ;
 }
+
 
 main section h3 {
   font-family: 'Bebas Neue', cursive;
   font-size: 23px;
     font-weight: bold;
     text-align: center;
-    background-color: rgb(255,255,255,0.5);
-    border-radius: 3%;
 }
 
 
-img {
+main section img {
     Width: 100%;
     border-radius: 3%;
 }
@@ -120,6 +111,7 @@ footer{
   width: 100vw;
   position:fixed;
   bottom: 0%;
+  height:15%;
 }
 
 footer section {
@@ -150,7 +142,29 @@ footer section i{
 
 /*inicio media queries*/
 
+@media (min-width: 361px){
+  main {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 95vw;
+    height: auto;
+    padding: 7.5px;
+    padding-bottom: 30%;
+    }
+ 
+    main section img {
+      width: 60%;
+      position:relative;
+      left: 21%;
+    }
+}
+
+
   @media(min-width: 768px){
+    header{
+     height: auto;
+    }
     nav img{
         display: inline-block;
         width: 100px;
@@ -158,77 +172,48 @@ footer section i{
 
     footer{
       font-size: smaller;
-      height: 15%;
+      height: 12.5%;
     }
     footer section{
       margin: 1%;
     }
     main {
-      margin-block-start: 5%;
-      width: 60vw;
+      margin: auto;
+      width: 90vw;
       height: auto;
+      padding-bottom: 12.5%;
+      }
+    main section{
+      justify-content: center;
     }
-
+    main section img {
+      width: 50%;
+      position:relative;
+      left: 25%;
+    }
   }
-  
   @media(min-width: 1024px){
     nav a{
        padding:0;
        font-size: larger;
     }
-
-    nav img {
+    footer{
+      font-size: smaller;
+      height: 14.5%;
+    }
+      nav img {
         width: 150px;
     }
-    main {
-      margin-block-start: 5%;
-      width: 45vw;
-      height: auto;
-      padding: 3%;
-    }
-    main h4 {
-      margin-top: 0;
-    }
-
-    main form label{
-      margin-bottom: 0.5%;
-    }
+  
+  main {
+  font-size: larger;
+  padding-bottom: 10%;
   }
-
+  main section h3{
+    font-size: larger;
+  }
+}
+  
   /*media queries Ale*/
   
-@media (min-width: 361px){
-    main {
-        display: flex;
-        padding: 20px;
-
-    }
-    img {
-        width: 50%;
-        position:relative;
-        left: 25%;
-
-    }
-
-    main p {
-        justify-content: space-between;
-
-    }
-
-   section h3 {
-        text-align: left;
-    }
-}
-
-@media (min-width: 768px){
-    main{
-        display: flex;
-        justify-content: space-between
-    }
-
-    section img{
-        width: 30%;
-    }
-
-}
 /*fin media queries ale*/
