@@ -13,7 +13,6 @@
     "sql:seed": "sequelize db:seed:undo:all && sequelize db:seed:all",
     "db:mg": "sequelize migration:generate --name=Comment",
     "db:sd": "sequelize seed:generate --name=Comments"
-
   },
   "repository": {
     "type": "git",
