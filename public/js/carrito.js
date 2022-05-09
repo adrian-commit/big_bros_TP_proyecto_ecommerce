@@ -15,7 +15,7 @@ let formEnviar = document.querySelector('.enviar');
 const abrirMenu = botonMenu.addEventListener('click', () => {
     menuCompleto.style.display = 'block';
     let cambiarMenu = document.querySelector('.nombreMenu');
-    cambiarMenu.innerHTML = '<a class="whap" href="">Enviar a whatsaap</a>';
+    cambiarMenu.innerHTML = '<a class="whap" href="https://api.whatsapp.com/send/?phone=5493624743819&text=Hola%2C+quisiera+hacer+un+pedido.%0A%0AID:+22">Enviar a whatsaap</a>';
     botonMenu.style.backgroundColor = 'green';
 }) 
 const cerrarMenu = botonCerrarMenu.addEventListener('click', () => {
