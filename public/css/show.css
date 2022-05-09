@@ -104,13 +104,12 @@ body{
     bottom: 15px;
   }
   
-  .caracteristicas-p p{
+  .caracteristicas-p h3{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 0px;
     margin-bottom: 3px;
-    text-decoration: underline;
   }
   
   .caracteristicas-p input{
@@ -155,6 +154,10 @@ body{
     margin: auto;
 
     
+  }
+  section p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
   }
 
   .edit {
@@ -236,7 +239,7 @@ footer{
 
     footer{
       font-size: smaller;
-      height: 15%;
+      height: 12.5%;
     }
     footer section{
       margin: 1%;

@@ -111,7 +111,7 @@ module.exports = {
             comment: req.body.comment,
             userId: req.body.userId
          });
-         return res.send(comment);
+         return res.redirect("panelUsuario");
       } catch (error) {
          return res.render('error', {error});
       }

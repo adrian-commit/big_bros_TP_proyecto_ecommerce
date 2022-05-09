@@ -17,21 +17,8 @@
         <img src="/static/products/<%= producto.product_image.url %>" alt="<%= producto.name %> Big Bros">
             </figure>  
         <section class="caracteristicas-p">
-            <p><%= producto.name%></p>
-               <form action="" method="">
-                   <select class="cantidad" name="cantidad" id="cantidad" aria-checked="3">
-                       <option value="1" selected><%= producto.amount%></option>
-                   </select>
-                   <input class="Agregar-carrito" type="submit" value="Agregar al carrito" id="Agregar al carrito"> 
-                   <input class="precio" type="text" value="$ <%= producto.price%>" id="precio" >
-                
-                   <section id="share">
-                       <a href=" "><i class="fas fa-share-alt"></i></a>
-                       <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
-                       <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                       <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-                   </section>
-               </form>
+            <h3><%= producto.name%></h3>
+            <p class="Descrip"><%= producto.description%></p>
         </section>
      </article>  
 </section>

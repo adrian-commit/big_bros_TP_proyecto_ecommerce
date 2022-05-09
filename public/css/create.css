@@ -75,10 +75,10 @@ body{
   margin: auto;
   margin-top: 3%;
   text-align: center;
-  color: white;
+  color: black;
   font-family: 'Bebas Neue', cursive;
-  font-style: italic;
   font-size: 30px;
+  font-weight: bold;
   }
 
 .create{
@@ -202,7 +202,7 @@ footer{
 
     footer{
       font-size: smaller;
-      height: 15%;
+      height: 12.5%;
     }
     footer section{
       margin: 1%;
