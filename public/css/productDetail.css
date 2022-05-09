@@ -68,6 +68,7 @@ body {
 
 main {
   margin-top: 8%;
+  padding-bottom: 30%;
 }
 
 .productos{
@@ -181,6 +182,11 @@ footer{
       font-size: smaller;
       height: 12.5%;
     }
+
+    main{
+    padding-bottom: 8%;
+    }
+
     footer section{
       margin: 1%;
     }
@@ -214,6 +220,10 @@ footer{
     nav img {
         width: 150px;
     }
+
+    main{
+      padding-bottom: 10%;
+      }
 
     .productos li{
       width: 23%;

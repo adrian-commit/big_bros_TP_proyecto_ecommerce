@@ -82,6 +82,15 @@ main{
     width: 100vw;
 }
 
+main button{
+    background-color:black;
+    border-radius: 5px;
+    display: block;
+    color: white;
+    margin:auto;
+    margin-top: 5%;
+    padding: 3px;
+  }
 .usuario {
     width: 50%;
     display: block;
@@ -156,10 +165,17 @@ main{
     margin:auto;
     padding-bottom: 3%;
 }
+.contenido label{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
 
 .contenido h3{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 23px;
+    font-weight: bold;
     text-align: center;
-    font-style: italic;
     margin-block-end:0.5em;
 }
 

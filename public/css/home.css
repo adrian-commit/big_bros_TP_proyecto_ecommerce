@@ -57,6 +57,11 @@
   
 /* hasta acá el header*/
 /*Inicio del Cuerpo */
+
+main {
+  padding-bottom: 30%;
+}
+
 #slider img {
 	max-width: 100%;
 }
@@ -212,7 +217,7 @@ footer{
   display: flex;
   justify-content: space-around;
   width: 100vw;
-  position:relative;
+  position:fixed;
   bottom: 0%;
   border-top: 1px solid rgba(255, 254, 254, 0.5);
   box-shadow: rgba(255, 254, 254, 1);
@@ -256,8 +261,13 @@ footer section i{
       font-size: smaller;
       height: 12.5%;
     }
+
     footer section{
       margin: 1%;
+    }
+
+    main {
+      padding-bottom: 15%;
     }
     /*
     main {
@@ -266,7 +276,7 @@ footer section i{
       height: auto;
     }
     */
-    
+
     .productos {
       display: flex;
       flex-wrap: wrap;
@@ -283,6 +293,9 @@ footer section i{
   }
   
   @media(min-width: 1024px){
+   body{
+     width: 1024px;
+   }
     nav a{
        padding:0;
        font-size: larger;
@@ -291,6 +304,13 @@ footer section i{
     nav img {
         width: 150px;
     }
+    header{
+      margin: 0px;
+    }
+    main {
+      padding-bottom: 10%;
+    }
+
     /*
     main {
       margin-block-start: 5%;
@@ -313,13 +333,56 @@ footer section i{
     
     #menu a{
       width: 3rem;
-      height: .5rem;
+      height: 0.5rem;
       position: relative;
       top: 10px;
       right: 6rem;
+      justify-content: center;
     }
     .productos li {
       width: 23%;
     }
-
+  }
+    @media(min-width: 1440px){
+      nav a{
+         padding:0;
+         font-size: larger;
+      }
+      body{
+        width: 100%;
+      }
+      nav img {
+          width: 150px;
+      }
+      /*
+      main {
+        margin-block-start: 5%;
+        width: 45vw;
+        height: auto;
+        padding: 3%;
+      }
+      main h4 {
+        margin-top: 0;
+      }
+  
+      main form label{
+        margin-bottom: 0.5%;
+      }
+      */
+      #slider{
+      width: 80%;
+      margin: auto;
+      }
+      
+      #menu a{
+        width: 3rem;
+        height: 0.5rem;
+        position: relative;
+        top: 10px;
+        right: 9rem;
+        justify-content: center;
+      }
+      .productos li {
+        width: 23%;
+      }
   }

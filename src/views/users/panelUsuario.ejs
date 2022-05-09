@@ -12,11 +12,11 @@
     <%- include("../includes/header")%>
     <main>
         <div class="padre">
-            <section class="opciones">
+            <!-- <section class="opciones">
                     <div class="mis-datos">Mis datos</div>       
                     <div class="mis-compras">Mis compras </div>
             </section>
-    
+        -->
             <div class="contenido">
             <h3>Mis datos</h3>
                 
@@ -25,8 +25,14 @@
                 <div class="input"><label>Teléfono:</label><div><input type="tel" placeholder="3624555333"><i class="far fa-edit"></i></div></div>
                 <div class="input"><label>Correo:</label><div><input type="email" placeholder="noeg@gmail.com"><i class="far fa-edit"></i></div></div>
                 <div class="input"><label>Contraseña:</label><div><input type="password" placeholder="********"><i class="far fa-edit"></i></div></div>
+                <button onclick="location.href='/users/logout'">
+                    Cerrar Sesión
+                </button>
             </div>
+            
+            <!--
                 <a href="/users/logout">Cerrar sesión</a>
+            -->
             </div>
     </main>
         <%- include("../includes/footer")%>  
