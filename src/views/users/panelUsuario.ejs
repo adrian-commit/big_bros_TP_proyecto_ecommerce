@@ -19,12 +19,10 @@
         -->
             <div class="contenido">
             <h3>Mis datos</h3>
-                
-                <div class="input"><label>Nombre:</label><div><input type="text" placeholder="Galeano, Noelia Belén"><i class="far fa-edit"></i></div></div>
-                <div class="input"><label>Dirección:</label><div><input type="text" placeholder="Julio A. Roca 350"><i class="far fa-edit"></i></div></div>
-                <div class="input"><label>Teléfono:</label><div><input type="tel" placeholder="3624555333"><i class="far fa-edit"></i></div></div>
-                <div class="input"><label>Correo:</label><div><input type="email" placeholder="noeg@gmail.com"><i class="far fa-edit"></i></div></div>
-                <div class="input"><label>Contraseña:</label><div><input type="password" placeholder="********"><i class="far fa-edit"></i></div></div>
+                <div class="input"><label>Nombre:</label><div><input type="text" placeholder="<%= user.first_name + user.last_name %> "><i class="far fa-edit"></i></div></div>
+                <div class="input"><label>Dirección:</label><div><input type="text" placeholder="<%= user.address %> "><i class="far fa-edit"></i></div></div>
+                <div class="input"><label>Teléfono:</label><div><input type="tel" placeholder="<%= user.telephone %> "><i class="far fa-edit"></i></div></div>
+                <div class="input"><label>Correo:</label><div><input type="email" placeholder="<%= user.email %> "><i class="far fa-edit"></i></div></div>
                 <button onclick="location.href='/users/logout'">
                     Cerrar Sesión
                 </button>

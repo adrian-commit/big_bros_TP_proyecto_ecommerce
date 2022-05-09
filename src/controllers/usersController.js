@@ -50,7 +50,9 @@ module.exports = {
    
    loginAccess: async (req,res) => {
       try {
-         let userLogin = await User.findOne({where:{email: req.body.email}});
+         let userLogin = await User.findOne({
+            where:{email: req.body.email},
+            include:{all:true}});
          if(userLogin){
             let userPassword = compareSync(req.body.password, userLogin.password); 
             

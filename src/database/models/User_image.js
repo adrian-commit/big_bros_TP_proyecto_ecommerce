@@ -22,8 +22,8 @@ module.exports = (sequelize, DataTypes) => {
     const User_image = sequelize.define(alias, cols, config);
 
     User_image.associate = function(models){
-      User_image.belongsTo(models.User, {
-        as: 'users',
+      User_image.hasOne(models.User, {
+        as: 'user',
         foreignKey: 'image'
       });
     }

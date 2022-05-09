@@ -60,8 +60,8 @@ module.exports = (sequelize, DataTypes) => {
 
     User.associate = function(models){
       User.belongsTo(models.User_image, {
-        as: 'users_image',
-        foreignKey: 'image'
+        as: 'user_image',
+        foreignKey: 'id'
       });
 
       User.hasMany(models.Comment, {
