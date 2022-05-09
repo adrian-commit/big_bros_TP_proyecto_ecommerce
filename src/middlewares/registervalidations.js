@@ -6,7 +6,7 @@ const validations = [
      .notEmpty().withMessage('Tienes que escribir un nombre').bail()
      .isLength({min:3}).withMessage('minimo 3 caracteres'),
      body('lastName')
-     .notEmpty().withMessage('Tienes que escribir un nombre').bail()
+     .notEmpty().withMessage('Tienes que escribir un Apellido').bail()
      .isLength({min:3}).withMessage('minimo 3 caracteres'),
     body('userName')
      .notEmpty().withMessage('Tienes que escribir un nombre de usuario').bail()

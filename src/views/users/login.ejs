@@ -12,7 +12,7 @@
 
     <main>
             <h4>Inicio de sesión</h4>       
-            <form action="/users/acceder" method="POST" novalidate>
+            <form action="/users/acceder" method="POST" id="login" novalidate>
             <p><label for="email">Correo:</label>
                 <input 
                 type="email" 
@@ -31,12 +31,12 @@
                 <input 
                 type="password" 
                 placeholder="ingresa tu contraseña .." 
-                id="pass" 
+                id="password" 
                 name="password"
                 class=" <%= locals.errors && errors.password ? "invalid" : null %> "
                 >
             </p>
-            <button onclick="location.href='/'">
+            <button>
                 Ingresar
             </button>
 
@@ -54,4 +54,5 @@
     <%- include("../includes/footer")%>  
 
 </body>
+<script src="/static/js/loginValidations.js"></script>
 </html>

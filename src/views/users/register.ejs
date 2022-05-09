@@ -16,13 +16,14 @@
  <main>
     <section>
         <h3 class="title">Registro</h3>
-        <form class="register" action="/users/guardar" method="post" enctype="multipart/form-data" novalidate>
+        <form class="register" id="register" action="/users/guardar" method="post" enctype="multipart/form-data" novalidate>
             
             <fieldset>
                 <label for="firstName"><b>Nombre</b></label>
                 <input 
                 type="text" 
                 name="firstName" 
+                id="firstName"
                 placeholder="Nombre.." 
                 class=" <%= locals.errors && errors.firstName ? "invalid" : null %> " 
                 value="<%= locals.oldData ? oldData.firstName : null %>"
@@ -32,12 +33,14 @@
                         <%= errors.firstName.msg %> 
                     </section>
                 <% } %>
+                <span class="errorF"></span>
             </fieldset>
             <fieldset>
                 <label for="lastName"><b>Apellido</b></label>
                 <input 
                 type="text" 
-                name="lastName" 
+                name="lastName"
+                id="lastName" 
                 placeholder="Apellido.." 
                 class=" <%= locals.errors && errors.lastName ? "invalid" : null %> " 
                 value="<%= locals.oldData ? oldData.lastName : null %>"
@@ -47,12 +50,14 @@
                         <%= errors.lastName.msg %> 
                     </section>
                 <% } %>
+                <span class="errorF"></span>
             </fieldset>  
             <fieldset>
                 <label for="userName"><b>Nombre de Usuario</b></label>
                 <input 
                 type="text" 
                 name="userName" 
+                id="userName"
                 placeholder="Nombre de usuario.." 
                 class=" <%= locals.errors && errors.userName ? "invalid" : null %> "
                 value="<%= locals.oldData ? oldData.userName : null %>" 
@@ -62,12 +67,14 @@
                         <%= errors.userName.msg %> 
                     </section>
                 <% } %>
+                <span class="errorF"></span>
             </fieldset>
             <fieldset>
                 <label for="email"><b>Email</b></label>
                 <input 
                 type="email" 
-                name="email" 
+                name="email"
+                id="email" 
                 placeholder="Email.." 
                 class=" <%= locals.errors && errors.email ? "invalid" : null %> "
                 value="<%= locals.oldData ? oldData.email : null %>"  
@@ -77,12 +84,14 @@
                         <%= errors.email.msg %> 
                     </section>
                 <% } %>
+                <span class="errorF"></span>
             </fieldset>
             <fieldset>
                 <label for="password"><b>Contraseña</b></label>
                 <input 
                 type="password" 
                 name="password" 
+                id="password"
                 placeholder="Contraseña.." 
                 class=" <%= locals.errors && errors.password ? "invalid" : null %> "
                 >
@@ -91,12 +100,17 @@
                         <%= errors.password.msg %> 
                     </section>
                 <% } %>
+                <span class="errorF"></span>
+            </fieldset>
+            <fieldset>
                 <button type= "submit">Enviar</button>
-            </fieldset> 
+            </fieldset>
+        </form> 
         </section>
     </main>
 
 
     
 </body>
+<script src="/static/js/registerValidations.js"></script>
 </html>
