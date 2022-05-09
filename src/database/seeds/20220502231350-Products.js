@@ -7,7 +7,7 @@ module.exports = {
      {
       id: 1,
       name: 'Alfajores de chocolate x12',
-      description: 'Descripción de alfajores',
+      description: 'Clásicos alfajores marplatenses con generoso relleno de dulce de leche.',
       price: 600,
       amount: 12,
       stock: 78,
@@ -17,7 +17,7 @@ module.exports = {
      {
       id: 2,
       name: "Cookies x12",
-      description: "Cookies",
+      description: "Clásicas cookies con chips de chocolate.",
       price: 400,
       amount: 12,
       stock: 94,
@@ -27,7 +27,7 @@ module.exports = {
      {
       id: 3,
       name: "Pan Dulce 1",
-      description: "Pan dulce",
+      description: "Nuestro pan dulce BIG BROS relleno de chips de chocolate, relleno de mucho dulce de leche cubierto de chocolate, copos de dulce de leche y por supuesto alfajores.",
       price: 1200,
       amount: 1,
       stock: 19,
@@ -37,7 +37,7 @@ module.exports = {
      {
       id: 4,
       name: "Budin 1",
-      description: "Budines",
+      description: "Budín de naranja, relleno con frutas abrillantadas, bañado con glasé y decorado con almendras, castañas, nueces y frutas abrillantadas",
       price: 900,
       amount: 1,
       stock: 19,
@@ -47,7 +47,7 @@ module.exports = {
      {
       id: 5,
       name: 'Alfajores de chocolate x6',
-      description: 'Descripción de alfajores',
+      description: 'Clásicos alfajores marplatenses con generoso relleno de dulce de leche',
       price: 300,
       amount: 6,
       stock: 30,
@@ -57,7 +57,7 @@ module.exports = {
      {
       id: 6,
       name: "Cookies x6",
-      description: "Cookies",
+      description: "Clásicas cookies con chips de chocolate.",
       price: 200,
       amount: 6,
       stock: 50,
@@ -67,7 +67,7 @@ module.exports = {
      {
       id: 7,
       name: "Alfacoockies x12",
-      description: "Cookies",
+      description: "Alfajor de cookies con chips de chocolate relleno del mejor dulce de leches",
       price: 800,
       amount: 12,
       stock: 20,
@@ -77,7 +77,7 @@ module.exports = {
     {
       id: 8,
       name: "Alfacoockies x6",
-      description: "Cookies",
+      description: "Alfajor de cookies con chips de chocolate relleno del mejor dulce de leche",
       price: 400,
       amount: 6,
       stock: 10,

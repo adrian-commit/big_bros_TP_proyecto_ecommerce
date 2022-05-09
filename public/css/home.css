@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
   }
+
   body{
     background-color: black;
   }
@@ -269,6 +270,7 @@ footer section i{
     main {
       padding-bottom: 15%;
     }
+    
     /*
     main {
       margin-block-start: 5%;
@@ -288,8 +290,6 @@ footer section i{
 
       margin-bottom: 20px;
     }
-
-  
   }
   
   @media(min-width: 1024px){
