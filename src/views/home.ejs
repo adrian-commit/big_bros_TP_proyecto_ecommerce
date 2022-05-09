@@ -37,10 +37,7 @@
                             <section class="caracteristicas-p item">
                                 <p class="titulo item-titulo"><%= producto.name%></p>
                                 <select class="cantidad item-cantidad" name="cantidad" id="cantidad" aria-checked="3">
-                                    <option value="1" selected>1</option>
-                                    <% for( let i = 2; i <= 10; i++ ) { %>       
-                                    <option value="<%= i %>"><%= i %></option>        
-                                    <% } %>             
+                                    <option value="1">1</option>        
                                 </select>              
                                 <button class="agregarCarrito item-agregarCarrito">Agregar al carrito</button>             
                                 <p class="precio item-precio">$<%= producto.price%></p>    
@@ -60,11 +57,50 @@
             <% } else {%>
                 <h2 class="p-null">no se encontro ningún producto</h2>
                 <% } %> 
-        
+                <section class="carrito">
+                    <section class="menuDesplegable">
+                        <button class="seguir">Seguir</button>
+                        <button class="verDetalle">
+                            Ver Detalle
+                        </button>
+                        <ul class="detalle">
+                            <li class="items">
+                                <p class="nombre">Producto</p>
+                                <p class="cantidad">Cant.</p>
+                                <p class="precio">Precio</p>
+                            </li>
+                        </ul>
+                        <section class="envio">
+                            <section class="opcionRetirar">
+                                    <p class="label1opcionRetirar" for="opcionRetirar">Paso a retirar</p>
+                                    <p class="label2opcionRetirar" for="opcionRetirar">Resistencia,Chaco,Argentina</p>
+                            </section>
+                            <section class="opcionEnviar">
+                                    <p class="label1opcionEnviar" for="opcionEnviar">Quiero que me lo envíen</p>
+                                    <p class="label2opcionEnviar" for="opcionEnviar">Envio a coordinar por whatsaap</p>
+                            </section>
+                            <form class="retirar">
+                                <input type="text" class="nombre" placeholder="Nombre">
+                                <input type="text" class="telefono" placeholder="Telefono">
+                            </form>
+                            <form class="enviar">
+                                <input type="text" class="nombre" placeholder="Nombre">
+                                <input type="text" class="telefono" placeholder="Telefono">
+                                <input type="text" class="Direccion" placeholder="Direccion">
+                            </form>
+                        </section>
+                    </section>
+                    <section class="menu">
+                        <p class="icono"><i class="fas fa-shopping-cart"></i></p>
+                        <p class="nombreMenu">Siguiente</p>
+                        <p class="precioTotal">($ )</p>
+                    </section>
+                </section>
     </main>
  
     <%- include("./includes/footer")%>
 
     <script src="/static/js/carrito.js"></script>
+    <script src="/static/js/tienda.js"></script>
  </body>
 </html>

@@ -200,6 +200,123 @@ main #titulo{
 
 /** ACA EMPIEZA LA SECCION DEL CARRITO**/
 
+
+.carrito {
+  width: 100%;
+  margin: auto;
+  display: none;
+}
+
+.menuDesplegable {
+  display: none;
+  width: 100%;
+  background-color: white;
+  padding: 5px 0px;
+}
+
+.seguir {
+  display: block;
+  width: 60%;
+  height: 7px;
+  margin: auto;
+  margin-bottom: 5px;
+  font-size: 1px;
+}
+
+.verDetalle {
+  display: block;
+  width: 100%;
+  padding: 5vw;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
+  background-color: white;
+  border: white;
+  font-size: 20px;
+}
+
+.detalle {
+  display: none;
+  padding: 0px 5px;
+}
+
+.detalle .items{
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
+  text-align: center;
+  background-color: rgb(224, 224, 224);
+}
+
+.nombre {
+  width: 50%;
+  flex-grow: 2;
+}
+
+.cantidad, .precio {
+  width: 25%;
+  flex-grow: 1;
+}
+
+.envio {
+  display: none;
+}
+
+.opcionRetirar, .opcionEnviar {
+  width: 100%;
+  padding: 5vw;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
+}
+
+.label1opcionRetirar, .label1opcionEnviar {
+  font-size: 20px;
+}
+
+.label2opcionRetirar, .label2opcionEnviar {
+  font-size: 12px;
+  margin-left: 5vw;
+}
+
+.enviar , .retirar {
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
+  font-size: 15px;
+}
+
+.enviar {
+  display: none;
+}
+
+.retirar {
+  display: block;
+}
+
+.enviar input, .retirar input {
+  width: 100%;
+  padding: 4vw;
+  border: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 5vw;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: bold;
+  letter-spacing: 2px; 
+  font-size: 20px;
+  background-color: white;
+}
+
+.whap {
+  color: white;
+  font-weight: normal;
+}
+
 /** ACA TERMINA LA SECCION DEL CARRITO **/
 /*hasta aca el cuerpo*/
 /*inicio footer*/

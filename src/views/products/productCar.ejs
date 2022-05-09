@@ -12,26 +12,32 @@
      
     <main>
         <section class="carrito">
-            <section class="menuDespligue">
-                <button class="seguir">
-                    Seguir Comprando
-                </button>
+            <section class="menuDesplegable">
+                <button class="seguir">Seguir</button>
                 <button class="verDetalle">
-                    Ver detalle
+                    Ver Detalle
                 </button>
-                <section class="detalle"></section>
+                <ul class="detalle">
+                    <li>
+                        <p class="nombre">Producto</p>
+                        <p class="cantidad">Cant.</p>
+                        <p class="precio">Precio</p>
+                    </li>
+                </ul>
                 <section class="envio">
-                    <input type="checkbox" class="retirar" id="retirar">
-                    <label for="opcionRetirar">Paso a retirar</label>
-                    <label for="opcionRetirar">Resistencia,Chaco,Argentina</label>
-                    <input type="checkbox" class="enviar" id="enviar">
-                    <label for="opcionEnviar">Quiero que me lo lleven</label>
-                    <label for="opcionEnviar">Costo de envio coordinar por whatsaap</label>
-                    <form class="retirar" action="/">
+                    <section class="opcionRetirar">
+                            <p class="label1opcionRetirar" for="opcionRetirar">Paso a retirar</p>
+                            <p class="label2opcionRetirar" for="opcionRetirar">Resistencia,Chaco,Argentina</p>
+                    </section>
+                    <section class="opcionEnviar">
+                            <p class="label1opcionEnviar" for="opcionEnviar">Quiero que me lo envíen</p>
+                            <p class="label2opcionEnviar" for="opcionEnviar">Envio a coordinar por whatsaap</p>
+                    </section>
+                    <form class="retirar">
                         <input type="text" class="nombre" placeholder="Nombre">
                         <input type="text" class="telefono" placeholder="Telefono">
                     </form>
-                    <form action="/">
+                    <form class="enviar">
                         <input type="text" class="nombre" placeholder="Nombre">
                         <input type="text" class="telefono" placeholder="Telefono">
                         <input type="text" class="Direccion" placeholder="Direccion">
@@ -39,9 +45,9 @@
                 </section>
             </section>
             <section class="menu">
-                <i class="fas fa-shopping-cart"></i>
-                <p>Siguiente</p>
-                <p>($ )</p>
+                <p class="icono"><i class="fas fa-shopping-cart"></i></p>
+                <p class="nombreMenu">Siguiente</p>
+                <p class="precioTotal">($ )</p>
             </section>
         </section>
     </main> 

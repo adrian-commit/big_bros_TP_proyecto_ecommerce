@@ -100,6 +100,7 @@ module.exports = {
         try {
             let producto = await Product.findByPk(req.params.id);
             let image = null;
+            
             if(req.files && req.files.length > 0 && producto.image != null){
                 await Product_image.update({
                     url: req.files[0].filename
@@ -113,7 +114,7 @@ module.exports = {
                     url: req.files[0].filename
                 }) 
                 image = image.id;
-            }
+            };
             await producto.update({
                 name: req.body.name,
                 description: req.body.description,

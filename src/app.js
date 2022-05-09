@@ -5,6 +5,7 @@ const method = require('method-override');
 const app = express();
 const {resolve} = require("path");
 
+
 /--- llamado de middlewares---/
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
