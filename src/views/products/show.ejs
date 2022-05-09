@@ -24,11 +24,11 @@
 </section>
 
 <section class="buttons">
-    <button class="edit"><a href="/productos/editar/<%= producto.id %>">Editar</a></button>
+    <button class="edit <%= (locals.isLogged == false) || (locals.userLogged && locals.userLogged.is_admin == false) ? 'admin' : null %>"><a href="/productos/editar/<%= producto.id %>">Editar</a></button>
 
     <form action="/productos/borrar?m=DELETE" method="post">
      <input type="hidden" name="id" id="id" value="<%= producto.id %>">
-     <button class="delete" type="submit">Eliminar</button>
+     <button class="delete <%= (locals.isLogged == false) || (locals.userLogged && locals.userLogged.is_admin == false) ? 'admin' : null %>" type="submit">Eliminar</button>
     </form>
 </section>    
   </main>

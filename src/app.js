@@ -29,7 +29,6 @@ app.use(session({
 }));
 
 app.use(cookies());
-
 app.use(userLoggedMiddleware);
 
 /* rutas */

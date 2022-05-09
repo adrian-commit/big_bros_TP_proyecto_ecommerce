@@ -31,7 +31,8 @@
         <h2>no se encontro ningún producto</h2>
     <% } %>   
         
-        <button class="create" type="submit"><a href="/productos/nuevo">Nuevo</a></button>
+        <button class="create <%= (locals.isLogged == false) || (locals.userLogged && locals.userLogged.is_admin == false) ? 'admin' : null %>" type="submit"><a href="/productos/nuevo">Nuevo</a></button>
+        
 </main>
 
   <%- include("../includes/footer")%>

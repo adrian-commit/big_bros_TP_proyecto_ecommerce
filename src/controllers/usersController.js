@@ -53,9 +53,11 @@ module.exports = {
          let userLogin = await User.findOne({where:{email: req.body.email}});
          if(userLogin){
             let userPassword = compareSync(req.body.password, userLogin.password); 
+            
             if(userPassword) {
                delete userLogin.password;
                req.session.userLogged = userLogin;
+               
             if(req.body.recordarme) {
                res.cookie('email', req.body.email, {
                   maxAge: (1000 * 60) *2
