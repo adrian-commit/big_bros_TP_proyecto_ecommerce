@@ -1,107 +1,206 @@
-body{
-    background-image: url("https://i.ibb.co/6Rgv2ST/20210418-112850.jpg");
-    background-color: black;
-    background-position:center;
-    background-size: cover ;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    width: 100%;
-    margin:0;
-    height: 100vh;
-    position: fixed;
-}
-
-main{
-    height: 40%;
-    width:60%;
-    display: flex;
-}
-
-main .register{
-    position: relative;
-    left: 30%;
-    top:50%;
-    display:flex;
-    border: white 1px solid;
-    box-shadow: 0px 0px 10px white;
-    border-radius: 3%;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    width:90%;
-    background-color: rgb(255,255,255,0.5);
-    padding: 20px;
-    padding-top: 160px;
-    padding-bottom: 160px;
-
-
-}
-
-
-
-footer{
-    background-color: black;
-    color:white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: justify;
-    margin: 0px;
-    padding: 10px;    
+/* inicio codigo general*/
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto";
+    text-decoration: none;
+  }
+  body{
+    background-color: black;
+  }
+  header{
+      width: 100vw;
+      height: 15%;
+  }
+  
+  nav {
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      height:auto;
+      width: 95%;
+      margin:auto;
+      background-color: black;
+      border-radius: 5%;
+      padding: 1%;
+  }
+  
+  nav a{
+      color:white;
+      font-family: 'Bebas Neue', cursive;
+      padding: 3px;
+      font-size: medium ;
+  }
+  
+  nav img{
+      display: none;
+  }
+  
+  .barra button{
+    background-color:black;
+    color: white;
+  }
+  
+  .busqueda{
+      background-color: black;
+      color: white;
+      font-style: italic;
+      }
+  
+  .barra{
+    text-align: right;
+    background-color: black;
+    padding:5px;
+  }
+  
+/* hasta acá el header*/
+
+body{
+  background-image: url("https://i.ibb.co/6Rgv2ST/20210418-112850.jpg");
+  background-color: black;
+  background-position:center;
+  background-size: cover ;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100vw;
+  margin:0;
+  margin-bottom: 5%;
+  height: 100vh;
 }
 
-h4 {
-    text-align: center;
+main {
+  margin: auto;
+  align-items: center;
+  width:90%;
+  margin-bottom: 30px;
+  padding: 5%;
+  border: white 1px solid;
+  border-radius: 3%;
+  background-color: rgb(255,255,255,0.5);
+  box-shadow: 0px 0px 10px white;
 }
 
-i {
-    position: relative;
-    left: 50%;
-
+.title{
+ margin: auto;
+ margin-top: 5%;
+ font-size: 24px;
+ font-family: 'Bebas Neue', cursive;
+ width: 60%;
+ text-align: center;
+ text-shadow: 1px 1px 2px white;
 }
-@media (min-width: 361px){
+
+.register{
+  width:90%;
+  margin: auto;
+  margin-top: 3%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: small;
+  text-align: center;
+}
+
+fieldset{
+  border:none;
+  margin-bottom: 10px;
+}
+
+fieldset label {
+  display:block;
+  margin-top: 5%;
+  margin-bottom: 3px;
+  font-size: small;
+  
+}
+
+
+
+fieldset input{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  border-color: white;
+  width: 100%;
+}
+
+.invalid {
+  border: 1px solid red;
+}
+
+
+fieldset button{
+  width: 20%;
+  background-color:black;
+  font-family: 'Bebas Neue', cursive;
+  font-size: larger;
+  border-radius: 5px;
+  color: white;
+  margin:auto;
+  margin-top: 10%;
+  padding: 1%;
+}
+
+.text-danger{
+  text-align: start;
+  color: red;
+}
+
+/*.is-invalid:invalid::before {
+  border-color: 1px solid red;
+  content: "";
+  
+}*/
+
+
+/*hasta aca el cuerpo*/
+
+
+/*inicio media queries*/
+
+  @media(min-width: 768px){
+    nav img{
+        display: inline-block;
+        width: 100px;
+    }
+
     main {
-        display: flex;
-        padding: 20px;
-
+      margin-block-start: 5%;
+      width: 60vw;
+      height: auto;
     }
-    img {
-        width: 50%;
-        position:relative;
-        left: 25%;
-
+    footer{
+      font-size: smaller;
+      height: 12.5%;
     }
 
-    main p {
-        justify-content: space-between;
-
+  }
+  
+  @media(min-width: 1024px){
+    nav a{
+       padding:0;
+       font-size: larger;
     }
 
-   section h3 {
-        text-align: left;
+    nav img {
+        width: 150px;
+    }
+    main {
+      margin-block-start: 5%;
+      width: 45vw;
+      height: auto;
+      padding: 3%;
+    }
+    .title {
+      margin-top: 0;
+      font-size: 30px;
     }
 
-    footer p{
-        text-align: center;
+    fieldset label{
+      margin-bottom: 0.5%;
     }
 
-
-}
-
-
-
-
-@media (min-width: 768px){
-    main{
-        display: flex;
-        justify-content: space-between
+    fieldset button {
+      width: 15%;
+      font-size: 20px;
     }
-
-    section img{
-        width: 30%;
-    }
-
-}
+  }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../includes/head")%>
+    <link href="/static/css/productCar.css"  rel="stylesheet">
+ 
+
+   </head>
+
+ <body>
+    <%- include("../includes/header")%>
+     
+    <main>
+        <section class="carrito">
+            <section class="menuDesplegable">
+                <button class="seguir">Seguir</button>
+                <button class="verDetalle">
+                    Ver Detalle
+                </button>
+                <ul class="detalle">
+                    <li>
+                        <p class="nombre">Producto</p>
+                        <p class="cantidad">Cant.</p>
+                        <p class="precio">Precio</p>
+                    </li>
+                </ul>
+                <section class="envio">
+                    <section class="opcionRetirar">
+                            <p class="label1opcionRetirar" for="opcionRetirar">Paso a retirar</p>
+                            <p class="label2opcionRetirar" for="opcionRetirar">Resistencia,Chaco,Argentina</p>
+                    </section>
+                    <section class="opcionEnviar">
+                            <p class="label1opcionEnviar" for="opcionEnviar">Quiero que me lo envíen</p>
+                            <p class="label2opcionEnviar" for="opcionEnviar">Envio a coordinar por whatsaap</p>
+                    </section>
+                    <form class="retirar">
+                        <input type="text" class="nombre" placeholder="Nombre">
+                        <input type="text" class="telefono" placeholder="Telefono">
+                    </form>
+                    <form class="enviar">
+                        <input type="text" class="nombre" placeholder="Nombre">
+                        <input type="text" class="telefono" placeholder="Telefono">
+                        <input type="text" class="Direccion" placeholder="Direccion">
+                    </form>
+                </section>
+            </section>
+            <section class="menu">
+                <p class="icono"><i class="fas fa-shopping-cart"></i></p>
+                <p class="nombreMenu">Siguiente</p>
+                <p class="precioTotal">($ )</p>
+            </section>
+        </section>
+    </main> 
+ 
+    <%- include("../includes/footer")%>
+
+    <script src="/static/js/carrito.js"></script>
+ </body>
+</html>

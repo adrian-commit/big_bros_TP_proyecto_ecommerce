@@ -2,150 +2,239 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
-main{
-    font-family: 'Roboto', sans-serif;
-    background-image: url('../images/alfajores/alfajores-fondo.jpg');
-    background-size: contain;
-
-}
-
-.productos h1{
-    width: 100%;
-    font-weight: bold;
-    color: yellow;
-    text-align: center;
-    margin-bottom: 30px;
+ /* inicio del header */
+ header{
+    width: 100vw;
+    height: 15%;
     position: relative;
-    top: 5px;
+    z-index: 2;
 }
 
-.productos h2{
-    width: 100%;
+nav {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height:auto;
+    width: 95%;
+    margin:auto;
+    background-color: black;
+    border-radius: 5%;
+    padding: 1%;
+}
+
+nav a{
+    color:white;
+    font-family: 'Bebas Neue', cursive;
+    padding: 3px;
+    font-size: medium ;
+}
+
+nav img{
+    display: none;
+}
+
+.barra button{
+  background-color:black;
+  color: white;
+}
+
+.busqueda{
+    background-color: black;
     color: white;
-    font-weight: lighter;
-    margin-bottom: 5px;
+    font-style: italic;
+    }
+
+.barra{
+  text-align: right;
+  background-color: black;
+  padding:5px;
 }
 
-.productos article{
-    width: 90%;
+/* hasta acá el header*/
+
+body {
+  background-image: url('../images/alfajores/alfajores-fondo.jpg');
+  background-position:center;
+  background-size: cover ;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100vw;
+  margin:0;
+  height: 100vh;
+}
+
+main {
+  margin-top: 8%;
+  padding-bottom: 30%;
+}
+
+.productos{
+    width: 90vw;
     margin: auto;
+  }
+  
+  .productos li{
+    list-style: none;
+    width: 100%;
+    height: 400px;
     margin-bottom: 10px;
-    text-align: center;
+    box-shadow: rgba(255, 254, 254, 1);
+  }
+  
+  .productos li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
     position: relative;
-    bottom: 10px;
-}
-
-.main-product{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100)
-}
-
-.info-product{
-    background-color: #ebebeb;
-    opacity: 0.9;
-    padding: 10px;
-}
-
-.alfajores img,
-.cookies img,
-.pan-dulce img{
+  }
+  
+  .caracteristicas-p{
     width: 100%;
-}
-
-.info-product .caracteristicas{
-    font-size: 18px;
-}
-
-.info-product p{
-    font-family: 'The Nautigal', cursive;
-    font-size: 14px;
-    margin-bottom: 3px;
-}
-
-.cantidad{
-    width: 20%;
-    margin-bottom: 5px;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 5%;
-}
-
-.precio{
     background-color: white;
-    width: 50%;
+    padding: 10px;
     text-align: center;
-    margin-bottom: 5px; 
+    border-radius: 5px;
+    position: relative;
+    bottom: 15px;
+  }
+  
+  .caracteristicas-p p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
     font-weight: bold;
-    border-radius: 5%;
-    border: 1px solid black;
-}
-
-.comprar{
-    display: block;
-    width: 100%;
-    margin: auto;
-    color: black;
-    background-color: yellow;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px;
-    padding: 0px 20px;
-    border: 2px solid black;
-    border-radius: 5%;
+    letter-spacing: 0px;
     margin-bottom: 3px;
-}
+    text-decoration: underline;
+  }
 
-.Agregar-carrito{
-    display: block;
+  .create {
+    width: 20vw;
+    margin-left: 40vw;
+    margin-right: 40vw;
+    margin-bottom: 10%;
+    padding: 3px 5px;
+    background-color: black;
+    box-shadow: 0px 0px 10px black;
+  }
+
+  .create a {
     width: 100%;
-    margin: auto;
-    color: black;
-    background-color: yellow;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px;
-    padding: 0px 20px;
-    border: 2px solid black;
-    border-radius: 5%;
-}
+    font-family:'Bebas Neue', cursive;
+    color: white;
+    border-color: white;
+    font-size: 20px;
+  }
 
-.pan-dulce{
-    margin-bottom: 30px;
-}
+  .admin {
+    display: none;
+  }
 
+/*inicio footer*/
+
+footer{
+    background-color: black;
+    color: white;
+    font-size:small;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    position:fixed;
+    bottom: 0%;
+    border-top: 1px solid rgba(255, 254, 254, 0.5);
+    box-shadow: rgba(255, 254, 254, 1);
+  }
+  
+  footer section {
+    margin: 5%;
+  }
+  
+  footer a{
+    margin:auto;
+    color:white;
+    text-decoration: none;
+    flex-direction: column;
+  }
+  
+  footer section h4 {
+    margin-block-start: 0px;
+    margin-block-end:8px;
+  
+  }
+  
+  footer section i{
+    color:white;
+    margin-right: 3px;
+  }
+  
+  
+  /*fin footer*/
+
+
+/*inicio media queries*/
 
 @media(min-width: 768px){
-
-    h1{
-        font-size: 50px;
+    nav img{
+        display: inline-block;
+        width: 100px;
     }
 
-    .productos h2{
-        font-size: 40px;
-    }
-    .main-product{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
+    footer{
+      font-size: smaller;
+      height: 12.5%;
     }
 
-    .main-product img{
-        width: 50%;
+    main{
+    padding-bottom: 8%;
     }
 
-    .info-product{
-        padding: 0px 0px 300px 0px;
+    footer section{
+      margin: 1%;
     }
-
-    .info-product .caracteristicas{
-        font-size: 24px;
-    }
-
-    .info-product p{
-        font-size: 18px;
-    }
-
     
-}
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .productos li{
+      width: 45%;
+      margin-bottom: 20px;
+    }
+
+    .create{
+      width: 10vw;
+    margin-left: 45vw;
+    margin-right: 45vw;
+    }
+
+  
+  }
+  
+  @media(min-width: 1024px){
+    nav a{
+       padding:0;
+       font-size: larger;
+    }
+
+    nav img {
+        width: 150px;
+    }
+
+    main{
+      padding-bottom: 10%;
+      }
+
+    .productos li{
+      width: 23%;
+    }
+
+    .create a{
+      font-size: 30px;
+    }
+  }

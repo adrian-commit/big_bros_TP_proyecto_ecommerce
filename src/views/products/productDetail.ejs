@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../includes/head")%>
+
+    
+    <link href="/static/css/productDetail.css"  rel="stylesheet">   
+
+   </head>
+
+<body>
+    <%- include("../includes/header")%>
+  
+
+<main>
+   
+<% if (productos.length > 0) {%>
+    <ul class="productos">
+      <%productos.forEach(producto => {%>
+        <li>
+            <figure>
+              <img src="/static/products/<%= producto.product_image.url %>" alt="<%= producto.name %> Big Bros">
+            </figure>
+                <section class="caracteristicas-p">
+                    <p><a href="/productos/<%= producto.id%>"><%=producto.name%></a></p>
+                </section> 
+        </li>
+      <% }) %>
+    </ul>
+    <% } else {%>
+        <h2>no se encontro ningún producto</h2>
+    <% } %>   
+        
+        <button class="create <%= (locals.isLogged == false) || (locals.userLogged && locals.userLogged.is_admin == false) ? 'admin' : null %>" type="submit"><a href="/productos/nuevo">Nuevo</a></button>
+        
+</main>
+
+  <%- include("../includes/footer")%>
+  
+</body> 
+  <script src="/static/js/productDetail.js"></script>  
+</html>

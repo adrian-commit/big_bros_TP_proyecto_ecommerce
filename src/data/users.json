@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "name": "David  Lezcano",
+    "userName": "Davagulez",
+    "email": "davidfma@hotmail.es",
+    "password": "$2b$10$YNTpnMnKBM8rxFWidzRMQuFJmkQarWcFMJdAmfBUDO/PiRYBF.Ov.",
+    "telephone": "123123123",
+    "birthDate": "231231-03-12",
+    "address": "dasdasd12312312",
+    "files": [
+      "avatar-1647893600330-.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "David  Lezcano",
+    "userName": "Davagulez",
+    "email": "lezcadav@gmail.com",
+    "password": "$2b$10$NjgfVspDyi7a/moq7Mybw.3R1T3pa/F5.B1aIEOJkcRDp4xdsQKA.",
+    "telephone": "123123123",
+    "birthDate": "123123-03-12",
+    "address": "Juan domingo peron 1451",
+    "files": [
+      "avatar-1647901424206-.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "David Lezcano",
+    "userName": "Davidcito",
+    "email": "lezcadav3@gmail.com",
+    "password": "$2b$10$KCBJ.becXH9ShkBgXO5WhOhlNUjrnvlpq6JWksVSATimjFc2mWHHu",
+    "telephone": "3624123456",
+    "birthDate": "1996-04-10",
+    "address": "casa blanca 123",
+    "files": [
+      "avatar-1651815766202-.jpg"
+    ]
+  },
+  {
+    "id":4, 
+    "name": "Noe Galeano",
+    "userName": "noegal97",
+    "email": "noeliagale@hotmail.com",
+    "password": "$2b$10$B0Ii2F6VTuRapVVhW.erQuxfs9sYRz8OCO6Ty/4xiivDY.Ch4cAx.",
+    "telephone": "3624012370",
+    "birthDate": "1997-02-11",
+    "address": "Julio A Roca 3350",
+    "files": [
+      "avatar-1651800127132-.png"
+    ]
+  }
+]

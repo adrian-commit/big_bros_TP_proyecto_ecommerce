@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../includes/head")%>
+    <link href="/static/css/stylecomments.css"  rel="stylesheet">
+</head>
+
+<body>
+    <%- include("../includes/header")%>
+
+    <main>
+            <h4>Dejanos tu comentario sobre cualquier duda o problema que tengas!</h4>       
+            <form action="/users/createComment" method="POST" novalidate>
+                <textarea
+                    type="text" 
+                    placeholder="Titulo .." 
+                    id="title" 
+                    name="title"
+                ></textarea>
+                <div>
+                <textarea
+                    type="text" 
+                    placeholder="Comentario .." 
+                    id="comment" 
+                    name="comment"
+                ></textarea></div>
+                <input type="hidden" name="userId" value="<%= user.id %> ">
+                <button type="submit">
+                    Enviar
+                </button>
+            </form>
+    </main>
+    
+    <%- include("../includes/footer")%>  
+
+</body>
+</html>

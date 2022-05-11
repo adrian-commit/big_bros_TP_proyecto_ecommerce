@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Alfajores",
+    "description": "Descripción de alfajores",
+    "price": 600,
+    "amount": 12,
+    "stock": 78,
+    "files": [
+      "product-1647056729033-.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Cookies",
+    "description": "Cookies",
+    "price": 400,
+    "amount": 12,
+    "stock": 94,
+    "files": [
+      "product-1647056797422-.JPG"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Pan Dulce",
+    "description": "Pan dulce",
+    "price": 1200,
+    "amount": 1,
+    "stock": 19,
+    "files": [
+      "product-1647056840943-.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Budines",
+    "description": "Budines",
+    "price": 900,
+    "amount": 1,
+    "stock": 19,
+    "files": [
+      "product-1647057694880-.jpg"
+    ]
+  }
+]

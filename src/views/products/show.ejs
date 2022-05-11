@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../includes/head")%>
+    <link href="/static/css/show.css"  rel="stylesheet">  
+   </head>
+
+<body>
+    <%- include("../includes/header")%>
+  
+
+<main>
+
+<section class="productos">
+    <article>
+            <figure>
+        <img src="/static/products/<%= producto.product_image.url %>" alt="<%= producto.name %> Big Bros">
+            </figure>  
+        <section class="caracteristicas-p">
+            <h3><%= producto.name%></h3>
+            <p class="Descrip"><%= producto.description%></p>
+        </section>
+     </article>  
+</section>
+
+<section class="buttons">
+    <button class="edit <%= (locals.isLogged == false) || (locals.userLogged && locals.userLogged.is_admin == false) ? 'admin' : null %>"><a href="/productos/editar/<%= producto.id %>">Editar</a></button>
+
+    <form action="/productos/borrar?m=DELETE" method="post">
+     <input type="hidden" name="id" id="id" value="<%= producto.id %>">
+     <button class="delete <%= (locals.isLogged == false) || (locals.userLogged && locals.userLogged.is_admin == false) ? 'admin' : null %>" type="submit">Eliminar</button>
+    </form>
+</section>    
+  </main>
+
+  <%- include("../includes/footer")%>  
+  
+  </body> 
+
+  <script src="/static/js/show.js"></script>
+</html>

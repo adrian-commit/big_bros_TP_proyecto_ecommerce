@@ -1,0 +1,200 @@
+//productos//
+<section class="productos">
+
+    <h1> PRODUCTOS </h1>
+    <article class="alfajores">
+        <h2> Alfajores </h2>
+        <div class="main-product">
+        <img src="/static/images/alfajores/alfajores-04.jpg" alt="alfajores Big Bros">
+        <div class="info-product">
+        <p class="caracteristicas">Caracteristicas</p>
+        <p>Alfajores Big Bros clásicos, con relleno de dulce de leche y bañado en chocolate con diferentes estilos. </p>
+        <form action="productCar.html" method="POST">
+            <select class="cantidad" name="cantidad" id="cantidad" aria-checked="3">
+                <option value="1">x1</option>
+                <option value="2">x3</option>
+                <option value="3" selected>x6</option>
+            </select>
+            <input class="precio" type="button" value="$600" id="precio" >
+            <input class="comprar" type="submit" value="Comprar" id="Comprar">
+            <input class="Agregar-carrito" type="submit" value="Agregar al carrito" id="Agregar al carrito"> 
+        </form>
+        </div>
+        </div>
+    </article>
+
+    
+    <article class="cookies">
+        <h2> Cookies </h2>
+        <div class="main-product">
+            <img src="/static/images/cookies-01.jpg" alt="Cookies Big Bros">
+            <div class="info-product">
+            <p class="caracteristicas">Caracteristicas</p>
+            <p>Cookies tipo americanas de vainilla o chocolate con chips de chocolate.</p>
+            <form action="productCar.html" method="POST">
+                <select class="cantidad" name="cantidad" id="cantidad" aria-checked="3">
+                    <option value="1" selected>x12</option>
+                </select>
+                <input class="precio" type="button" value="$400" id="precio" >
+                <input class="comprar" type="submit" value="Comprar" id="Comprar">
+                <input  class="Agregar-carrito" type="submit" value="Agregar al carrito" id="Agregar al carrito">  
+            </form>
+            </div>
+            </div>
+    </article>
+
+    <article class="pan-dulce">
+        <h2> Pan Dulce </h2>
+        <div class="main-product">
+            <img src="/static/images/pandulce-01.jpg" alt="Pan Dulce Big Bros">
+            <div class="info-product">
+            <p class="caracteristicas">Caracteristicas</p>
+            <p>Pan Dulce Big Bros 100% artesanal, de varios tipos como el clásico con frutos secos bañado con glasé, o el CHIPS con chips y bañado de chocolate.</p>
+            <form action="productCar.html" method="POST">
+                <select class="cantidad" name="cantidad" id="cantidad" aria-checked="3">
+                    <option value="1" selected>x1</option>
+                </select>
+                <input class="precio" type="button" value="$1200" id="precio" >
+                <input  class="comprar" type="submit" value="Comprar" id="Comprar">
+                <input  class="Agregar-carrito" type="submit" value="Agregar al carrito" id="Agregar al carrito"> 
+            </form>
+            </div>
+            </div>
+    </article>
+<script src="./productCar.html"></script>
+</section>
+
+
+//carrito de compras//
+<section class="carrito">
+    <ul type="none" class="menu-carrito">
+        <ul type="none" class="menu-desplegable">
+            <li><input class="seguir-comprando" type="button" value="Seguir comprando" id="Cerrar menu"></li>
+            <li><input class="detalles" type="button" value="Ver detalles" id="detalles"></li>
+            <li>
+                <section class="envio">
+                 <ul>
+                     <li><input class="retirar" type="radio" name="envio" value="Retirar" id="Retirar"> Paso a Retirar
+                      <ul type="none" class="si-paso-a-retirar">
+                        <li><input type="text" value="Nombre completo" id="Nombre completo"></li>
+                        <li><input type="email" value="Email" id="Email"></li>
+                        <li><textarea>Comentarios</textarea></li>
+                      </ul>
+                     </li> 
+                    </ul>
+                <ul>
+                  <li><input class="enviar" type="radio" name="envio" value="Envio" id="Envio"> Quiero que me lo envien</li>
+                  <ul type="none" class="si-pido-para-enviar">
+                        <li><input type="text" value="Nombre completo" id="Nombre completo"></li>
+                        <li><input type="email" value="Email" id="Email"></li>
+                        <li><input type="text" value="Direccion Exacta" id="Direccion"></li>
+                        <li><textarea>Comentarios</textarea></li>
+                    </ul>
+                </ul>
+                </section>
+            </li>
+            <p class="registro">No tenes cuenta?<a href="./register.html">Registrate</a></p>
+        </ul>
+        <section class="principal">
+            <i class="fas fa-shopping-cart"></i>
+            <p> Comprar </p>
+            <p>($total)</p>
+        </section>
+    </ul>
+</section>
+
+
+//carrito de compras pt 2//
+<section class="carrito">
+    <ul type="none" class="menu-carrito">
+        <ul type="none" class="menu-desplegable">
+            <li><input class="seguir-comprando" type="button" value="Seguir comprando" id="Cerrar menu"></li>
+            <li><input class="detalles" type="button" value="Ver detalles" id="detalles"></li>
+            <li>
+                <section class="envio">
+                 <ul>
+                     <li><input class="retirar" type="radio" name="envio" value="Retirar" id="Retirar"> Paso a Retirar</li>
+                <ul>
+                  <li><input class="enviar" type="radio" name="envio" value="Envio" id="Envio"> Quiero que me lo envien</li>
+                </ul>
+                </section>
+            </li>
+            <p class="registro">Iniciar sesión para comprar<a href="users/login"> Iniciar Sesion</a></p>
+        </ul>
+        <section class="principal">
+            <i class="fas fa-shopping-cart"></i>
+            <p> Comprar </p>
+            <p>($total)</p>
+        </section>
+    </ul>
+</section>
+
+//imagenes varias//
+<section>
+    <img width=33% src="/static/images/alfajores 3.jpg" alt="Alfajores de Chocolate" class="product_img">
+    <img width=33% src="/static/images/alfajores 2.jpg" alt="Alfajores de Chocolate" class="product_img">
+    <img width=33% src="/static/images/alfajores 4.jpg" alt="Alfajores de Chocolate" class="product_img">  
+    </section> 
+
+
+//campos de formulario//
+</fieldset>
+<fieldset>
+    <label for="telefono"><b>Teléfono</b></label>
+<input 
+type="number" 
+name="telephone" 
+placeholder="Teléfono"
+class=" <%= locals.errors && errors.telephone ? "invalid" : null %> "
+value="<%= locals.oldData ? oldData.telephone : null %>" 
+>
+<% if (locals.errors && errors.telephone) { %>
+    <section class="text-danger">
+        <%= errors.telephone.msg %> 
+    </section>
+<% } %>
+</fieldset>
+<fieldset>
+    <label for="birthDate"><b>Fecha de nacimiento</b></label>
+    <input 
+    type="date" 
+    name="birthDate" 
+    id="birthDate" 
+    class=" <%= locals.errors && errors.birthDate ? "invalid" : null %> "
+    value="<%= locals.oldData ? oldData.birthDate : null %>" 
+    >
+    <% if (locals.errors && errors.birthDate) { %>
+        <section class="text-danger">
+            <%= errors.birthDate.msg %> 
+        </section>
+    <% } %>
+</fieldset>
+<fieldset>
+    <label for="address"><b>Dirección</b></label>
+    <input 
+    type="text" 
+    name="address" 
+    placeholder="Domicilio"
+    class=" <%= locals.errors && errors.address ? "invalid" : null %> "
+    value="<%= locals.oldData ? oldData.address : null %>" 
+    >
+    <% if (locals.errors && errors.address) { %>
+        <section class="text-danger">
+            <%= errors.address.msg %> 
+        </section>
+    <% } %>
+</fieldset>
+<fieldset>
+    <label for="avatar"><b>Imagen de Perfil</b></label>
+    <input type="file" 
+    name="avatar" 
+    id="avatar"
+    class=" <%= locals.errors && errors.avatar ? "invalid" : null %> "
+    >
+    <% if (locals.errors && errors.avatar) { %>
+        <section class="text-danger">
+            <%= errors.avatar.msg %> 
+        </section>
+    <% } %> 
+</fieldset>
+<fieldset>

@@ -1,68 +1,219 @@
+header{
+  width: 100vw;
+  height: 9%;
+  position: relative;
+  z-index: 2;
+}
+
+nav {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  height:auto;
+  width: 95%;
+  margin:auto;
+  background-color: black;
+  border-radius: 5%;
+  padding: 1%;
+}
+
+
+nav a{
+  color:white;
+  font-family: 'Bebas Neue', cursive;
+  padding: 3px;
+  font-size: medium ;
+  text-decoration: none;
+}
+
+nav img{
+  display: none;
+}
+
+.barra button{
+background-color:black;
+color: white;
+}
+
+.busqueda{
+  background-color: black;
+  color: white;
+  font-style: italic;
+  }
+
+.barra{
+text-align: right;
+background-color: black;
+padding:5px;
+}
+
+/*inicio cuerpo*/
+
+/*codigo Ale */
+body{
+  background-image: url("https://i.postimg.cc/ZnyH3V6m/20210418-110632.jpg");
+  background-color: black;
+  background-position:center;
+  background-size: cover ;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100vw;
+  margin:0;
+  height: 100vh;
+}
+
 main {
     margin: 0px;
     padding: 20px;    
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    background-color: #ebebeb;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     text-align: justify;
     justify-content: space-around;
     font-size: 15px;
+    padding-bottom: 40%;
+    background-color: rgb(255,255,255,0.5);
 }
 
-img {
-    Width: 100%;
+main section p {
+    box-shadow: 3% ;
 }
 
-section h3 {
-    font-size: 23px;
+
+main section h3 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 23px;
     font-weight: bold;
     text-align: center;
 }
 
 
+main section img {
+    Width: 100%;
+    border-radius: 3%;
+}
 
 
+/*fin codigo Ale*/
+
+/*hasta aca el cuerpo*/
+/*inicio footer*/
+
+footer{
+  background-color: black;
+  color:white;
+  font-size:small;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  position:fixed;
+  bottom: 0%;
+  height:15%;
+}
+
+footer section {
+  margin: 5%;
+}
+
+footer a{
+  margin:auto;
+  color:white;
+  text-decoration: none;
+  flex-direction: column;
+}
+
+footer section h4 {
+  margin-block-start: 0px;
+  margin-block-end:8px;
+
+}
+
+footer section i{
+  color:white;
+  margin-right: 3px;
+}
+
+
+/*fin footer*/
+
+
+/*inicio media queries*/
 
 @media (min-width: 361px){
+  main {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 95vw;
+    height: auto;
+    padding: 7.5px;
+    padding-bottom: 30%;
+    }
+ 
+    main section img {
+      width: 60%;
+      position:relative;
+      left: 21%;
+    }
+}
+
+
+  @media(min-width: 768px){
+    header{
+     height: auto;
+    }
+    nav img{
+        display: inline-block;
+        width: 100px;
+    }
+
+    footer{
+      font-size: smaller;
+      height: 12.5%;
+    }
+    footer section{
+      margin: 1%;
+    }
     main {
-        display: flex;
-        padding: 20px;
-
+      margin: auto;
+      width: 90vw;
+      height: auto;
+      padding-bottom: 12.5%;
+      }
+    main section{
+      justify-content: center;
     }
-    img {
-        width: 50%;
-        position:relative;
-        left: 25%;
-
+    main section img {
+      width: 50%;
+      position:relative;
+      left: 25%;
     }
-
-    main p {
-        justify-content: space-between;
-
+  }
+  @media(min-width: 1024px){
+    nav a{
+       padding:0;
+       font-size: larger;
     }
-
-   section h3 {
-        text-align: left;
+    footer{
+      font-size: smaller;
+      height: 14.5%;
     }
-
+      nav img {
+        width: 150px;
+    }
   
-
-
+  main {
+  font-size: larger;
+  padding-bottom: 10%;
+  }
+  main section h3{
+    font-size: larger;
+  }
 }
-
-
-
-
-@media (min-width: 768px){
-    main{
-        display: flex;
-        justify-content: space-between
-    }
-
-    section img{
-        width: 30%;
-    }
-
-}
+  
+  /*media queries Ale*/
+  
+/*fin media queries ale*/

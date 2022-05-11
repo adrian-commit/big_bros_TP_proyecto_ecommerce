@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../includes/head")%>
+    <link href="/static/css/create.css"  rel="stylesheet">
+</head>
+<body>
+    <%- include("../includes/header")%>
+    <p class="title">Actualizando producto</p>
+  <form class="create" action="/productos/actualizar/<%= producto.id %>?m=PUT" enctype="multipart/form-data" method="post" novalidate>
+    <input type="hidden" name="id" id="id" value="<%= producto.id %>">
+       <fieldset class="name">
+          <label for="name">Nombre</label>
+          <input type="text" name="name" value="<%= producto.name%>" placeholder="name">
+        </fieldset>
+      <fieldset class="description">
+          <label for="description">Descripción</label>
+          <textarea name="description" id="description" cols="30" rows="10"><%= producto.description%></textarea>
+        </fieldset>
+      <fieldset class="price">
+          <label for="price">Precio</label>
+          <input type="number" min="1" name="price" id="price" value="<%= producto.price%>">
+        </fieldset>
+        <fieldset class="amount">
+            <label for="amount">Cantidad</label>
+            <input type="number" min="1" max="100" name="amount" id="amount" value="<%= producto.amount%>">
+          </fieldset>
+      <fieldset class="stock">
+          <label for="stock">Stock</label>
+          <input type="range" min="1" max="100" name="stock" id="stock" value="<%= producto.stock%>">
+        </fieldset>
+        <fieldset class="image">
+          <label for="product">Imagen</label>
+          <input type="file" name="product" id="product">
+        </fieldset>
+        <fieldset> 
+          <label for="category">Categoría</label>
+          <select name="category" id="category" value="<%= producto.category%>">
+           <option value="1">Alfajores</option>
+           <option value="2">Budines</option>
+           <option value="3">Pan Dulce</option>
+           <option value="4">Cookies</option>
+          </select> 
+        </fieldset>
+      <fieldset> 
+          <button type="submit">Guardar</button>
+        </fieldset>
+  </form>
+        <%- include("../includes/footer")%> 
+</body>
+<script src="/static/js/productUpdateValidations.js"></script>
+</html>

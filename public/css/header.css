@@ -16,7 +16,7 @@
       display:flex;
       justify-content: space-around;
       align-items: center;
-      height: 10%;
+      height: auto;
       width: 95%;
       margin:auto;
       background-color: black;
@@ -28,6 +28,7 @@
       color:white;
       font-family: 'Bebas Neue', cursive;
       padding: 3px;
+      font-size: medium ;
   }
   
   nav img{

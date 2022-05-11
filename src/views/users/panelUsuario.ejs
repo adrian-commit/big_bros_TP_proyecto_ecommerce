@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../includes/head")%>
+    <link href="/static/css/stylepanel.css"  rel="stylesheet">
+ 
+
+</head>
+
+<body>
+
+    <%- include("../includes/header")%>
+    <main>
+        <div class="padre">
+            <!-- <section class="opciones">
+                    <div class="mis-datos">Mis datos</div>       
+                    <div class="mis-compras">Mis compras </div>
+            </section>
+        -->
+            <div class="contenido">
+            <h3>Mis datos</h3>
+                <div class="input"><label>Nombre:</label><div><input type="text" placeholder="<%= user.first_name + user.last_name %> "><i class="far fa-edit"></i></div></div>
+                <div class="input"><label>Dirección:</label><div><input type="text" placeholder="<%= user.address %> "><i class="far fa-edit"></i></div></div>
+                <div class="input"><label>Teléfono:</label><div><input type="tel" placeholder="<%= user.telephone %> "><i class="far fa-edit"></i></div></div>
+                <div class="input"><label>Correo:</label><div><input type="email" placeholder="<%= user.email %> "><i class="far fa-edit"></i></div></div>
+                <button onclick="location.href='/users/logout'">
+                    Cerrar Sesión
+                </button>
+            </div>
+            
+            <!--
+                <a href="/users/logout">Cerrar sesión</a>
+            -->
+            </div>
+    </main>
+        <%- include("../includes/footer")%>  
+</body>
+</html>

@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  body{
+    background-color: black;
+  }
+  /* acá empieza el header */
+  header{
+      width: 100vw;
+      height: 15%;
+      position: relative;
+      z-index: 2;
+  }
+  
+  nav {
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      height:auto;
+      width: 95%;
+      margin:auto;
+      background-color: black;
+      border-radius: 5%;
+      padding: 1%;
+  }
+  
+  nav a{
+      color:white;
+      font-family: 'Bebas Neue', cursive;
+      padding: 3px;
+      font-size: medium ;
+  }
+  
+  nav img{
+      display: none;
+  }
+  
+  .barra button{
+    background-color:black;
+    color: white;
+  }
+    
+  .busqueda{
+      background-color: black;
+      color: white;
+      font-style: italic;
+      }
+  
+  .barra{
+    text-align: right;
+    background-color: black;
+    padding:5px;
+  }
+  
+/* hasta acá el header*/
+/*Inicio del Cuerpo */
+
+main {
+  padding-bottom: 30%;
+}
+
+#slider img {
+	max-width: 100%;
+}
+#slider {
+  width: 100vw;
+  height: 150px;
+	position: relative;
+}
+
+#slides {
+  width: 100%;
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	height: 150px;
+}
+.slide {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+	opacity: 0;
+  
+}
+#slide-1 {
+	opacity: 1;
+}
+
+.slide:target {
+	opacity: 1;
+}
+
+#menu {
+  background-color: rgba(0, 0, 0, 0);
+	display: flex;
+	justify-content: center;
+	height: .5rem;
+	position: absolute;
+	width: 100vw;
+	bottom: .5rem;
+	z-index: 2;
+}
+
+#menu a {
+	background-color: rgb(17, 17, 17);
+	width: 2rem;
+  margin: 5px;
+	border-radius: .5rem;
+}
+
+main #titulo{
+  color: white;
+  font-family:'Bebas Neue', cursive;
+  font-size: 24px;
+  font-style: oblique;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+}
+
+.productos{
+  width: 90vw;
+  margin: auto;
+}
+
+.productos li {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 10vw;
+  box-shadow: rgba(255, 254, 254, 1);
+}
+
+.productos li img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+}
+
+.caracteristicas-p{
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  bottom: 15px;
+}
+
+.caracteristicas-p p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  margin-bottom: 3px;
+  text-decoration: underline;
+}
+
+.caracteristicas-p input{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.caracteristicas-p .cantidad{
+  width: 25%;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.caracteristicas-p .precio{
+  width: 25%;
+  text-align: left;
+  margin:left;
+  margin-right: 2vw;
+  text-decoration: none;
+}
+.caracteristicas-p .agregarCarrito{
+  width: 70%;
+  background-color: white;
+}
+
+#share{
+  display: inline-block;
+  width: 70%;
+}
+
+.caracteristicas-p i{
+  margin: 3px 1px 3px 1px;
+  color: rgb(236, 236, 20);
+}
+
+.p-null {
+  color:white
+}
+
+/** ACA EMPIEZA LA SECCION DEL CARRITO**/
+
+
+.carrito {
+  width: 100%;
+  margin: auto;
+  display: none;
+}
+
+.menuDesplegable {
+  display: none;
+  width: 100%;
+  background-color: white;
+  padding: 5px 0px;
+}
+
+.seguir {
+  display: block;
+  width: 60%;
+  height: 7px;
+  margin: auto;
+  margin-bottom: 5px;
+  font-size: 1px;
+}
+
+.verDetalle {
+  display: block;
+  width: 100%;
+  padding: 5vw;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
+  background-color: white;
+  border: white;
+  font-size: 20px;
+}
+
+.detalle {
+  display: none;
+  padding: 0px 5px;
+}
+
+.detalle .items{
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
+  text-align: center;
+  background-color: rgb(224, 224, 224);
+}
+
+.nombre {
+  width: 50%;
+  flex-grow: 2;
+}
+
+.cantidad, .precio {
+  width: 25%;
+  flex-grow: 1;
+}
+
+.envio {
+  display: none;
+}
+
+.opcionRetirar, .opcionEnviar {
+  width: 100%;
+  padding: 5vw;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
+}
+
+.label1opcionRetirar, .label1opcionEnviar {
+  font-size: 20px;
+}
+
+.label2opcionRetirar, .label2opcionEnviar {
+  font-size: 12px;
+  margin-left: 5vw;
+}
+
+.enviar , .retirar {
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
+  font-size: 15px;
+}
+
+.enviar {
+  display: none;
+}
+
+.retirar {
+  display: block;
+}
+
+.enviar input, .retirar input {
+  width: 100%;
+  padding: 4vw;
+  border: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 5vw;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: bold;
+  letter-spacing: 2px; 
+  font-size: 20px;
+  background-color: white;
+}
+
+.whap {
+  color: white;
+  font-weight: normal;
+}
+
+/** ACA TERMINA LA SECCION DEL CARRITO **/
+/*hasta aca el cuerpo*/
+/*inicio footer*/
+
+footer{
+  background-color: black;
+  color: white;
+  font-size:small;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  position:fixed;
+  bottom: 0%;
+  border-top: 1px solid rgba(255, 254, 254, 0.5);
+  box-shadow: rgba(255, 254, 254, 1);
+}
+
+footer section {
+  margin: 5%;
+}
+
+footer a{
+  margin:auto;
+  color:white;
+  text-decoration: none;
+  flex-direction: column;
+}
+
+footer section h4 {
+  margin-block-start: 0px;
+  margin-block-end:8px;
+
+}
+
+footer section i{
+  color:white;
+  margin-right: 3px;
+}
+
+
+/*fin footer*/
+
+
+/*inicio media queries*/
+
+  @media(min-width: 768px){
+    nav img{
+        display: inline-block;
+        width: 100px;
+    }
+
+    footer{
+      font-size: smaller;
+      height: 12.5%;
+    }
+
+    footer section{
+      margin: 1%;
+    }
+
+    main {
+      padding-bottom: 15%;
+    }
+    
+    
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .productos li {
+      width: 45%;
+
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media(min-width: 1024px){
+   body{
+     width: 100vw;
+   }
+    nav a{
+       padding:0;
+       font-size: larger;
+    }
+
+    nav img {
+        width: 150px;
+    }
+    header{
+      margin: 0px;
+    }
+    main {
+      padding-bottom: 10%;
+    }
+
+    #slider{
+    width: 80%;
+    margin: auto;
+    }
+    
+    #menu a{
+      width: 3rem;
+      height: 0.5rem;
+      position: relative;
+      top: 10px;
+      right: 7.5rem;
+      justify-content: center;
+    }
+
+    .productos li {
+      width: 23%;
+    }
+
+    
+  }
+    @media(min-width: 1440px){
+      nav a{
+         padding:0;
+         font-size: larger;
+      }
+      body{
+        width: 100%;
+      }
+      nav img {
+          width: 150px;
+      }
+      
+      #slider{
+      width: 80%;
+      margin: auto;
+      }
+      
+      #menu a{
+        width: 3rem;
+        height: 0.5rem;
+        position: relative;
+        top: 10px;
+        right: 9rem;
+        justify-content: center;
+      }
+      .productos li {
+        width: 23%;
+      }
+  }
