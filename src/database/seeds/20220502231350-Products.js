@@ -6,7 +6,7 @@ module.exports = {
    await queryInterface.bulkInsert('products', [
      {
       id: 1,
-      name: 'Alfajores de chocolate x12',
+      name: 'Alfajores x12',
       description: 'Clásicos alfajores marplatenses con generoso relleno de dulce de leche.',
       price: 600,
       amount: 12,
@@ -46,7 +46,7 @@ module.exports = {
      },
      {
       id: 5,
-      name: 'Alfajores de chocolate x6',
+      name: 'Alfajores x6',
       description: 'Clásicos alfajores marplatenses con generoso relleno de dulce de leche',
       price: 300,
       amount: 6,

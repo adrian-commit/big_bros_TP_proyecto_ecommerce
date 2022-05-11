@@ -69,13 +69,17 @@ body{
   background-attachment: fixed;
   background-repeat: no-repeat;
   width: 100vw;
-  margin:0;
   height: 100vh;
+  margin:0;
+  margin-bottom: 20vw;
+  
 }
 
 .productos{
     width: 90vw;
     margin: auto;
+    margin-top: 5vw;
+    
   }
   
   .productos article{
@@ -151,9 +155,7 @@ body{
     justify-content: space-between;
     flex-grow: 1;
     width: 40vw;
-    margin: auto;
-
-    
+    margin: auto;    
   }
   section p {
     font-family: 'Montserrat', sans-serif;
@@ -236,6 +238,10 @@ footer{
   /*inicio media queries*/
 
   @media(min-width: 768px){
+    body {
+      margin-bottom: 15vw;
+    }
+    
     nav img{
         display: inline-block;
         width: 100px;
@@ -266,6 +272,10 @@ footer{
   }
   
   @media(min-width: 1024px){
+    body {
+      margin-bottom: 10vw;
+    }
+    
     nav a{
        padding:0;
        font-size: larger;
@@ -279,32 +289,9 @@ footer{
     width: 80%;
     margin: auto;
     }
-    /*
-    main {
-      margin-block-start: 5%;
-      width: 45vw;
-      height: auto;
-      padding: 3%;
-    }
-    main h4 {
-      margin-top: 0;
-    }
-
-    main form label{
-      margin-bottom: 0.5%;
-    }
-    */
-    
-    
-    #menu a{
-      width: 3rem;
-      height: .5rem;
-      position: relative;
-      top: 10px;
-      right: 6rem;
-    }
+   
     .productos article{
-      width: 20%;
+      width: 30%;
     }
 
   }

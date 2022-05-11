@@ -388,14 +388,7 @@ footer section i{
       padding-bottom: 15%;
     }
     
-    /*
-    main {
-      margin-block-start: 5%;
-      width: 60vw;
-      height: auto;
-    }
-    */
-
+    
     .productos {
       display: flex;
       flex-wrap: wrap;
@@ -411,7 +404,7 @@ footer section i{
   
   @media(min-width: 1024px){
    body{
-     width: 1024px;
+     width: 100vw;
    }
     nav a{
        padding:0;
@@ -428,21 +421,6 @@ footer section i{
       padding-bottom: 10%;
     }
 
-    /*
-    main {
-      margin-block-start: 5%;
-      width: 45vw;
-      height: auto;
-      padding: 3%;
-    }
-    main h4 {
-      margin-top: 0;
-    }
-
-    main form label{
-      margin-bottom: 0.5%;
-    }
-    */
     #slider{
     width: 80%;
     margin: auto;
@@ -453,12 +431,15 @@ footer section i{
       height: 0.5rem;
       position: relative;
       top: 10px;
-      right: 6rem;
+      right: 7.5rem;
       justify-content: center;
     }
+
     .productos li {
       width: 23%;
     }
+
+    
   }
     @media(min-width: 1440px){
       nav a{
@@ -471,21 +452,7 @@ footer section i{
       nav img {
           width: 150px;
       }
-      /*
-      main {
-        margin-block-start: 5%;
-        width: 45vw;
-        height: auto;
-        padding: 3%;
-      }
-      main h4 {
-        margin-top: 0;
-      }
-  
-      main form label{
-        margin-bottom: 0.5%;
-      }
-      */
+      
       #slider{
       width: 80%;
       margin: auto;

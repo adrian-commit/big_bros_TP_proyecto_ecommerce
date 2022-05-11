@@ -71,7 +71,7 @@ email.addEventListener('keydown', function(e) {
 })
 
 password.addEventListener('blur', function(e) {
-    if (e.target.value.length <= 8) {
+    if (e.target.value.length <= 7) {
         e.target.style.color = 'red';
     } else {
         e.target.style.color = 'green';
@@ -79,14 +79,14 @@ password.addEventListener('blur', function(e) {
 })
 
 password.addEventListener('keydown', function(e) {
-    if (e.target.value.length <= 8) {
+    if (e.target.value.length <= 7) {
         e.target.style.color = 'red';
     } else {
         e.target.style.color = 'green';
     }
 })
 
-register.addEventListener('submit', function(e) {
+/* register.addEventListener('submit', function(e) {
     e.preventDefault();
     if (firstName.value.length < 3) {
         firstName.style.color = 'red';
@@ -101,5 +101,5 @@ register.addEventListener('submit', function(e) {
     } else {
         register.submit();
     }    
-})
+}) */
 

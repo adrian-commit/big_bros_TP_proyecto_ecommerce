@@ -3,7 +3,7 @@ let elements = login.elements;
 let email = elements.email;
 let password = elements.password;
 
-login.addEventListener('submit', function(e) {
+/* login.addEventListener('submit', function(e) {
     e.preventDefault();
     if (email.value.length <= 5) {
         email.style.color = 'red';
@@ -12,4 +12,4 @@ login.addEventListener('submit', function(e) {
     } else {
         login.submit();
     }    
-}) 
+})  */

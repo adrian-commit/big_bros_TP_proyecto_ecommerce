@@ -115,6 +115,9 @@ module.exports = {
                 }) 
                 image = image.id;
             };
+            if(producto.image){
+                image = producto.image
+            }
             await producto.update({
                 name: req.body.name,
                 description: req.body.description,
@@ -122,7 +125,7 @@ module.exports = {
                 amount: req.body.amount,
                 stock: req.body.stock,
                 category: req.body.category,
-                image: image
+                image: image 
             });
             return res.redirect('/productos/' + producto.id);
         } catch (error) {
