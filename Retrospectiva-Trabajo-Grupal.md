@@ -10,5 +10,8 @@ En el presente archivo se deja constancia de la experiencia de trabajo grupal du
 
 Como cierre, queremos destacar la calidad de contenido y a su vez también, destacar la calidad docente que estuvieron a la altura de lo que esperabamos e influyeron mucho a poder seguir adelante con la realización del proyecto, marcando las buenas prácticas en el entorno de trabajo IT. 
 
-
+integrantes del grupo nº2:
+ Adrían Santillan
+ David Lezcano
+ Noelia Galeano
 
