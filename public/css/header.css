@@ -51,6 +51,7 @@
     background-color: black;
     padding:5px;
   }
+
   
   @media(min-width: 768px){
     nav img{

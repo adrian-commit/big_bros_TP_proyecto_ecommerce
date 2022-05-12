@@ -75,22 +75,25 @@ body{
     position: fixed;
 }
 
-main{
+/* main{
     display: flex;
     width: 100vw;
     align-self: center;    
-}
+} */
 
-.datosU {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
+
+.nombreUsuario{
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 23px;
+    text-align: center;
+    margin-block-end:0.5em;
 }
 
 .usuario {
   display: block;
   width: 100%;
-  color: white;
+  color: black;
   font-family:'Bebas Neue', cursive;
   font-size: 24px;
   font-style: oblique;
@@ -135,6 +138,7 @@ main button{
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40%;
     align-items: center;
     width:90%;
     background-color: rgb(255,255,255,0.5);

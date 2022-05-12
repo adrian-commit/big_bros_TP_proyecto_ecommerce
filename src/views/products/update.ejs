@@ -2,36 +2,67 @@
 <html lang="en">
 <head>
     <%- include("../includes/head")%>
-    <link href="/static/css/create.css"  rel="stylesheet">
+    <link href="/static/css/createUpdate.css"  rel="stylesheet">
 </head>
 <body>
     <%- include("../includes/header")%>
     <p class="title">Actualizando producto</p>
-  <form class="create" action="/productos/actualizar/<%= producto.id %>?m=PUT" enctype="multipart/form-data" method="post" novalidate>
+  <form class="update" id="update" action="/productos/actualizar/<%= producto.id %>?m=PUT" enctype="multipart/form-data" method="post" novalidate>
     <input type="hidden" name="id" id="id" value="<%= producto.id %>">
        <fieldset class="name">
           <label for="name">Nombre</label>
-          <input type="text" name="name" value="<%= producto.name%>" placeholder="name">
+          <input type="text" 
+           name="name" 
+           id="name"  
+           placeholder="name"
+           class=" <%= locals.errors && errors.name ? "invalid" : null %> " 
+           value="<%= locals.oldData ? oldData.name : producto.name %>"
+           >
+          <% if (locals.errors && errors.name) { %>
+            <section class="text-danger">
+                <%= errors.name.msg %> 
+            </section>
+          <% } %>
         </fieldset>
       <fieldset class="description">
           <label for="description">Descripción</label>
-          <textarea name="description" id="description" cols="30" rows="10"><%= producto.description%></textarea>
+          <textarea name="description" 
+          id="description" 
+          cols="30" 
+          rows="10"
+          class=" <%= locals.errors && errors.description ? "invalid" : null %> " 
+          value="<%= locals.oldData ? oldData.description : producto.description %>"
+          ><%= producto.description %></textarea>
+          <% if (locals.errors && errors.description) { %>
+            <section class="text-danger">
+                <%= errors.description.msg %> 
+            </section>
+          <% } %>
         </fieldset>
       <fieldset class="price">
           <label for="price">Precio</label>
-          <input type="number" min="1" name="price" id="price" value="<%= producto.price%>">
+          <input type="number" min="1" name="price" id="price" value="<%= locals.oldData ? oldData.price : producto.price %>">
         </fieldset>
         <fieldset class="amount">
             <label for="amount">Cantidad</label>
-            <input type="number" min="1" max="100" name="amount" id="amount" value="<%= producto.amount%>">
+            <input type="number" min="1" max="100" name="amount" id="amount" value="<%= locals.oldData ? oldData.amount : producto.amount %>">
           </fieldset>
       <fieldset class="stock">
           <label for="stock">Stock</label>
-          <input type="range" min="1" max="100" name="stock" id="stock" value="<%= producto.stock%>">
+          <input type="range" min="1" max="100" name="stock" id="stock" value="<%= locals.oldData ? oldData.stock : producto.stock %>">
         </fieldset>
         <fieldset class="image">
           <label for="product">Imagen</label>
-          <input type="file" name="product" id="product">
+          <input type="file" 
+          name="product" 
+          id="product"
+          class=" <%= locals.errors && errors.product ? "invalid" : null %> " 
+          >
+          <% if (locals.errors && errors.product) { %>
+            <section class="text-danger">
+                <%= errors.product.msg %> 
+            </section>
+          <% } %>
         </fieldset>
         <fieldset> 
           <label for="category">Categoría</label>
@@ -48,5 +79,5 @@
   </form>
         <%- include("../includes/footer")%> 
 </body>
-<script src="/static/js/productUpdateValidations.js"></script>
+<script src="/static/js/productValidations.js"></script>
 </html>

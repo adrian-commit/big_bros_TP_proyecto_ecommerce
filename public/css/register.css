@@ -123,11 +123,6 @@ fieldset input{
   width: 100%;
 }
 
-.invalid {
-  border: 1px solid red;
-}
-
-
 fieldset button{
   width: 20%;
   background-color:black;
@@ -140,6 +135,10 @@ fieldset button{
   padding: 1%;
 }
 
+/* //---CSS de las validaciones--// */
+.invalid {
+  border: 1px solid red;
+}
 .text-danger{
   text-align: start;
   color: red;

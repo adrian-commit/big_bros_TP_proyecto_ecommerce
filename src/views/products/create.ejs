@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <%- include("../includes/head")%>
-    <link href="/static/css/create.css"  rel="stylesheet">
+    <link href="/static/css/createUpdate.css"  rel="stylesheet">
 </head>
 <body>
+
     <%- include("../includes/header")%>
     <p class="title">nuevo producto</p>
   <form class="create" action="/productos/guardar" enctype="multipart/form-data" method="post" novalidate>
@@ -12,6 +13,7 @@
           <label for="name">Nombre</label>
           <input type="text" 
           name="name"
+          id="name"
           class=" <%= locals.errors && errors.name ? "invalid" : null %> " 
           value="<%= locals.oldData ? oldData.name : null %>"
           >
@@ -76,5 +78,5 @@
   </form>        
 </body>
   <%- include("../includes/footer")%> 
-  <script src="/static/js/productCreateValidations.js"></script>
+  <script src="/static/js/productValidations.js"></script>
 </html> 

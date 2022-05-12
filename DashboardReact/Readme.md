@@ -1,0 +1,2 @@
+En este archivo dejamos el link a un repositorio remoto adicional donde se subieron los archivos respectivos del sprint 8, de la puesta en marcha del dashboard de React.
+https://github.com/adrian-commit/dashboardBigBros.git

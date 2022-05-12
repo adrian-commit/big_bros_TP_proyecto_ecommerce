@@ -54,16 +54,17 @@ userName.addEventListener('keydown', function(e) {
     }
 })
 
-email.addEventListener('blur', function(e) {
-    if (e.target.value.length <= 5) {
+
+/* let testEmail = /^[a-zA-Z0-9]+@{a-zA-Z0-9]+\.[a-zA-Z0-9]+$/; */
+/* email.addEventListener('keypress', function(e) {
+    if (testEmail.test(e.target.value)) {
         e.target.style.color = 'red';
     } else {
         e.target.style.color = 'green';
     }
-})
-
+}) */
 email.addEventListener('keydown', function(e) {
-    if (e.target.value.length <= 5) {
+    if (e.target.value.length <= 4) {
         e.target.style.color = 'red';
     } else {
         e.target.style.color = 'green';
@@ -85,6 +86,8 @@ password.addEventListener('keydown', function(e) {
         e.target.style.color = 'green';
     }
 })
+
+
 
 /* register.addEventListener('submit', function(e) {
     e.preventDefault();
